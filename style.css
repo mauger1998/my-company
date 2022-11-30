@@ -121,3 +121,44 @@ nav ul li a {
 .hero-wrapper h1 span:last-of-type > img {
     width:max(2.5rem, 3vw);
 }
+/*************************/
+.hero-image-wrapper img {
+    width:max(80vw, 600px);
+    margin-top:2rem;
+}
+/**********************/
+@media (max-width:704px) {
+    .hero-wrapper h1:last-of-type {
+        display:block;
+    }
+    .hero-wrapper h1:first-child {
+        display:none;
+    }
+    .hero-button-wrapper p {
+        width:90%;
+        text-align:center;
+    }
+    .hero-button-wrapper {
+        flex-direction: column-reverse;
+    }
+    .hero-section {
+        max-height:50rem;
+    }
+  
+}
+@media (max-width:835px) {
+    nav {
+        display:none;
+    }
+}
+@media (max-width:330px) {
+    .hero-wrapper h1 {
+        font-size:2rem;
+    }
+}
+@media (max-width:619px) {
+    .hero-image-wrapper img {
+        width:90vw;
+    }
+}
+/***************************/
