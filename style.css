@@ -44,7 +44,7 @@ header {
     width:100vw;
     padding-inline:4rem;
     padding-top:1rem;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:#0A2640;
     z-index:1;
 }
 .logo-container img {
@@ -59,7 +59,8 @@ nav {
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%, -50%)
+    transform:translate(-50%, -50%);
+
 }
 nav ul {
     display:flex;
@@ -70,13 +71,15 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color:black;
+    color:white !important;
+
 }
 .nav-button-container button {
     padding:0.25rem 1rem;
     border-radius:2rem;
-    background-color:var(--dark-purple);
+    background-color:#4FE9A4;
     border:none;
-    color:white;
+    color:black;
 }
 /*********************/
 .hero-section {
@@ -88,19 +91,21 @@ nav ul li a {
     align-items: center;
     padding-top:11rem;
     padding-inline:4rem;
+    background-color:#0A2640;
+    min-height:80vh;
 }
 .hero-wrapper {
     width:80vw;
 }
 .hero-wrapper h1 {
-    font-family: 'Bowlby One SC', cursive;
     font-size:max(4vw, 2.5rem);
     text-align:center;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+
 }
-.hero-wrapper h1 span {
-    font-family: 'Bowlby One SC', cursive;
-    color:var(--dark-purple);
-}
+
 .hero-button-wrapper {
     display:flex;
     justify-content: center;
@@ -115,22 +120,33 @@ nav ul li a {
     width:max(7rem, 9vw);
     padding-block:0.5rem;
     font-size:max(1.25vw, 0.75rem);
-    color:white;
-    background-color:black;
+    color:black;
+    background-color:#4FE9A4;;
     font-weight:500;
     border:none;
 }
 .hero-button-wrapper p {
     width:50%;
     font-size:max(0.75rem,1.3vw);
+    color:white;
+    font-weight:200;
 }
 .hero-wrapper h1 span:last-of-type > img {
     width:max(2.5rem, 3vw);
+}
+.hero-section {
+    position:relative;
 }
 /*************************/
 .hero-image-wrapper img {
     width:max(80vw, 600px);
     margin-top:2rem;
+    background-color:inherit;
+    position:absolute;
+    top:105%;
+    left:50%;
+    transform:translate(-50%, -50%)
+    
 }
 /**********************/
 @media (max-width:704px) {
@@ -177,6 +193,7 @@ nav ul li a {
     align-items: center;
     gap:6rem;
     padding-block:3rem;
+    padding-top:20rem !important;
 }
 .why-us img {
     width:50px;
@@ -791,7 +808,7 @@ footer {
     align-items: flex-start;
     justify-content: center;
     width:100vw;
-    flex-direction:column;
+    flex-direction:row-reverse;
     gap:2rem;
     padding:4rem;
 }
@@ -801,10 +818,10 @@ footer img {
 .top-footer {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width:auto;
     width:100%;
-    text-align:center;
+    text-align:right;
 }
 .top-footer-right {
     display:flex;
