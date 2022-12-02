@@ -705,6 +705,9 @@ nav ul li a {
     justify-content: flex-start;
     gap:2rem;
 }
+.cards-titles {
+    padding-left:0.8rem;
+}
 /***********************/
 .contact {
     padding:4rem;
@@ -753,4 +756,77 @@ form button {
     color:white;
     border:none;
 }
-    
+input,
+textarea {
+    padding:0.25rem;
+}
+.contact {
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.form-titles img {
+    width:50px;
+}
+.form-titles {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.form-titles p {
+    font-weight:300;
+    font-size:0.9rem
+}
+.form-titles h2 {
+    font-size:2rem;
+}
+.form-titles span {
+    padding-left:1rem;
+}
+/**********************/
+footer {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width:100vw;
+    flex-direction:column;
+    gap:2rem;
+    padding:4rem;
+}
+footer img {
+    width:40px;
+}
+.top-footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    width:100%;
+    text-align:center;
+}
+.top-footer-right {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.bottom-footer {
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+.twitter,
+.facebook,
+.github {
+    display:flex;
+    align-items: center;
+    gap:4rem;
+}
+.twitter img,
+.facebook img,
+.github img {
+    display:flex;
+    align-items: center;
+    gap:4rem;
+}
