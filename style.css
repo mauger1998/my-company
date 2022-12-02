@@ -605,13 +605,17 @@ nav ul li a {
     flex-direction:column;
     gap:4rem;
     padding:4rem;
+    padding-bottom:10rem;
+    align-items: center;
+    justify-content: center;
 }
 .pricing-titles {
     display:flex;
     flex-direction:column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap:1rem;
+    gap:1.5rem;
+    text-align:left;
 }
 .pricing-titles h2 {
     font-weight:700;
@@ -620,11 +624,11 @@ nav ul li a {
 .pricing-titles p:nth-of-type(1) {
     font-weight:300;
     width:55%;
-    text-align:center;
+    text-align:left;
 }
 .pricing-titles p:nth-of-type(2) {
     font-weight:600;
-    text-align:center;
+    text-align:left;
 }
 .pricing-titles button {
     font-weight:600;
@@ -635,3 +639,118 @@ nav ul li a {
     width:10rem;
     border-radius:10rem;
 }
+.cards-pricing {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.pricing-cards {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:4rem;
+    
+}
+.cards {
+    border:1px solid black;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    padding:2.5rem;
+    gap:1rem;
+    width:25rem;
+}
+.pricing-one {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:3rem;
+}
+.pricing-one h3,
+.pricing-two h3 {
+    font-size:2rem;
+}
+.pricing-two {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pricing-three {
+    font-size:0.8rem;
+}
+
+.pricing-four button {
+    padding-block:0.5rem;
+    width:100%;
+    font-size:1rem;
+    font-weight:600;
+    background-color:var(--dark-purple);
+    color:white;
+    border:none;
+}
+.pricing-five ul {
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    list-style:none;
+    font-size:0.8rem;
+    align-items:flex-start;
+    
+    justify-content: center;
+}
+.pricing-five ul li {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2rem;
+}
+/***********************/
+.contact {
+    padding:4rem;
+}
+.form-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form-wrapper img {
+    width:25rem;
+}
+form {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width:25rem;
+    padding:2rem;
+}
+
+fieldset {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    width:100%;
+    outline:none;
+    border:none;
+}
+textarea {
+    width:100%;
+} 
+input {
+    width:inherit;
+    outline:none;
+}
+form button {
+    width:100%;
+    padding-block:0.5rem;
+    font-size:1rem;
+    font-weight:600;
+    background-color:var(--dark-purple);
+    color:white;
+    border:none;
+}
+    
