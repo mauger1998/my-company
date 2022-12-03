@@ -155,13 +155,21 @@ nav ul li a {
     width:75%;
     
 }
-.hero-section > img {
-    width:600px;
+.hero-section > img:nth-child(1) {
+    width:30px;
     position:absolute;
-    left:-15%;
-    top:-25%;
+    left:10%;
+    top:18%;
     z-index:1;
 }
+.hero-section > img:nth-child(2) {
+    width:25px;
+    position:absolute;
+    right:15%;
+    bottom:15%;
+    z-index:1;
+}
+
 /*************************/
 .hero-image-wrapper img {
     width:max(80vw, 600px);
@@ -244,6 +252,7 @@ nav ul li a {
     align-items: center;
     gap:6rem;
     padding-block:3rem;
+    padding-inline:5rem;
 }
 .why-us > * {
     overflow-x:visible;
@@ -263,10 +272,10 @@ nav ul li a {
 }
 .why-us-cards {
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap:4rem;
     text-align:left;
+    width:100%;
 }
 .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -291,9 +300,15 @@ nav ul li a {
     .card:nth-child(3) {
         grid-column: 1 / span 2;
     }
+    .card:nth-child(1) {
+        place-self:start;
+    }
+    .card:nth-child(2) {
+        place-self:end;
+    }
    
 }
-@media (max-width:823px) {
+@media (max-width:1023px) {
     .why-us-cards {
         display:flex;
         flex-direction: column;
@@ -310,6 +325,9 @@ nav ul li a {
     .why-us h2 {
         font-size:1.5rem;
         /* margin-bottom:6rem; */
+    }
+    .card {
+        place-self:center !important;
     }
     
 }
@@ -626,7 +644,7 @@ nav ul li a {
     .our-work-section {
         grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
         text-align:center;
-        gap:0rem;
+        gap:1rem;
         margin-top:0; 
              
         
@@ -764,7 +782,8 @@ nav ul li a {
 }
 .pricing-section {
     width:100%;
-    padding-inline:10rem;
+    padding-inline:6rem;
+
 }
 .pricing-section > * {
     overflow:hidden;
@@ -1032,11 +1051,11 @@ textarea {
 footer {
     display:flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     width:100vw;
     flex-direction:row-reverse;
     gap:2rem;
-    padding:4rem;
+    padding:5rem;
     height:max-content;
 }
 footer > * {
