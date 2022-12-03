@@ -12,7 +12,7 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 }
 
 /*************************
@@ -97,6 +97,9 @@ nav ul li a {
     padding-inline:4rem;
     background-color:#0A2640;
     padding-bottom:10rem;
+}
+.hero-section > * {
+    overflow-x:hidden !important;
 }
 .hero-wrapper {
     width:80vw;
@@ -472,8 +475,13 @@ nav ul li a {
     
 }
 .our-work-section > * {
-    overflow-x:hidden;
+    overflow-x:hidden !important;
 }
+.our-work-section img {
+    overflow-x:hidden !important;
+}
+
+
 .wrapper-test {
     display:flex;
     justify-content: center;
@@ -512,6 +520,9 @@ nav ul li a {
     gap:5rem;
     row-gap: 10rem;
     margin-bottom:5rem;
+}
+.our-work-section p {
+    max-width:70vw;
 }
 .top-part-our-work {
     grid-column: 1 / span 2;
@@ -574,6 +585,18 @@ nav ul li a {
 }
 .what-we-do-right {
     place-self:end;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.what-we-do-right img {
+    width:max(50%, 16rem);
+}
+
+.first-project-left p,
+.first-project-right p  {
+    
 }
 @media (max-width:1194px) {
     .first-project-right {
@@ -585,11 +608,13 @@ nav ul li a {
         grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
         text-align:center;
         gap:5rem;
-        margin-top:0;       
+        margin-top:0; 
+             
         
     }
     .top-part-our-work p {
         text-align:center;
+        
         
     }
     .top-part-our-work {
@@ -599,6 +624,7 @@ nav ul li a {
         align-self:center;
         place-self:center;
         text-align:center;
+        
     }
     .first-project-right {
         gap:1.5em;
@@ -610,6 +636,7 @@ nav ul li a {
         justify-content: center;
         align-items: center;
         text-align:center;
+        
     
     }
     .first-project-left img,
@@ -619,6 +646,13 @@ nav ul li a {
     .what-we-do-right {
         align-self:flex-start;
         
+    }
+    .first-project-title {
+        border:2px solid red;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .first-project-right {
         grid-column:1 / span 2;
@@ -677,14 +711,18 @@ nav ul li a {
         grid-column: 1 / span 2;
         margin:0;
         padding:0;
+        justify-content:center;
     }
 
    
 }
 @media (max-width:550px) {
     .what-we-do-left p {
-        width:90vw;
+        width:80vw;
     }
+    
+    
+   
 }
 
 
@@ -1000,5 +1038,139 @@ footer img {
     .twitter {
         flex-direction:column;
         align-items:center
+    }
+}
+
+
+
+
+/*****************/
+.pricing-section > * {
+    overflow:hidden;
+}
+.tick-container > * {
+    overflow:hidden;
+}
+.tick-container {
+    width:100%;
+    
+    
+}
+.tick-container img {
+    width:40px;
+    
+}
+.price-one,
+.price-two,
+.price-three {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1.5rem;
+    padding:2rem;
+}
+.price-one h3,
+.price-two h3,
+.price-three h3 {
+    font-size:2rem;
+} 
+.price-one button,
+.price-two button,
+.price-three button {
+    font-size:1rem;
+    padding-block:0.25rem;
+    padding-inline:2rem;
+    font-weight:600;
+    background-color:var(--new-green);
+    border:none;
+} 
+.price-one p:nth-of-type(1),
+.price-two p:nth-of-type(1),
+.price-three p:nth-of-type(1) {
+    font-size:1.5rem;
+} 
+.tick-container ul {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.tick-container ul li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    
+}
+.pricing-section > * {
+    overflow-x:visible !important;
+}
+.pricing-grid > * {
+    overflow-x:visible !important;
+}
+.tick-container > * {
+    overflow-x:visible !important;
+}
+.tick-container ul li {
+    overflow-x:visible !important
+}
+.tick-container ul {
+    overflow-x:visible !important;
+}
+.tick-container img {
+    overflow-x:visible !important;
+}
+
+footer > * {
+    overflow-x:hidden !important
+}
+
+.our-work-section > * {
+    overflow:hidden !important;
+    
+}
+.what-we-do-left > *,
+.what-we-do-right > * {
+    overflow:hidden;
+}
+
+.contact > * {
+    overflow:hidden !important;
+    
+    
+}
+.contact {
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid red;
+}
+.form-titles {
+    align-self:center;
+    border:2px solid red;
+    text-align:center;
+}
+@media (max-width:427px) {
+    .price-one h3,
+    .price-two h3,
+    .price-three h3 {
+        font-size:1.5rem;
+    }
+    .price-one p,
+    .price-two p,
+    .price-three p {
+        font-size:0.8rem;
+    } 
+    .tick-container ul {
+        font-size:0.8rem;
+        gap:0.5rem;
+    }
+    
+}
+@media (max-width:356px) {
+    .tick-container ul {
+        font-size:0.7rem;
     }
 }
