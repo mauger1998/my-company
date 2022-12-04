@@ -28,11 +28,16 @@ const dropDownHome = document.querySelector(".dropDownHome")
 const dropDownOurWork = document.querySelector(".dropDownOurWork")
 const dropDownPricing = document.querySelector(".dropDownPricing")
 const dropDownContact = document.querySelector(".drop-down button")
+const dropDownWhyUs = document.querySelector(".dropDownWhyUs")
 
 contactButtonHeader 
 
 const sectionOneOptions = { }
 const navChangeOptions = { }
+const whyUsOptions = { rootMargin: "-300px" }
+const ourWorkOptions = { rootMargin: "-300px" }
+const priceOptions = { rootMargin: "-300px" }
+const homeOptions = { }
 
 
 
@@ -55,6 +60,7 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             header.classList.add("header-add")
+            header.style.transition = "1s"
             nav.forEach(link => {
                 link.classList.add("nav-add")
             })
@@ -76,12 +82,14 @@ const sectionWhyUsObserver = new IntersectionObserver(function(entries, sectionW
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             whyUsNav.classList.remove("scrolling")
+            dropDownWhyUs.classList.remove("scrolling")
             
         } else {
             whyUsNav.classList.add("scrolling")
+            dropDownWhyUs.classList.add("scrolling")
         }
     })
-}, navChangeOptions)
+}, whyUsOptions)
 
 
 
@@ -95,7 +103,7 @@ const navChangeWorkObserver = new IntersectionObserver(function(entries, navChan
             dropDownOurWork.classList.add("scrolling")
         }
     })
-}, navChangeOptions)
+}, ourWorkOptions)
 
 
 
@@ -105,13 +113,13 @@ const navChangePriceObserver = new IntersectionObserver(function(entries, navCha
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             pricingNav.classList.remove("scrolling")
-            dropDownPricing.classList.remove("scrolli g")
+            dropDownPricing.classList.remove("scrolling")
         } else {
             pricingNav.classList.add("scrolling")
             dropDownPricing.classList.add("scrolling")
         }
     })
-}, navChangeOptions)
+}, priceOptions)
 
 
 
@@ -126,7 +134,7 @@ const navChangeHomeObserver = new IntersectionObserver(function(entries, navChan
             dropDownHome.classList.add("scrolling")
         }
     })
-}, navChangeOptions)
+}, homeOptions)
 
 sectionOneObserver.observe(hero)
 sectionWhyUsObserver.observe(whyUsSection)
