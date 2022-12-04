@@ -3,11 +3,9 @@ const contactSection = document.querySelector(".contact")
 const seeWorkButtonHero = document.querySelector(".hero-section button")
 const portfolioSection = document.querySelector(".wrapper-test")
 const whatWeDoContactButton = document.querySelector(".what-we-do-left button")
-console.log(contactButtonHeader)
 
 contactButtonHeader.addEventListener("click", (e) => {
     contactSection.scrollIntoView()
-    console.log("hello")
 })
 
 seeWorkButtonHero.addEventListener("click", (e) => {
@@ -23,10 +21,18 @@ const header = document.querySelector("header")
 const nav = document.querySelectorAll("nav ul li")
 const hero = document.querySelector(".hero-section")
 const paragraphSection = document.querySelector(".paragraph-section")
+const homeNav = document.querySelector(".nav-add")
+const pricingNav = document.querySelector(".pricingNav")
+const pricingSection = document.querySelector(".pricing-section")
+const dropDownHome = document.querySelector(".dropDownHome")
+const dropDownOurWork = document.querySelector(".dropDownOurWork")
+const dropDownPricing = document.querySelector(".dropDownPricing")
+const dropDownContact = document.querySelector(".drop-down button")
+
 contactButtonHeader 
 
 const sectionOneOptions = { }
-const paragraphSectionOptions = { }
+const navChangeOptions = { }
 
 
 
@@ -34,6 +40,8 @@ const paragraphSectionOptions = { }
 /***********************************************/
 const menu = document.querySelector(".menu")
 const dropDown = document.querySelector(".drop-down")
+const ourWorkNav = document.querySelector(".our-work-nav")
+
 
 menu.addEventListener("click", (e) => {
     dropDown.classList.toggle("toggle")
@@ -41,7 +49,6 @@ menu.addEventListener("click", (e) => {
 
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
     entries.forEach(entry => {
-        console.log(entry.target)
         header.classList.toggle("header-add")
         nav.forEach(link => {
             link.classList.toggle("nav-add")
@@ -50,15 +57,37 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
         contactButtonHeader.classList.toggle("button-add")
     })
 }, sectionOneOptions)
+
+const navChangeWorkObserver = new IntersectionObserver(function(entries, navChangeWorkObserver) {
+    entries.forEach(entry => {
+        ourWorkNav.classList.toggle("scrolling")
+        dropDownOurWork.classList.toggle("scrolling")
+    })
+}, navChangeOptions)
+
+const navChangePriceObserver = new IntersectionObserver(function(entries, navChangePriceObserver) {
+    entries.forEach(entry => {
+        pricingNav.classList.toggle("scrolling")
+        dropDownPricing.classList.toggle("scrolling")
+    })
+}, navChangeOptions)
+
+const navChangeHomeObserver = new IntersectionObserver(function(entries, navChangeHomeObserver) {
+    entries.forEach(entry => {
+        homeNav.classList.toggle("scrolling")
+        dropDownHome.classList.toggle("scrolling")
+    })
+}, navChangeOptions)
+
 sectionOneObserver.observe(hero)
+navChangeWorkObserver.observe(portfolioSection)
+navChangePriceObserver.observe(pricingSection)
+navChangeHomeObserver.observe(hero)
+
 
 
 /**********************************/
 
-const ourWorkNav = document.querySelector(".our-work-nav")
-const homeNav = document.querySelector(".nav-add")
-const pricingNav = document.querySelector(".pricingNav")
-const pricingSection = document.querySelector(".pricing-section")
 
 ourWorkNav.addEventListener("click", (e) => {
     portfolioSection.scrollIntoView()
@@ -70,6 +99,22 @@ homeNav.addEventListener("click", (e) => {
 
 pricingNav.addEventListener("click", (e) => {
     pricingSection.scrollIntoView()
+})
+
+dropDownHome.addEventListener("click", (e) => {
+    hero.scrollIntoView()
+})
+
+dropDownOurWork.addEventListener("click", (e) => {
+    portfolioSection.scrollIntoView()
+})
+
+dropDownPricing.addEventListener("click", (e => {
+    pricingSection.scrollIntoView()
+}))
+
+dropDownContact.addEventListener("click", (e) => {
+    contactSection.scrollIntoView()
 })
 
 

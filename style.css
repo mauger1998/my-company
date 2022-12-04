@@ -143,7 +143,7 @@ nav ul li {
 }
 .hero-button-wrapper p {
     width:50%;
-    font-size:max(0.65rem,1.15vw);
+    font-size:max(0.85rem,1.15vw);
     color:white;
     font-weight:200;
 }
@@ -1393,7 +1393,7 @@ button:hover {
     color:white !important;
 }
 .drop-down-add {
-    background-color:var(--blue) !important;
+    background-color:#122e49c6 !important;
     color:white;
 }
 
@@ -1472,4 +1472,10 @@ header button {
 
 nav ul li {
     cursor:pointer;
+}
+.drop-down ul li {
+    cursor:pointer;
+}
+.scrolling {
+    color:var(--new-green) !important;
 }
