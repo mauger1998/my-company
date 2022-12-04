@@ -738,6 +738,10 @@ nav ul li {
 .what-we-do-right img {
     width:max(50%, 16rem);
 }
+.first-project-title p,
+.second-project-title p {
+    font-weight:200;
+}
 
 
 @media (max-width:1194px) {
@@ -888,7 +892,7 @@ nav ul li {
 .price-one,
 .price-two,
 .price-three {
-    border:1px solid black;
+    border:0.5px solid black;
     height:25rem;
     width:100%;
     max-width:24rem;
@@ -899,7 +903,15 @@ nav ul li {
     padding-inline:6rem;
     width:100%;
     max-width:102rem;
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+    align-items: flex-start;
+    justify-content: center;
 
+}
+.pricing-section h3 {
+    font-size:2rem;
 }
 .pricing-section > * {
     overflow:hidden;
@@ -1326,7 +1338,7 @@ footer img {
     align-items: flex-start;
     gap:1rem;
     padding:2rem;
-    border:2px solid
+    border:1px solid black;
 }
 .price-one h3,
 .price-two h3,
@@ -1469,10 +1481,7 @@ button:hover {
     color:black !important;
     font-weight:700;
 }
-.button-add {
-    background-color:var(--blue) !important;
-    color:white !important;
-}
+
 .drop-down-add {
     background-color:#122e49c6 !important;
     color:white;
