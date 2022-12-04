@@ -41,6 +41,8 @@ const navChangeOptions = { }
 const menu = document.querySelector(".menu")
 const dropDown = document.querySelector(".drop-down")
 const ourWorkNav = document.querySelector(".our-work-nav")
+const whyUsNav = document.querySelector(".why-us-nav")
+const whyUsSection = document.querySelector(".why-us")
 
 
 menu.addEventListener("click", (e) => {
@@ -57,6 +59,12 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
         contactButtonHeader.classList.toggle("button-add")
     })
 }, sectionOneOptions)
+
+const sectionWhyUsObserver = new IntersectionObserver(function(entries, sectionWhyUsObserver) {
+    entries.forEach(entry => {
+        whyUsNav.classList.toggle("scrolling")
+    })
+}, navChangeOptions)
 
 const navChangeWorkObserver = new IntersectionObserver(function(entries, navChangeWorkObserver) {
     entries.forEach(entry => {
@@ -80,6 +88,7 @@ const navChangeHomeObserver = new IntersectionObserver(function(entries, navChan
 }, navChangeOptions)
 
 sectionOneObserver.observe(hero)
+sectionWhyUsObserver.observe(whyUsSection)
 navChangeWorkObserver.observe(portfolioSection)
 navChangePriceObserver.observe(pricingSection)
 navChangeHomeObserver.observe(hero)
@@ -117,5 +126,9 @@ dropDownContact.addEventListener("click", (e) => {
     contactSection.scrollIntoView()
 })
 
+
+whyUsNav.addEventListener("click", (e) => {
+    whyUsSection.scrollIntoView()
+})
 
 

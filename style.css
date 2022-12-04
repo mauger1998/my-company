@@ -51,6 +51,7 @@ header {
     padding-top:1rem;
     background-color:rgba(10, 38, 64, 0.8);
     z-index:2;
+    max-width:102rem;
 }
 .logo-container img {
     width:50px;
@@ -104,6 +105,7 @@ nav ul li {
     background-color:#0A2640;
     padding-bottom:10rem;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    max-width:102rem;
 
 }
 .hero-section > * {
@@ -113,11 +115,16 @@ nav ul li {
     width:80vw;
 }
 .hero-wrapper h1 {
-    font-size:max(4vw, 2.5rem);
+    font-size:3.5rem;
     text-align:center;
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-weight:900;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
@@ -133,17 +140,17 @@ nav ul li {
     display:none;
 }
 .hero-button-wrapper button {
-    width:max(7rem, 9vw);
+    width:max(8rem);
     padding-block:0.5rem;
-    font-size:max(1.25vw, 0.75rem);
+    font-size:max(1rem);
     color:black;
     background-color:#4FE9A4;;
     font-weight:500;
     border:none;
 }
 .hero-button-wrapper p {
-    width:50%;
-    font-size:max(0.85rem,1.15vw);
+    width:65%;
+    font-size:max(1rem);
     color:white;
     font-weight:200;
 }
@@ -201,7 +208,7 @@ nav ul li {
         display:none;
     }
     .hero-button-wrapper p {
-        width:90%;
+        width:60%;
         text-align:center;
     }
     .hero-button-wrapper {
@@ -247,7 +254,7 @@ nav ul li {
     }
     .hero-wrapper h1 {
         /* font-size:1.5rem; */
-        width:100%;
+        /* width:100%; */
     }
 }
 @media (max-width:350px) {
@@ -255,6 +262,76 @@ nav ul li {
         font-size:1.8rem;
     }
 }
+/****************************/
+
+@media (max-width:1328px) {
+    .hero-section h1 {
+        font-size:3rem;
+    }
+}
+@media (max-width:1150px) {
+    .hero-section h1 {
+        font-size:2.6rem;
+    }
+    .hero-button-wrapper button {
+        width:6.5rem;
+        font-size:0.9rem;
+    }
+    .hero-button-wrapper {
+        flex-direction: column-reverse;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+        width:80%;
+    }
+}
+
+@media (max-width:1030px) {
+    .hero-section h1 {
+        font-size:2.3rem;
+        
+        
+    }
+    .hero-button-wrapper p {
+        font-size:0.9rem;
+    }
+    .hero-button-wrapper button {
+        width:6rem;
+        font-size:0.8rem;
+    }
+}
+@media (max-width:934px) {
+    .hero-section h1 {
+        font-size:2.1rem;
+        
+        
+    }
+    .hero-button-wrapper p {
+        font-size:0.8rem;
+    }
+    .hero-button-wrapper button {
+        width:5.5rem;
+        font-size:0.8rem;
+    }
+}
+@media (max-width:852px) {
+    .hero-section h1 {
+        font-size:1.8rem;
+        
+        
+    }
+}
+@media (max-width:546px) {
+    .hero-section h1 {
+        font-size:1.75rem;
+        
+        
+    }
+    .hero-button-wrapper p {
+        font-size:0.7rem;
+    }
+}
+
 /***************************/
 .why-us {
     width:100vw;
@@ -402,6 +479,7 @@ nav ul li {
     padding-top:8rem;
     background-color: var(--blue);
     color:white;
+    max-width:102rem;
 }
 .paragraph-section > * {
     overflow-x:visible !important;
@@ -537,7 +615,7 @@ nav ul li {
 }
 /*************************/
 .our-work-section {
-    max-width:100rem;
+    max-width:102rem;
     margin:6rem;
     
 }
@@ -818,8 +896,9 @@ nav ul li {
     
 }
 .pricing-section {
-    width:100%;
     padding-inline:6rem;
+    width:100%;
+    max-width:102rem;
 
 }
 .pricing-section > * {
@@ -830,8 +909,8 @@ nav ul li {
     grid-template-columns:1fr 1fr 1fr;
     width:100%;
     place-items:center;
-    gap:2rem;
-    max-width:102rem;
+    gap:4rem;
+    max-width:100rem;
 }
 .tick-container {
     display:flex;
@@ -1103,6 +1182,7 @@ footer {
     gap:2rem;
     padding:5rem;
     height:max-content;
+    max-width:102rem;
 }
 footer > * {
     overflow-x: visible;
@@ -1246,6 +1326,7 @@ footer img {
     align-items: flex-start;
     gap:1rem;
     padding:2rem;
+    border:2px solid
 }
 .price-one h3,
 .price-two h3,
@@ -1399,7 +1480,7 @@ button:hover {
 
 /*****************************/
 .menu {
-    width:50px;
+    width:35px;
     display:none;
     position:absolute;
     top:50%;
