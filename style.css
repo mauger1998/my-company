@@ -64,7 +64,7 @@ nav {
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%, -50%);
+    transform:translate(-50%, -25%);
 
 }
 nav ul {
@@ -76,6 +76,11 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color:black;
+    color:white !important;
+
+}
+nav ul li {
+    text-decoration: none;
     color:white !important;
 
 }
@@ -214,6 +219,9 @@ nav ul li a {
 @media (max-width:835px) {
     nav {
         display:none;
+    }
+    .menu {
+        display:block;
     }
 }
 @media (max-width:450px) {
@@ -1371,3 +1379,97 @@ button:hover {
     background-color:#93e8bc;
 }
 
+/******************************/
+.header-add {
+    background-color:rgba(255, 255, 255, 0.9);
+    color:black;
+}
+.nav-add {
+    color:black !important;
+    font-weight:700;
+}
+.button-add {
+    background-color:var(--blue) !important;
+    color:white !important;
+}
+.drop-down-add {
+    background-color:var(--blue) !important;
+    color:white;
+}
+
+/*****************************/
+.menu {
+    width:50px;
+    display:none;
+    position:absolute;
+    top:50%;
+    right:5%;
+    transform:translate(-50%, -40%);
+    z-index:4;
+    
+}
+@media (max-width:837px) {
+    .menu {
+        display:block;
+        cursor:pointer;
+    }
+    
+    header button {
+        display:none;
+    }
+}
+
+.drop-down {
+    position:absolute;
+    background-color:white;
+    top:100%;
+    padding:2rem;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:50%;
+    right:0;
+    transform:translateY(-100%);
+    opacity:0;
+    transition:0.5s;
+    
+
+}
+.drop-down ul {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    gap:4rem;
+    align-items:center;
+    width:100%;
+    text-align:center;
+    font-weight:600;
+}
+.toggle {
+    transform:translateY(0);
+    opacity:1;
+}
+header button {
+    z-index:10;
+    position:relative;
+}
+.drop-down ul li button {
+    display:block !important;
+    background-color:var(--new-green);
+    border:0;
+    padding-block:0.5rem;
+    width:5rem;
+    border-radius:1rem;
+}
+@media (min-width:837px) {
+    .drop-down {
+        display:none;
+    }
+}
+
+
+/************************/
+
+nav ul li {
+    cursor:pointer;
+}
