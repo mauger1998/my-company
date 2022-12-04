@@ -65,7 +65,7 @@ nav {
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%, -25%);
+    transform:translate(-50%, -10%);
 
 }
 nav ul {
@@ -86,11 +86,12 @@ nav ul li {
 
 }
 .nav-button-container button {
-    padding:0.25rem 1rem;
+    padding:0.4rem 1.75rem;
     border-radius:2rem;
     background-color:#4FE9A4;
     border:none;
     color:black;
+    font-size:1rem;
 }
 /*********************/
 .hero-section {
@@ -120,10 +121,7 @@ nav ul li {
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-weight:900;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     
 
 }
@@ -371,6 +369,7 @@ nav ul li {
 }
 .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     padding:2rem;
     display:flex;
     flex-direction: column;
@@ -1054,7 +1053,7 @@ nav ul li {
 form {
     display:flex;
     flex-direction:column;
-    gap:0.5rem;
+    gap:1rem;
     align-items: flex-start;
     justify-content: space-evenly;
     width:25rem;
@@ -1568,4 +1567,53 @@ nav ul li {
 }
 .scrolling {
     color:var(--new-green) !important;
+}
+
+/**********************/
+.foot {
+    display:none;
+}
+@media (max-width:837px){
+    header {
+        display:none;
+    }
+    .foot {
+    display:block;
+    color:white;
+    position:fixed;
+    top:91%;
+    width:100vw;
+    background-color:var(--blue);
+    font-weight:bold;
+    
+}
+.foot ul {
+    display:flex;
+    padding:1.25rem;
+    justify-content: space-evenly;
+    
+}
+}
+.hero-wrapper h1 span {
+    color:var(--new-green);
+}
+.foot li {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.foot button {
+    padding-block:0.5rem;
+    width:6rem;
+    background-color:var(--new-green);
+    font-weight:700;
+    border:none;
+    border-radius:1rem;
+    color:black;
+    font-size:1rem;
+}
+.our-work-section button a {
+    text-decoration:none;
+    color:black;
 }
