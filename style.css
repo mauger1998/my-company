@@ -351,7 +351,10 @@ nav ul li a {
     }
     .why-us h2 {
         font-size:1.25rem;
-        width:75%;
+        width:120%;
+    }
+    .why-us-titles {
+        width:120%;
     }
 }
 @media (max-width:340px) {
@@ -782,6 +785,8 @@ nav ul li a {
     border:1px solid black;
     height:25rem;
     width:100%;
+    max-width:24rem;
+    gap:1rem;
     
 }
 .pricing-section {
@@ -797,7 +802,7 @@ nav ul li a {
     grid-template-columns:1fr 1fr 1fr;
     width:100%;
     place-items:center;
-    gap:4rem;
+    gap:2rem;
     max-width:102rem;
 }
 .tick-container {
@@ -822,6 +827,11 @@ nav ul li a {
     .pricing-grid {
         grid-template-columns: 1fr 1fr;
         place-items:center;
+    }
+    .price-one,
+    .price-two,
+    .price-three {
+        max-width:20rem;
     }
     .price-three {
         place-self:center;
