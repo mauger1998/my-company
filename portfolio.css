@@ -49,7 +49,7 @@ header {
     padding-top:1rem;
     background-color:rgba(10, 38, 64, 0.8);
     z-index:2;
-    max-width:102rem;
+    max-width:140rem;
 }
 .logo-container img {
     width:50px;
@@ -103,7 +103,7 @@ nav ul li {
     background-color:#0A2640;
     padding-bottom:10rem;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-    max-width:102rem;
+    max-width:140rem;
 
 }
 .hero-section > * {
@@ -453,6 +453,7 @@ nav ul li {
     flex-direction:column;
     gap:8rem;
     align-items: flex-start;
+    max-width:140rem;
 }
 .ci-lighting h2 {
     padding-left:9rem;
