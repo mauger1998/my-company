@@ -1434,7 +1434,7 @@ fieldset {
 }
 .footer-top{
     display:flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     width:100vw;
     gap:2rem;
@@ -1494,10 +1494,46 @@ footer img {
     display:flex;
     flex-direction:column;
     align-items: flex-start;
-    justify-content: center;
-    gap:3.5rem;
+    justify-content: flex-end;
+    gap:2rem;
+    font-size:0.8rem;
 }
-
+@media (max-width:706px) {
+    .footer-top {
+        flex-direction:column;
+        align-items: center;
+        padding-inline:0 !important;
+        
+    }
+    .footer-top {
+        gap:5rem;
+    }
+    .footer-left {
+        text-align:center;
+        align-items:center;
+    }
+    .address {
+        text-align:center;
+        align-items: center;
+    }
+    .address p {
+        text-align:center !important;
+        
+    }
+    .footer-contact {
+        text-align:center;
+        align-items:center;
+    }
+    .footer-right {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .footer-right ul {
+        align-items:center;
+    }
+    
+}
 
 
 
