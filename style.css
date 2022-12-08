@@ -1243,6 +1243,8 @@ nav ul li {
 }
 .right-form img {
     width:100%;
+    object-fit:cover;
+    height:100% !important;
 }
 .right-form {
     display:flex;
@@ -1277,6 +1279,8 @@ form {
     padding-block:1rem;
     font-size:1.25rem;
 }
+
+
 form button {
     padding:0.5rem 1rem;
     align-self:flex-end;
@@ -1317,6 +1321,76 @@ fieldset {
     max-height:45rem;
     max-width:140rem;
     
+}
+
+
+
+@media (max-width:1048px) {
+    .right-form {
+        position:absolute;
+        width:100%;
+        
+    }
+    .right-form img {
+        border:2px solid red;
+    }
+    .contact {
+        height:100%;
+        padding-top:0rem;
+    }
+    .form-wrapper{
+        position:relative !important;
+        padding:0;
+        
+    }
+    input {
+        padding:0.25rem !important;
+    }
+    
+    form {
+        z-index:1000000000;
+        padding-right:0;
+        width:100%;
+        gap:0.5rem;
+        padding:10rem;
+        padding-top:6rem;
+        align-self:center;
+        
+    }
+    
+}
+@media (max-width:758px) {
+    .contact h2 {
+        font-size:1.75rem;
+    }
+}
+@media (max-width:724px) {
+    .contact h2 {
+        font-size:1.5rem;
+    }
+}
+@media (max-width:642px) {
+    .contact {
+        padding-top:0rem !important;
+    }
+    .right-form img {
+        -webkit-mask-image:linear-gradient(black, transparent 50%)
+    }
+    form {
+        padding:8rem;
+    }
+}
+@media (max-width:492px) {
+    
+    form {
+        padding:6rem;
+    }
+}
+@media (max-width:438px) {
+    
+    form {
+        padding:3rem;
+    }
 }
 
 /**********************/
