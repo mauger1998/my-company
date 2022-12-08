@@ -1331,9 +1331,7 @@ fieldset {
         width:100%;
         
     }
-    .right-form img {
-        border:2px solid red;
-    }
+   
     .contact {
         height:100%;
         padding-top:0rem;
@@ -1372,24 +1370,60 @@ fieldset {
 @media (max-width:642px) {
     .contact {
         padding-top:0rem !important;
+        
     }
     .right-form img {
-        -webkit-mask-image:linear-gradient(black, transparent 50%)
+        -webkit-mask-image:linear-gradient(black, transparent 50%);
+        mask-image:linear-gradient(black, transparent 50%)
+
     }
     form {
         padding:8rem;
+        padding-inline:3rem !important;
+    }
+}
+@media (max-width:520px) {
+    .right-form img {
+        -webkit-mask-image:linear-gradient(black, transparent 20%);
+        mask-image:linear-gradient(black, transparent 20%)
+
     }
 }
 @media (max-width:492px) {
     
     form {
-        padding:6rem;
+        padding-bottom:6rem;
+        padding-top:2rem;
+    }
+    .right-form {
+        top:0%;
     }
 }
-@media (max-width:438px) {
+@media (max-width:336px) {
+    .right-form img {
+        -webkit-mask-image:linear-gradient(black, transparent 20%);
+        mask-image:linear-gradient(black, transparent 20%)
+    }
+    .contact-titles h2 {
+        text-align:center;
+        font-size:1.2rem !important;
+    }
     
     form {
         padding:3rem;
+        padding-top:1rem;
+        padding-bottom:5rem;
+    }
+    form button {
+        align-self:flex-start;
+        /* width:100% !important; */
+    }
+}
+@media (max-width:300px) {
+    form button {
+        width:100%;
+        display:flex;
+        justify-content: center;
     }
 }
 
