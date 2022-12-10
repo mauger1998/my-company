@@ -1,7 +1,7 @@
 const contactButtonHeader = document.querySelector("header button")
 const contactSection = document.querySelector(".contact")
 const seeWorkButtonHero = document.querySelector(".hero-section button")
-const portfolioSection = document.querySelector(".wrapper-test")
+const portfolioSection = document.querySelector(".portfolio-section")
 const whatWeDoContactButton = document.querySelector(".what-we-do-left button")
 
 contactButtonHeader.addEventListener("click", (e) => {

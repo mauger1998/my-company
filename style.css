@@ -1101,7 +1101,7 @@ nav ul li {
     align-items: center;
     width:100vw !important;
     justify-content: space-between;
-    padding-left:6rem;
+    padding-left:4rem;
     
 }
 .right-form img {
@@ -1704,34 +1704,42 @@ nav ul li {
     font-size:1rem;
 }
 /***************************/
-.bamford {
+.bamford,
+.cilighting {
     width:100%;
-    height:40rem;
     object-fit:cover;
     position:relative;
 }
-.first-project {
+.first-project,
+.second-project {
     display:flex;
     justify-content: flex-start;
     align-items: center;
    
 }
 .portfolio-section {
-    padding:4rem;
+    padding:6rem;
     display:flex;
     flex-direction: column;
     gap:8rem;
+    width:100%;
     
+}
+.portfolio-p {
+    width:60%;
+    margin-top:2rem;
+    line-height:2;
 }
 .portfolio-section h2 {
     font-size:2.5rem;
 }
-.bamford-information {
+.bamford-information,
+.cilighting-information {
     position:absolute;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:1rem;
+    gap:2rem;
     left:12%;
 }
 .what-we-do-left button {
@@ -1742,10 +1750,15 @@ nav ul li {
     background-color:var(--new-green);
     border:2px solid var(--new-green)
 }
-.bamford-information h3 {
+.cilighting-information {
+    color:white;
+}
+.bamford-information h3,
+.cilighting-information h3 {
     font-size:2.75rem;
 }
-.bamford-titles-top {
+.bamford-titles-top,
+.cilighting-titles-top {
     display:flex;
     flex-direction: column;
     gap:0.5rem;
@@ -1757,6 +1770,14 @@ nav ul li {
     color:white;
 
 }
+.ci {
+    color:black;
+    
+}
+.ci p {
+    background-color:var(--new-green) !important;
+    font-weight:500 !important;
+}
 .tags p {
     background-color:lightgray;
     padding:0.25rem 1rem;
@@ -1765,16 +1786,24 @@ nav ul li {
     background-color:var(--blue);
 
 }
-.bamford-p {
+.bamford-p,
+.cilighting-p {
     line-height:2;
     width:45%;
     font-size:0.9rem;
 }
-.bamford-information button {
+.bamford-information button
+ {
     padding:0.5rem 1rem;
     background-color:var(--blue);
     color:white;
     border:2px solid var(--blue);
+}
+.cilighting-information button {
+    background-color:var(--new-green);
+    color:black;
+    border:2px solid var(--new-green);
+    padding:0.5rem 1rem;
 }
 /***************************/
 .cms img {
@@ -1974,6 +2003,25 @@ nav ul li {
    width:100%;
    height:90% !important;
    object-fit:cover;
+}
+
+.stars img {
+    width:20px !important;
+}
+.testimonial-card {
+    border:0.5px solid black;
+    width:30%;
+    padding:2rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.testimonial-card img {
+    width:75px;
+}
+.testimonial-card p {
+    width:100%;
+    line-height:2;
 }
 
 @media (max-width:1276px) {
