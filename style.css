@@ -665,9 +665,6 @@ nav ul li {
     z-index:-1;
     -webkit-mask-image:linear-gradient(black, transparent 50%);
     mask-image:linear-gradient(black, transparent 50%);
-    
-
-
 }
 .portfolio-titles {
     position:relative;
@@ -768,6 +765,68 @@ nav ul li {
     background-color:transparent;
     color:var(--new-green);
     border:none;
+}
+@media (max-width:1149px) {
+    .services h2 {
+        font-size:1.75rem;
+    }
+}
+@media (max-width:1041px) {
+    .services {
+        flex-direction:column;
+        align-items: center;
+        gap:1.5rem;
+        width:100%;
+        
+    }
+    .services h2 {
+        font-size:2rem;
+    }
+    .services-left,
+    .services-right {
+        width:100%;
+    }
+}
+@media (max-width:864px) {
+    .services h2 {
+        font-size:1.75rem;
+    }
+}
+@media (max-width:656px) {
+    .services {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:656px) {
+    .services {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:461px) {
+    .services {
+        padding-inline:1rem;
+    }
+    .services h2 {
+        font-size:1.5rem;
+    }
+    .services button {
+        padding-inline:0.75rem;
+    }
+}
+@media (max-width:373px) {
+    .services h2 {
+        width:100%;
+        /* font-size:1.3rem; */
+    }
+    .services-left {
+        width:100%;
+        padding-inline:0;
+    }
+}
+@media (max-width:358px) {
+    .services {
+        padding-block:10rem;
+    }
 }
 /*************************/
 
