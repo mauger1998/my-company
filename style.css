@@ -110,23 +110,47 @@ nav ul li {
     position:relative;
 }
 .drop-down {
-    background-color:#c5c1c1;
+    background-color:var(--blue);
+    opacity:0.8;
     color:white;
     position:absolute;
     right:10%;
-    bottom:-550%;
+    bottom:-630%;
     transform:translateY(-100%);
     opacity:0;
     transition:0.5s;
-    height:30rem;
-    padding:6rem;
+    height:35rem;
+    padding:2rem;
+    padding-block:4rem;
     display:none;
+    width:20rem;
+    overflow-y: hidden;;
+}
+.drop-down span img {
+        width:25px;
+}
+.drop-down li {
+    display:flex;
+    align-items: center;
+    gap:1.5rem;
 }
 .drop-down ul {
     display:flex;
     flex-direction:column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2.8rem;
     height:100%;
+}
+.drop-down button {
+    padding:0.25rem 1rem;
+    border-radius:0;
+    border:2px solid var(--new-green);
+    background-color:var(--new-green);
+    display:flex;
+    align-items: center;gap:0.5rem;
+}
+.logoWhite {
+    width:200px;
 }
 .toggle {
     transform:translateY(0);

@@ -7,11 +7,6 @@ const whatWeDoContactButton = document.querySelector(".what-we-do-left button")
 contactButtonHeader.addEventListener("click", (e) => {
     contactSection.scrollIntoView()
 })
-
-seeWorkButtonHero.addEventListener("click", (e) => {
-    portfolioSection.scrollIntoView()
-})
-
 whatWeDoContactButton.addEventListener("click", (e => {
     contactSection.scrollIntoView()
 }))
