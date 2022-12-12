@@ -1858,7 +1858,7 @@ nav ul li {
 /*******************/
 .testimonials {
     width:100%;
-    max-width:140rem;
+    max-width:1440px;
     padding:4rem;
     padding-block:10rem;
     display:flex;
@@ -2081,7 +2081,7 @@ nav ul li {
     justify-content: center;
     position:absolute;
     right:0;
-    top:-20%;
+    top:-10%;
     gap:1rem;
     padding-top:23rem;
     overflow-y:hidden !important;
