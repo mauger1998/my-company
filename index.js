@@ -30,14 +30,8 @@ const dropDownPricing = document.querySelector(".dropDownPricing")
 const dropDownContact = document.querySelector(".drop-down button")
 const dropDownWhyUs = document.querySelector(".dropDownWhyUs")
 
-contactButtonHeader 
 
-const sectionOneOptions = { }
-const navChangeOptions = { }
-const whyUsOptions = { rootMargin: "-300px" }
-const ourWorkOptions = { rootMargin: "-300px" }
-const priceOptions = { rootMargin: "-300px" }
-const homeOptions = { }
+
 
 
 
@@ -56,91 +50,17 @@ menu.addEventListener("click", (e) => {
 
 
 
-const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            header.classList.add("header-add")
-            header.style.transition = "1s"
-            nav.forEach(link => {
-                link.classList.add("nav-add")
-            })
-            dropDown.classList.add("drop-down-add")
-        } else {
-            header.classList.remove("header-add")
-            nav.forEach(link => {
-                link.classList.remove("nav-add")
-            })
-            dropDown.classList.remove("drop-down-add")
-        }
-        
-    })
-}, sectionOneOptions)
-
-
-
-const sectionWhyUsObserver = new IntersectionObserver(function(entries, sectionWhyUsObserver) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            whyUsNav.classList.remove("scrolling")
-            dropDownWhyUs.classList.remove("scrolling")
-            
-        } else {
-            whyUsNav.classList.add("scrolling")
-            dropDownWhyUs.classList.add("scrolling")
-        }
-    })
-}, whyUsOptions)
-
-
-
-const navChangeWorkObserver = new IntersectionObserver(function(entries, navChangeWorkObserver) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            ourWorkNav.classList.remove("scrolling")
-            dropDownOurWork.classList.remove("scrolling")
-        } else {
-            ourWorkNav.classList.add("scrolling")
-            dropDownOurWork.classList.add("scrolling")
-        }
-    })
-}, ourWorkOptions)
 
 
 
 
 
-const navChangePriceObserver = new IntersectionObserver(function(entries, navChangePriceObserver) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            pricingNav.classList.remove("scrolling")
-            dropDownPricing.classList.remove("scrolling")
-        } else {
-            pricingNav.classList.add("scrolling")
-            dropDownPricing.classList.add("scrolling")
-        }
-    })
-}, priceOptions)
 
 
 
 
-const navChangeHomeObserver = new IntersectionObserver(function(entries, navChangeHomeObserver) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            homeNav.classList.remove("scrolling")
-            dropDownHome.classList.remove("scrolling")
-        } else {
-            homeNav.classList.add("scrolling")
-            dropDownHome.classList.add("scrolling")
-        }
-    })
-}, homeOptions)
 
-sectionOneObserver.observe(hero)
-sectionWhyUsObserver.observe(whyUsSection)
-navChangeWorkObserver.observe(portfolioSection)
-navChangePriceObserver.observe(pricingSection)
-navChangeHomeObserver.observe(hero)
+
 
 
 
