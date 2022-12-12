@@ -158,7 +158,7 @@ nav ul li {
     font-family: 'Roboto', sans-serif;
 }
 .hero-section h1 {
-    font-size:3.5rem;
+    font-size:3.5rem ;
     text-align:center;
     position:relative;
     overflow:visible;
@@ -169,7 +169,7 @@ nav ul li {
 }
 .hero-buttons button{
     padding-block:0.75rem;
-    padding-inline:1.25rem;
+    padding-inline:2rem;
     background-color:var(--new-green);
     color:black;
     border:2px solid var(--new-green)
