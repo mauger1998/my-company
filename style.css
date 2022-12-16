@@ -119,17 +119,76 @@ nav ul li {
     color:white;
     position:absolute;
     right:10%;
-    bottom:-630%;
+    bottom:-600%;
     transform:translateY(-100%);
     opacity:0;
     transition:0.5s;
-    height:35rem;
+    /* height:35rem; */
     padding:2rem;
     padding-block:4rem;
     display:none;
     width:20rem;
-    overflow-y: hidden;;
+    overflow-y: hidden;
 }
+.logoWhite {
+    margin-bottom:4rem;
+}
+.dropDownWhyUs,
+.dropDownWebDesign {
+    position:relative;
+    flex-direction:column;
+}
+.dropDownWhyUs span,
+.dropDownWebDesign span {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    align-self:flex-start;
+}
+.drop-down-our-work-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    top:100%;
+    padding:4rem;
+    padding-block:2rem;
+    transform:translateY(-250%);
+    opacity:0;
+    transition:0.5s;
+    z-index:2;
+
+
+}
+.drop-down-web-design-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-250%);
+    opacity:1;
+    transition:0.5s;
+    z-index:2;
+
+}
+.drop-down-burger-add {
+    transform:translateY(0);
+    opacity:1;
+    transition:0.5s;
+}
+
 .drop-down span img {
         width:25px;
 }
@@ -2133,4 +2192,141 @@ nav ul li {
 .bigOne {
     pointer-events:none;
     overflow:hidden;
+}
+
+
+.our-work-drop,
+.web-design-drop,
+.pricing-drop {
+    cursor:pointer;
+}
+
+.our-work-drop {
+    position:relative;
+    z-index:10000;
+    
+}
+.our-work-menu,
+.web-design-menu,
+.pricing-menu {
+    cursor:auto;
+}
+.our-work-menu p,
+.web-design-menu p,
+.pricing-menu p {
+    cursor:auto;
+}
+.cursor {
+    cursor:pointer !important;
+}
+.our-work-menu {
+    position:absolute;
+    inset:0;
+    width:max-content;
+    height:30rem;
+
+}
+.our-work-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color:var(--blue);
+    padding:2rem;
+    font-weight:700;
+    color:white;
+    font-size:1rem;
+    top:150%;
+    left:-15%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:0.5s;
+    padding-inline:4rem;
+    border-radius:0.5rem;
+
+}
+.add-to-drop {
+    transform:translateY(0%) !important;
+    opacity:1 !important;
+    transition:0.5s;
+}
+.web-design-drop {
+    position:relative;
+    z-index:1000000;
+    
+}
+.web-design-menu {
+    position:absolute;
+    inset:0;
+    width:max-content;
+    height:30rem;
+
+}
+.web-design-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:10%;
+    transform:translateY(-10%);
+    opacity:0;
+    color:white;
+    transition:0.5s;
+    border-radius:0.5rem;
+    padding-inline:4rem;
+    padding-block:6rem;
+    width:20rem;
+
+}
+.add-to-drop {
+    transform:translateY(0%) !important;
+    opacity:1 !important;
+    transition:0.5s;
+}
+
+
+
+.pricing-drop {
+    position:relative;
+    z-index:1000000;
+    
+}
+.pricing-menu {
+    position:absolute;
+    inset:0;
+    width:max-content;
+    height:30rem;
+
+}
+.pricing-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color:white;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:30%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:0.5s;
+    border-radius:0.5rem;
+    padding-inline:4rem;
+    padding-block:6rem;
+    width:20rem;
+
+}
+.add-to-drop {
+    transform:translateY(0%) !important;
+    opacity:1 !important;
+    transition:0.5s;
 }

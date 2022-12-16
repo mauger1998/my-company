@@ -12,18 +12,20 @@ whatWeDoContactButton.addEventListener("click", (e => {
 }))
 
 /****************************************/
-const header = document.querySelector("header")
-const nav = document.querySelectorAll("nav ul li")
-const hero = document.querySelector(".hero-section")
-const paragraphSection = document.querySelector(".paragraph-section")
-const homeNav = document.querySelector(".home")
-const pricingNav = document.querySelector(".pricingNav")
-const pricingSection = document.querySelector(".priceScroll")
-const dropDownHome = document.querySelector(".dropDownHome")
-const dropDownOurWork = document.querySelector(".dropDownOurWork")
-const dropDownPricing = document.querySelector(".dropDownPricing")
-const dropDownContact = document.querySelector(".drop-down button")
-const dropDownWhyUs = document.querySelector(".dropDownWhyUs")
+const burgerOurWorkDrop = document.querySelector(".burger-our-work-drop")
+const burgerOurWorkMenu = document.querySelector(".drop-down-our-work-burger")
+
+burgerOurWorkDrop.addEventListener("click", (e) => {
+    burgerOurWorkMenu.classList.toggle("drop-down-burger-add")
+})
+
+const burgerWebDesignDrop = document.querySelector(".burger-web-design-drop")
+const burgerWebDesignMenu = document.querySelector(".drop-down-web-design-burger")
+
+burgerWebDesignDrop.addEventListener("click", (e) => {
+    burgerWebDesignMenu.classList.toggle("drop-down-burger-add")
+})
+
 
 
 
@@ -62,37 +64,58 @@ menu.addEventListener("click", (e) => {
 /**********************************/
 
 
-ourWorkNav.addEventListener("click", (e) => {
-    portfolioSection.scrollIntoView()
-})
 
-homeNav.addEventListener("click", (e) => {
-    hero.scrollIntoView()
-})
 
-pricingNav.addEventListener("click", (e) => {
-    pricingSection.scrollIntoView()
-})
 
-dropDownHome.addEventListener("click", (e) => {
-    hero.scrollIntoView()
-})
 
-dropDownOurWork.addEventListener("click", (e) => {
-    portfolioSection.scrollIntoView()
-})
 
-dropDownPricing.addEventListener("click", (e => {
-    pricingSection.scrollIntoView()
-}))
+/***********************/
 
-dropDownContact.addEventListener("click", (e) => {
-    contactSection.scrollIntoView()
+const ourWorkMenu = document.querySelector(".our-work-menu") 
+const ourWorkLink = document.querySelector(".our-work-drop")
+
+const ourWorkMenuP = document.querySelectorAll(".our-work-menu p")
+const webDesignMenuP = document.querySelectorAll(".web-design-menu p")
+const pricingMenuP = document.querySelectorAll(".pricing-menu p")
+
+
+
+ourWorkLink.addEventListener("click", (e) => {
+    ourWorkMenu.classList.toggle("add-to-drop")
+    ourWorkMenuP.forEach(p => {
+        p.classList.toggle("cursor")
+    })
+    
 })
 
 
-whyUsNav.addEventListener("click", (e) => {
-    whyUsSection.scrollIntoView()
+
+
+const webDesignMenu = document.querySelector(".web-design-menu") 
+const webDesignLink = document.querySelector(".web-design-drop")
+
+webDesignLink.addEventListener("click", (e) => {
+    webDesignMenu.classList.toggle("add-to-drop")
+    webDesignMenuP.forEach(p => {
+        p.classList.toggle("cursor")
+    })
+   
+    
+})
+
+
+
+const pricingMenu = document.querySelector(".pricing-menu") 
+const pricingLink = document.querySelector(".pricing-drop")
+
+pricingLink.addEventListener("click", (e) => {
+    pricingMenu.classList.toggle("add-to-drop")
+    pricingMenuP.forEach(p => {
+        p.classList.toggle("cursor")
+    })
+
+   
+    
 })
 
 
