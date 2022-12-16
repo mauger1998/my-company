@@ -189,7 +189,7 @@ nav ul li {
     font-size:3.5rem ;
     text-align:center;
     position:relative;
-    overflow:visible;
+    overflow:visible !important;
 }
 .hero-section p {
     font-size:1.1rem;
@@ -212,6 +212,8 @@ span {
     display:flex;
     align-items: center;
     justify-content: center;
+    overflow:hidden !important;
+
 }
 .hero-wrapper {
     width:100%;
@@ -224,6 +226,8 @@ span {
     gap:2rem;
     position:relative;
     padding-top:14rem;
+    overflow:hidden !important;
+
 
 }
 
