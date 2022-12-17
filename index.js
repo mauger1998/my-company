@@ -26,6 +26,13 @@ burgerWebDesignDrop.addEventListener("click", (e) => {
     burgerWebDesignMenu.classList.toggle("drop-down-burger-add")
 })
 
+const burgepricingDrop = document.querySelector(".burger-pricing-drop")
+const burgepricingMenu = document.querySelector(".drop-down-pricing-burger")
+
+burgepricingDrop.addEventListener("click", (e) => {
+    burgepricingMenu.classList.toggle("drop-down-burger-add")
+})
+
 
 
 
