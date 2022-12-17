@@ -2,10 +2,19 @@ const ourWorkMenu = document.querySelector(".our-work-menu")
 const ourWorkLink = document.querySelector(".our-work-drop")
 
 const ourWorkMenuP = document.querySelectorAll(".our-work-menu p")
+const pricingMenuP = document.querySelectorAll(".pricing-menu p")
+const webDesignMenuP = document.querySelectorAll(".web-design-menu p")
+
+const pointerLinkWork = document.querySelector(".point")
+const pointerLinkDesign = document.querySelector(".pointer")
+const pointerLinkPrice = document.querySelector(".pointing")
+
 
 
 ourWorkLink.addEventListener("click", (e) => {
     ourWorkMenu.classList.toggle("add-to-drop")
+    pointerLinkWork.classList.toggle("addme")
+
     ourWorkMenuP.forEach(p => {
         p.classList.toggle("cursor")
     })
@@ -23,7 +32,9 @@ const webDesignLink = document.querySelector(".web-design-drop")
 
 webDesignLink.addEventListener("click", (e) => {
     webDesignMenu.classList.toggle("add-to-drop")
-    webDesignMenuP.forEach(p => {
+    pointerLinkDesign.classList.toggle("addme")
+
+    webDesignDropDownLinks.forEach(p => {
         p.classList.toggle("cursor")
     })
    
@@ -35,6 +46,8 @@ const pricingLink = document.querySelector(".pricing-drop")
 
 pricingLink.addEventListener("click", (e) => {
     pricingMenu.classList.toggle("add-to-drop")
+        pointerLinkPrice.classList.toggle("addme")
+
     pricingMenuP.forEach(p => {
         p.classList.toggle("cursor")
     })
@@ -55,6 +68,7 @@ dropDownOurWorkLink.addEventListener("click", (e) => {
     ourWorkDropDownLinks.forEach(link => {
         link.classList.toggle("cursor")
     })
+
 })
 
 const dropDownWebDesignLink = document.querySelector(".burger-web-design-drop")

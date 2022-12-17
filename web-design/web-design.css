@@ -41,6 +41,7 @@ header {
 }
 .logo-container img {
     width:200px;
+    cursor:pointer;
 }
 nav {
     position:absolute;
@@ -162,6 +163,7 @@ nav ul {
     transform:translateY(0%) !important;
     opacity:1 !important;
     transition:0.5s;
+    pointer-events:all;
 }
 .web-design-drop {
     position:relative;
@@ -292,13 +294,7 @@ nav ul {
     padding:2rem;
     font-weight:bold;
 }
-.addToOurWork {
-    transition:0.5s;
-    opacity:1;
-    transform:translateY(0);
-    visibility: visible;
-    pointer-events:all;
-}
+
 .burger-our-work-drop,
 .burger-web-design-drop,
 .burger-pricing-drop {
@@ -322,6 +318,13 @@ nav ul {
     display:flex;
     align-items: center;
     gap:1rem;
+}
+.addToOurWork {
+    transition:0.5s;
+    opacity:1;
+    transform:translateY(0);
+    visibility: visible;
+    pointer-events:all !important;
 }
 /******************** Hero Section *****************************/
 
@@ -1098,3 +1101,183 @@ header {
         font-size:0.7rem;
     }
 }
+
+/*************** Footer ***************/
+footer {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+footer ul {
+    list-style:none;
+} 
+.footer-top{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width:100%;
+    gap:2rem;
+    padding-inline:6rem;
+    padding-bottom:4rem;
+    padding-top:10rem;
+    max-width:1440px;;
+    border-bottom:0.5px solid black;
+}
+.footer-bottom {
+    padding:6rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:0.75rem;
+    max-width:1440px;
+}
+.footer-left {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:2rem;
+}
+.bold {
+    font-weight:bold;
+}
+.logo {
+    width:75px;
+}
+.address {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:0.5rem;
+}
+.footer-contact {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:0.5rem;
+}
+.footer-icons {
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+
+footer img {
+    width:30px;
+}
+.footer-right {
+    display:flex;
+    align-items: flex-start;
+    gap:4rem;
+    height:100% ;
+}
+.footer-right-left ul,
+.footer-right-right ul {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap:2rem;
+    font-size:0.8rem;
+}
+@media (max-width:706px) {
+    .footer-top {
+        flex-direction:column;
+        align-items: center;
+        padding-inline:0 !important;
+        
+    }
+    .footer-top {
+        gap:5rem;
+    }
+    .footer-left {
+        text-align:center;
+        align-items:center;
+    }
+    .address {
+        text-align:center;
+        align-items: center;
+    }
+    .address p {
+        text-align:center !important;
+        
+    }
+    .footer-contact {
+        text-align:center;
+        align-items:center;
+    }
+    .footer-right {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .footer-right ul {
+        align-items:center;
+    }
+    
+}
+@media (max-width:512px) {
+    .footer-bottom p {
+        text-align:center;
+    }
+    .footer-bottom {
+        gap:2rem;
+        padding-inline:1rem;
+    }
+}
+
+
+
+/*****************/
+
+.our-work-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.our-work-menu p {
+    font-weight:300;
+}
+.web-design-menu a p {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    cursor:pointer !important;
+}
+.web-design-menu p {
+    font-weight:300;
+}
+.pricing-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.pricing-menu p {
+    font-weight:300;
+}
+.our-work-menu a p,
+.pricing-menu a p,
+.web-design-menu a p {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:900 !important;
+}
+
+
+
+.addToOurWork {
+    transition:0.5s;
+    opacity:1;
+    transform:translateY(0);
+    visibility: visible;
+    pointer-events:all !important;
+    
+}
+.addme {
+    pointer-events:all;
+}
+

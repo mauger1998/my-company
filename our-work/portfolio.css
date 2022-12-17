@@ -61,6 +61,7 @@ header {
 }
 .logo-container img {
     width:200px;
+    cursor:pointer;
 }
 nav {
     display:flex;
@@ -969,4 +970,40 @@ footer ul {
     .bye-circle {
         right:0;
     }
+}
+
+
+
+
+.our-work-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+}
+.our-work-menu p {
+    font-weight:300;
+}
+.web-design-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+}
+.web-design-menu p {
+    font-weight:300;
+}
+.pricing-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+}
+.pricing-menu p {
+    font-weight:300;
+}
+.our-work-menu a p,
+.pricing-menu a p,
+.web-design-menu a p {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:900 !important;
 }

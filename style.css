@@ -2374,3 +2374,40 @@ nav ul li {
     transition:0.5s;
     pointer-events:all;
 }
+
+
+.our-work-menu p {
+    font-weight:300;
+}
+.web-design-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:bold !important;
+}
+.web-design-menu p {
+    font-weight:300;
+}
+.pricing-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:bold !important;
+}
+.pricing-menu p {
+    font-weight:300;
+}
+.our-work-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:900 !important;
+}
+.our-work-menu a p,
+.pricing-menu a p,
+.web-design-menu a p {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:900 !important;
+}
