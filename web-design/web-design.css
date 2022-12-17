@@ -594,3 +594,77 @@ header {
         gap:1rem;
     }
 }
+/*************** Transparent Pricing *****************/
+.transparent-section {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.transparent-wrapper {
+    width:100%;
+    max-width:1440px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    padding:6rem;
+}
+.left-transparent img {
+    width:100%;
+}
+.left-transparent,
+.right-transparent {
+    width:50%;
+}
+.right-transparent img {
+    width:40px;
+}
+.right-transparent {
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.right-transparent h2 {
+    font-size:2.5rem;
+}
+.right-transparent p {
+    line-height:1.75;
+    font-weight:200;
+}
+.right-transparent button {
+    padding:0.75rem 1rem;
+    background-color:var(--new-green);
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+}
+@media (max-width:1004px) {
+    .transparent-wrapper {
+        flex-direction:column;
+    }
+    .right-transparent,
+    .left-transparent {
+        width:100%;
+    }
+}
+@media (max-width:738px) {
+    .transparent-wrapper {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:499px) {
+    .transparent-wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:372px) {
+    .right-transparent h2 {
+        font-size:2rem;
+    }
+    .right-transparent img {
+        width:35px;
+    }
+}
