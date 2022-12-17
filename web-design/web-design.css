@@ -550,4 +550,47 @@ header {
 .icon-p {
     margin-top:1rem;
     line-height:1.75;
+    font-weight:200;
+}
+@media (max-width:1001px) {
+    .timeline-wrapper {
+        flex-direction:column;
+
+    }
+    .right-timeline {
+        margin-top:0;
+        width:100%;
+    }
+    .left-timeline {
+        width:100%;
+    }
+}
+@media (max-width:738px) {
+    .timeline-wrapper {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:513px) {
+    .right-timeline img {
+        width:30px;
+    }
+    .timeline-wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:409px) {
+    .timeline-wrapper h2 {
+        font-size:2rem;
+    }
+}
+@media (max-width:317px) {
+    .icon-text h3 {
+        font-size:1.25rem;
+    }
+    .icon-text p {
+        font-size:0.8rem;
+    }
+    .icon-container {
+        gap:1rem;
+    }
 }
