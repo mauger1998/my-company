@@ -40,28 +40,25 @@ main {
 }
 /*****************************/
 header {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
     width:100%;
-    background-color:white;
-    z-index:2;
-    color:black;
-    
+    display:flex;
+    justify-content: center;
 }
 .header-wrapper {
-    width:100%;
-    max-width:1440px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline:4rem;
-    padding-block:2rem;
+    position:fixed;
+    width:100%;
+    padding-inline:6rem;
+    background-color:white;
+    z-index:200;
+    max-width:1440px;
+    background-color:transparent;
+    padding-block:1.5rem;
 }
 .logo-container img {
     width:200px;
-    cursor:pointer;
 }
 nav {
     display:flex;
@@ -78,26 +75,34 @@ nav {
 nav ul {
     display:flex;
     list-style:none;
-    justify-content: space-evenly;
-    width:40rem;
-    color:black;
+    align-items: center;
+    gap:4rem;
+    color:black !important;
+
 }
 nav ul li a {
     text-decoration: none;
     color:black;
-    
 
 }
 nav ul li {
     text-decoration: none;
     font-size:0.9rem !important;
 
+
 }
 .nav-button-container button {
-    padding:0.5rem 1rem;
+    padding:0.3rem 1.5rem;
     background-color:#4FE9A4;
     border:none;
     color:black;
+    font-size:1rem;
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+}
+.nav-button-container button img {
+    width:20px;
 }
 .menu {
     width:35px;
@@ -107,29 +112,360 @@ nav ul li {
     position:relative;
 }
 .drop-down {
-    background-color:#c5c1c1;
+    background-color:var(--blue);
+    opacity:0.8;
     color:white;
     position:absolute;
     right:10%;
-    bottom:-450%;
+    bottom:-600%;
     transform:translateY(-100%);
     opacity:0;
     transition:0.5s;
-    height:30rem;
-    padding:6rem;
+    /* height:35rem; */
+    padding:2rem;
+    padding-block:4rem;
     display:none;
+    width:20rem;
+    overflow-y: hidden;
+}
+.logoWhite {
+    margin-bottom:4rem;
+}
+.dropDownWhyUs,
+.dropDownWebDesign,
+.dropDownPricing {
+    position:relative;
+    flex-direction:column;
+}
+.dropDownWhyUs span,
+.dropDownWebDesign span,
+.dropDownPricing span {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    align-self:flex-start;
+}
+.drop-down-our-work-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    top:100%;
+    padding:4rem;
+    padding-block:2rem;
+    transform:translateY(-250%);
+    opacity:0;
+    transition:0.5s;
+    z-index:2;
+
+
+}
+.drop-down-web-design-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-250%);
+    opacity:1;
+    transition:0.5s;
+    z-index:2;
+
+}
+.drop-down-pricing-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-250%);
+    opacity:1;
+    transition:0.5s;
+    z-index:2;
+
+}
+.drop-down-burger-add {
+    transform:translateY(0);
+    opacity:1;
+    transition:0.5s;
+}
+.drop-down-burger-add {
+    transform:translateY(0);
+    opacity:1;
+    transition:0.5s;
+}
+
+.drop-down span img {
+        width:25px;
+}
+.drop-down li {
+    display:flex;
+    align-items: center;
+    gap:1.5rem;
 }
 .drop-down ul {
     display:flex;
     flex-direction:column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2.8rem;
     height:100%;
+}
+.drop-down button {
+    padding:0.25rem 1rem;
+    border-radius:0;
+    border:2px solid var(--new-green);
+    background-color:var(--new-green);
+    display:flex;
+    align-items: center;gap:0.5rem;
+}
+.logoWhite {
+    width:200px;
 }
 .toggle {
     transform:translateY(0);
     opacity:1;
     transition:0.5s;
 }
+
+.header-add {
+    background-color:rgba(255, 255, 255, 0.9);
+    color:black;
+}
+.nav-add {
+    color:black !important;
+    font-weight:700;
+}
+
+.drop-down-add {
+    background-color:#122e49c6 !important;
+    color:white;
+}
+nav ul li {
+    cursor:pointer;
+}
+.drop-down ul li {
+    cursor:pointer;
+}
+.scrolling {
+    color:var(--new-green) !important;
+}
+.our-work-drop,
+.web-design-drop,
+.pricing-drop {
+    cursor:pointer;
+}
+
+.our-work-drop {
+    position:relative;
+    z-index:10000;
+    
+}
+.our-work-menu,
+.web-design-menu,
+.pricing-menu {
+    cursor:auto;
+}
+.our-work-menu p,
+.web-design-menu p,
+.pricing-menu p {
+    cursor:auto;
+}
+.cursor {
+    cursor:pointer !important;
+}
+.our-work-menu {
+    position:absolute;
+    inset:0;
+    width:max-content;
+    height:30rem;
+
+}
+.our-work-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color:var(--blue);
+    padding:2rem;
+    font-weight:700;
+    color:white;
+    font-size:1rem;
+    top:150%;
+    left:-15%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:0.5s;
+    padding-inline:4rem;
+    border-radius:0.5rem;
+
+}
+.add-to-drop {
+    transform:translateY(0%) !important;
+    opacity:1 !important;
+    transition:0.5s;
+}
+.web-design-drop {
+    position:relative;
+    z-index:1000000;
+    
+}
+.web-design-menu {
+    position:absolute;
+    inset:0;
+    width:max-content;
+    height:30rem;
+
+}
+.web-design-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:10%;
+    transform:translateY(-10%);
+    opacity:0;
+    color:white;
+    transition:0.5s;
+    border-radius:0.5rem;
+    padding-inline:4rem;
+    padding-block:6rem;
+    width:20rem;
+
+}
+.add-to-drop {
+    transform:translateY(0%) !important;
+    opacity:1 !important;
+    transition:0.5s;
+}
+
+
+
+.pricing-drop {
+    position:relative;
+    z-index:1000000;
+    
+}
+.pricing-menu {
+    position:absolute;
+    inset:0;
+    width:max-content;
+    height:30rem;
+
+}
+.pricing-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color:white;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:30%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:0.5s;
+    border-radius:0.5rem;
+    padding-inline:4rem;
+    padding-block:6rem;
+    width:20rem;
+
+}
+
+.drop-down-our-work-burger,
+.drop-down-web-design-burger,
+.drop-down-pricing-burger {
+    cursor:auto;
+}
+.drop-down-our-work-burger p,
+.drop-down-web-design-burger p,
+.drop-down-pricing-burger p {
+    cursor:pointer;
+}
+
+
+.pricing-menu,
+.web-design-menu,
+.our-work-menu {
+    pointer-events:none;
+}
+.add-to-drop {
+    transform:translateY(0%) !important;
+    opacity:1 !important;
+    transition:0.5s;
+    pointer-events:all;
+}
+
+
+.our-work-menu p {
+    font-weight:300;
+}
+.web-design-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:bold !important;
+}
+.web-design-menu p {
+    font-weight:300;
+}
+.pricing-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:bold !important;
+}
+.pricing-menu p {
+    font-weight:300;
+}
+.our-work-menu a {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:900 !important;
+}
+.our-work-menu a p,
+.pricing-menu a p,
+.web-design-menu a p {
+    color:white;
+    font-size:1.5rem;
+    text-decoration:underline;
+    font-weight:900 !important;
+}
+a {
+    text-decoration:none;
+}
+
+header a {
+    color:black;
+}
+
+
 
 @media (max-width:1144px) {
     nav {
@@ -145,7 +481,6 @@ nav ul li {
         display:block;
     }
 }
-
 
 
 /*********************/
