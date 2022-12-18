@@ -804,6 +804,9 @@ header {
     background-color:var(--new-green);
     cursor:pointer;
 }
+.card-main-titles button:hover {
+    color:var(--new-green);
+}
 .card img {
     width:100%;
     object-fit:cover;
@@ -860,6 +863,9 @@ header {
     background-color:var(--new-green);
     border:none;
     cursor:pointer;
+}
+.card-left button:hover {
+    color:var(--new-green);
 }
 @media (max-width:1149px) {
     .cards {
@@ -1282,4 +1288,16 @@ footer img {
 .addme {
     pointer-events:all;
 }
+
+
+
+button {
+    border:2px solid var(--new-green) !important;
+    transition:0.5s;
+}
+button:hover {
+    background-color:transparent;
+    transition:0.5s;
+    cursor:pointer;
+} 
 

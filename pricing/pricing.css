@@ -1048,3 +1048,22 @@ strong {
     border-bottom:1px solid black;
     padding-bottom:2rem;
 }
+
+
+
+.logolink {
+    cursor:pointer;
+}
+.head-button {
+    cursor:pointer;
+    transition:0.5s;
+}
+button {
+    border:2px solid var(--new-green) !important;
+    transition:0.5s;
+}
+button:hover {
+    background-color:transparent;
+    transition:0.5s;
+    cursor:pointer;
+} 

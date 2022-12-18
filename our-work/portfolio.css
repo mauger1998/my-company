@@ -1342,3 +1342,13 @@ footer ul {
     text-decoration:underline;
     font-weight:900 !important;
 }
+
+button {
+    border:2px solid var(--new-green) !important;
+    transition:0.5s;
+}
+button:hover {
+    background-color:transparent !important;
+    transition:0.5s !important;
+    cursor:pointer;
+} 

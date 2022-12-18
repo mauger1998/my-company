@@ -766,6 +766,14 @@ main {
 .services-list-buttons button {
     padding:0.5rem 1rem;
     font-weight:600;
+    transition:0.5s;
+
+
+}
+.services-list-buttons button:hover {
+    transition:0.5s;
+    cursor:pointer;
+    color:var(--new-green) !important;
 
 }
 .services-list-buttons button:nth-of-type(1) {
@@ -1175,6 +1183,9 @@ form button {
     align-items: center;
     gap:0.5rem;
 }
+form button:hover {
+    color:var(--new-green);
+}
 form button img {
     width:20px;
 }
@@ -1207,6 +1218,14 @@ fieldset {
     overflow:hidden;
    
 }
+.contact {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    background-color:var(--blue);
+}
 .contact-wrapper {
     width:100%;
     max-width:1440px;
@@ -1220,14 +1239,7 @@ fieldset {
 
 
 }
-.contact {
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
-    background-color:var(--blue);
-}
+
 
 
 
@@ -1329,15 +1341,18 @@ fieldset {
 }
 
 /**********************/
-.footer {
+footer {
     display:flex;
     flex-direction:column;
+    width:100%;
+    align-items: center;
+    justify-content: center;
 }
 .footer-top{
     display:flex;
     align-items: flex-end;
     justify-content: space-between;
-    width:100vw;
+    width:100%;
     gap:2rem;
     padding-inline:6rem;
     padding-bottom:4rem;
@@ -2042,7 +2057,7 @@ nav ul li {
     justify-content: center;
     position:absolute;
     right:0;
-    top:-2%;
+    top:-5%;
     gap:1rem;
     padding-top:23rem;
     overflow-y:hidden !important;
@@ -2057,6 +2072,9 @@ nav ul li {
     background-color:var(--new-green);
     font-weight:600;
     border:none;
+}
+.test-card-para button:hover {
+    color:var(--new-green);
 }
 .test-card-para p {
     line-height:2;
@@ -2272,4 +2290,17 @@ nav ul li {
     font-size:1.5rem;
     text-decoration:underline;
     font-weight:900 !important;
+}
+
+button {
+    border:2px solid var(--new-green) !important;
+    transition:0.5s !important;
+}
+button:hover {
+    background-color:transparent !important;
+    transition:0.5s;
+    cursor:pointer !important;
+} 
+.rated {
+    pointer-events:none;
 }
