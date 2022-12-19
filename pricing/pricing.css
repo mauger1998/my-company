@@ -284,7 +284,7 @@ nav ul li {
     position:absolute;
     inset:0;
     width:max-content;
-    height:30rem;
+    height:25rem;
 
 }
 .our-work-menu {
@@ -292,7 +292,8 @@ nav ul li {
     flex-direction:column;
     z-index:1000;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2rem;
     background-color:var(--blue);
     padding:2rem;
     font-weight:700;
@@ -303,8 +304,8 @@ nav ul li {
     transform:translateY(-10%);
     opacity:0;
     transition:0.5s;
-    padding-inline:4rem;
-    border-radius:0.5rem;
+    padding-inline:2rem;
+   
 
 }
 .add-to-drop {
@@ -321,7 +322,7 @@ nav ul li {
     position:absolute;
     inset:0;
     width:max-content;
-    height:30rem;
+    height:20rem;
 
 }
 .web-design-menu {
@@ -329,7 +330,8 @@ nav ul li {
     flex-direction:column;
     z-index:1000;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2rem;
     background-color:var(--blue);
     font-weight:700;
     font-size:1rem;
@@ -339,10 +341,8 @@ nav ul li {
     opacity:0;
     color:white;
     transition:0.5s;
-    border-radius:0.5rem;
-    padding-inline:4rem;
-    padding-block:6rem;
-    width:20rem;
+    padding-inline:2rem;
+   
 
 }
 .add-to-drop {
@@ -362,7 +362,7 @@ nav ul li {
     position:absolute;
     inset:0;
     width:max-content;
-    height:30rem;
+    height:20rem;
 
 }
 .pricing-menu {
@@ -370,20 +370,19 @@ nav ul li {
     flex-direction:column;
     z-index:1000;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2rem;
     color:white;
     background-color:var(--blue);
     font-weight:700;
     font-size:1rem;
     top:150%;
-    left:30%;
+    left:45%;
     transform:translateY(-10%);
     opacity:0;
     transition:0.5s;
-    border-radius:0.5rem;
-    padding-inline:4rem;
-    padding-block:6rem;
-    width:20rem;
+    padding-inline:2rem;
+   
 
 }
 
@@ -417,8 +416,7 @@ nav ul li {
 }
 .web-design-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     font-weight:bold !important;
 }
 .web-design-menu p {
@@ -426,8 +424,7 @@ nav ul li {
 }
 .pricing-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     font-weight:bold !important;
 }
 .pricing-menu p {
@@ -435,17 +432,15 @@ nav ul li {
 }
 .our-work-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
-    font-weight:900 !important;
+    font-size:1.25rem;
+    font-weight:700 !important;
 }
 .our-work-menu a p,
 .pricing-menu a p,
 .web-design-menu a p {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
-    font-weight:900 !important;
+    font-size:1.25rem;
+    font-weight:700 !important;
 }
 a {
     text-decoration:none;
@@ -945,6 +940,7 @@ footer > * {
     gap:1rem;
     padding:6rem;
 }
+
 .updates-wrapper h2 {
     font-size:2.5rem;
 }
@@ -964,6 +960,74 @@ strong {
     border:none;
     background-color:var(--new-green);
     font-weight:bold;
+}
+.updates-wrapper {
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    gap:6rem;
+    padding-block:12rem;
+}
+.updates-left {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+    width:50%;
+   
+}
+.updates-left p {
+    width:100%;
+}
+.updates-img {
+    width:50%;
+}
+
+.updates-img img {
+    width:100%;
+    width:max(100%, 30rem);
+}
+@media (max-width:1170px) {
+    .updates-wrapper {
+        flex-direction:column;
+    }
+    .updates-left {
+        width:100%;
+    }
+    .updates-img {
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .updates-wrapper {
+        padding-inline:4rem;
+    }
+    .updates-img img {
+        width:100% !important;
+    }
+}
+@media (max-width:500px) {
+    .updates-wrapper {
+        padding-inline:2rem;
+        padding-block:2rem;
+        padding-top:12rem;
+    }
+    
+}
+@media (max-width:420px) {
+    .updates-left h2 {
+        font-size:2rem;
+    }
+    .updates-left p {
+        font-size:0.8rem;
+    }
+}
+@media (max-width:330px) {
+    .updates-wrapper {
+       padding-inline:1rem;
+    }
+    
 }
 /**************** Maintenance ************/
 
@@ -989,7 +1053,7 @@ strong {
 .maintenance-titles p {
     font-weight:300;
     line-height:1.75;
-    width:50%;
+    width:100%;
 }
 .maintenance-titles {
     display:flex;
@@ -1004,10 +1068,71 @@ strong {
     background-color:var(--new-green);
     font-weight:bold;
 }
+.maintenance-img img {
+    width:max(100%, 25rem);
+}
+.maintenance-img {
+    width:50%;
+}
+.maintenance-titles {
+    width:50%;
+}
+.maintenance-titles-wrapper {
+    display:flex;
+    padding-bottom:12rem;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+
+}
+@media (max-width:1170px) {
+    .maintenance-titles-wrapper {
+        flex-direction:column;
+    }
+    .maintenance-img img {
+        width:100%;
+    }
+    .maintenance-img {
+        width:100%;
+    }
+    .maintenance-titles {
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .maintenance-wrapper {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:500px) {
+    .maintenance-wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:420px) {
+    .maintenance-titles h2 {
+        font-size:2rem;
+    }
+    .maintenance-titles p {
+        font-size:0.8rem;
+    }
+    .maintenance-titles-wrapper {
+        padding-bottom:6rem;
+    }
+}
+@media (max-width:330px) {
+    .maintenance-wrapper {
+       padding-inline:1rem;
+    }
+    
+}
+
+
+/***********************/
 
 .maintenance-grid {
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
     width:100%;
 }
 .left-grid {
@@ -1015,8 +1140,7 @@ strong {
     grid-template-columns:1fr;
     gap:4rem;
     width:100%;
-    align-items: center;
-   
+    align-items: center;   
 
 }
 .container {
@@ -1056,6 +1180,42 @@ strong {
 .container {
     border-bottom:1px solid black;
     padding-bottom:2rem;
+}
+@media (max-width:813px) {
+    .price p:nth-of-type(2) {
+        font-size:0.7rem;
+    }
+    .price p:nth-of-type(1) {
+        font-size:1.5rem;
+    }
+    .price-summary p {
+        font-size:0.7rem;
+    }
+    .container img {
+        width:30px;
+    }
+}
+@media (max-width:489px) {
+    .container {
+        width:100%;
+    }
+}
+@media (max-width:480px) {
+    .price p:nth-of-type(2) {
+        font-size:0.6rem;
+    }
+    .price p:nth-of-type(1) {
+        font-size:1.25rem;
+    }
+    .price-summary p {
+        font-size:0.6rem;
+    }
+    .container img {
+        width:20px;
+    }
+    .list-item {
+        font-size:0.8rem;
+    }
 }
 
 
@@ -1214,8 +1374,7 @@ footer img {
 
 .our-work-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     cursor:pointer;
 }
 .our-work-menu p {
@@ -1223,8 +1382,7 @@ footer img {
 }
 .web-design-menu a p {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     cursor:pointer !important;
 }
 .web-design-menu p {
@@ -1232,8 +1390,7 @@ footer img {
 }
 .pricing-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     cursor:pointer;
 }
 .pricing-menu p {
@@ -1243,9 +1400,8 @@ footer img {
 .pricing-menu a p,
 .web-design-menu a p {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
-    font-weight:900 !important;
+    font-size:1.25rem;
+    font-weight:700 !important;
 }
 
 
@@ -1274,31 +1430,6 @@ button:hover {
     cursor:pointer;
 } 
 
-.updates-wrapper {
-    display:flex;
-    flex-direction:row-reverse;
-    align-items: center;
-    gap:6rem;
-    padding-block:12rem;
-}
-.updates-left {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap:1rem;
-    width:50%;
-   
-}
-.updates-left p {
-    width:100%;
-}
-.updates-img {
-    width:50%;
-}
 
-.updates-img img {
-    width:100%;
-}
 
 

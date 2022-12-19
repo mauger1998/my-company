@@ -294,7 +294,7 @@ nav ul li {
     position:absolute;
     inset:0;
     width:max-content;
-    height:30rem;
+    height:25rem;
 
 }
 .our-work-menu {
@@ -302,7 +302,8 @@ nav ul li {
     flex-direction:column;
     z-index:1000;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2rem;
     background-color:var(--blue);
     padding:2rem;
     font-weight:700;
@@ -313,8 +314,7 @@ nav ul li {
     transform:translateY(-10%);
     opacity:0;
     transition:0.5s;
-    padding-inline:4rem;
-    border-radius:0.5rem;
+    padding-inline:2rem;
 
 }
 .add-to-drop {
@@ -331,7 +331,7 @@ nav ul li {
     position:absolute;
     inset:0;
     width:max-content;
-    height:30rem;
+    height:20rem;
 
 }
 .web-design-menu {
@@ -339,20 +339,19 @@ nav ul li {
     flex-direction:column;
     z-index:1000;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:2rem;
     background-color:var(--blue);
     font-weight:700;
     font-size:1rem;
     top:150%;
-    left:10%;
+    left:25%;
     transform:translateY(-10%);
     opacity:0;
     color:white;
     transition:0.5s;
-    border-radius:0.5rem;
-    padding-inline:4rem;
-    padding-block:6rem;
-    width:20rem;
+    padding-inline:2rem;
+    
 
 }
 .add-to-drop {
@@ -372,7 +371,7 @@ nav ul li {
     position:absolute;
     inset:0;
     width:max-content;
-    height:30rem;
+    height:20rem;
 
 }
 .pricing-menu {
@@ -380,20 +379,19 @@ nav ul li {
     flex-direction:column;
     z-index:1000;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content:center;
+    gap:2rem;
     color:white;
     background-color:var(--blue);
     font-weight:700;
     font-size:1rem;
     top:150%;
-    left:30%;
+    left:40%;
     transform:translateY(-10%);
     opacity:0;
     transition:0.5s;
-    border-radius:0.5rem;
-    padding-inline:4rem;
-    padding-block:6rem;
-    width:20rem;
+    padding-inline:2rem;
+    
 
 }
 
@@ -427,8 +425,7 @@ nav ul li {
 }
 .web-design-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     font-weight:bold !important;
 }
 .web-design-menu p {
@@ -436,8 +433,7 @@ nav ul li {
 }
 .pricing-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
     font-weight:bold !important;
 }
 .pricing-menu p {
@@ -445,17 +441,15 @@ nav ul li {
 }
 .our-work-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
-    font-weight:900 !important;
+    font-size:1.25rem;
+    font-weight:700 !important;
 }
 .our-work-menu a p,
 .pricing-menu a p,
 .web-design-menu a p {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
-    font-weight:900 !important;
+    font-size:1.25rem;
+    font-weight:700 !important;
 }
 a {
     text-decoration:none;
@@ -1336,24 +1330,21 @@ footer ul {
 
 .our-work-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
 }
 .our-work-menu p {
     font-weight:300;
 }
 .web-design-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
 }
 .web-design-menu p {
     font-weight:300;
 }
 .pricing-menu a {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
+    font-size:1.25rem;
 }
 .pricing-menu p {
     font-weight:300;
@@ -1362,9 +1353,8 @@ footer ul {
 .pricing-menu a p,
 .web-design-menu a p {
     color:white;
-    font-size:1.5rem;
-    text-decoration:underline;
-    font-weight:900 !important;
+    font-size:1.25rem;
+    font-weight:700 !important;
 }
 
 button {
