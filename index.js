@@ -122,4 +122,29 @@ pricingLink.addEventListener("click", (e) => {
     
 })
 
+/********************* Animations
+ * ************************
+ */
+
+gsap.registerPlugin(ScrollTrigger)
+
+const clipPathCircle = document.querySelector(".clip-path-test")
+let tl = gsap.timeline({ defaults: { ease: "power4.inOut",  duration: 2}})
+
+
+
+ourWorkLink.addEventListener("mouseenter", (e) => {
+    tl.to(".clip-path-test", 
+    { clipPath: "circle(70.7% at 50% 50%)", y: -175, height: "20rem", zIndex: "2", x:-400 }
+   
+)
+})
+clipPathCircle.addEventListener("mouseleave", (e) => {
+    tl.to(".clip-path-test", 
+    { clipPath: "circle(17.5% at 50% 50%)", y: 0, height: "10rem", zIndex: "-1", x:0 }
+   
+)
+    
+})
+
 

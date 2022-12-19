@@ -2440,3 +2440,22 @@ footer a {
     text-decoration:none;
     color:black;
 }
+/***********************/
+.clip-path-test {
+    height:10rem;
+    width:10rem;
+    background-color:var(--new-green);
+    position: absolute;
+    clip-path: circle(17.5% at 50% 50%);
+    left:78%;
+    top:35%;
+}
+.circleOne {
+    display:none;
+}
+.clip-path-test ul {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:2rem;
+}
