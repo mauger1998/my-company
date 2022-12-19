@@ -371,12 +371,12 @@ main {
 .absolute:nth-of-type(1) {
     right:15%;
     top:20%;
-    width:25px;
+    width:15px;
 }
 .absolute:nth-of-type(2) {
     left:10%;
     bottom:26%;
-    width:35px;
+    width:15px;
 }
 
 .absolute:nth-of-type(3) {
@@ -387,15 +387,14 @@ main {
 
 
 .hero-section h1 img:nth-of-type(1) {
-    width:100px;
-    left:5%;
-    top:-50%;
+    width:70px;
+    
 }
 .hero-section .exist img {
     width:75px !important;
     z-index:-1;
     top:-10% !important;
-    left:70% !important;
+    left:55% !important;
 }
 .hero-section .affordable img {
     
@@ -486,7 +485,6 @@ header {
 @media (max-width:319px) {
     .hero-section {
         padding-inline:1rem;
-        border:2px solid red;
     }
 }
 @media (max-width:282px) {
@@ -792,6 +790,7 @@ header {
 .card-main-titles-title {
     display:flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 .card-main-titles-title h2 {
     font-size:3rem;
@@ -1143,6 +1142,9 @@ footer ul {
     width:100%;
     text-align:center;
 
+}
+.footer-logo {
+    width:250px;
 }
 .footer-left {
     display:flex;
