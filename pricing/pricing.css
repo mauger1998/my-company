@@ -1097,6 +1097,10 @@ footer ul {
     align-items: center;
     font-size:0.75rem;
     max-width:1440px;
+    width:100%;
+    text-align:center;
+
+
 }
 .footer-left {
     display:flex;
