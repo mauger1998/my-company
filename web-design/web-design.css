@@ -298,9 +298,8 @@ nav ul {
     cursor:pointer;
 
 }
-.cursor {
-    cursor:pointer;
-}
+
+
 .drop-down button {
     background-color:var(--new-green);
     color:black;
@@ -1301,4 +1300,12 @@ button:hover {
 a {
     color:black;
     text-decoration:none;
+}
+.cursor {
+    cursor:pointer;
+    pointer-events:all !important;
+   
+}
+.add-to-drop {
+    pointer-events:all !important;
 }
