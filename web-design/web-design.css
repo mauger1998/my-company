@@ -1309,3 +1309,7 @@ a {
 .add-to-drop {
     pointer-events:all !important;
 }
+footer a {
+    text-decoration:none;
+    color:black;
+}

@@ -2435,3 +2435,7 @@ button:hover {
 .header-wrapper a p {
     font-weight:300;
 }
+footer a {
+    text-decoration:none;
+    color:black;
+}

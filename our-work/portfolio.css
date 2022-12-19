@@ -1366,4 +1366,7 @@ button:hover {
     transition:0.5s !important;
     cursor:pointer;
 } 
-
+footer a {
+    text-decoration:none;
+    color:black;
+}
