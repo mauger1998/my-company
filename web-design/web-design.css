@@ -131,6 +131,7 @@ nav ul {
 }
 .cursor {
     cursor:pointer !important;
+    pointer-events:all !important;
 }
 .our-work-menu {
     position:absolute;
