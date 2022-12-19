@@ -1684,6 +1684,58 @@ nav ul li {
 }
 
 
+@media (max-width:1147px) {
+    .overlay p {
+        font-size:1.75rem;
+    }
+}
+@media (max-width:799px) {
+    .overlay button {
+        padding:0.25rem 0.5rem;
+        font-size:0.9rem;
+    }
+    .overlay {
+        padding:1rem;
+    }
+}
+@media (max-width:670px) {
+    .overlay-buttons {
+        flex-direction:column;
+    }
+    .overlay-buttons button {
+        width:100% !important;
+    }
+    .overlay-buttons a {
+        width:100%;
+    }
+}
+@media (max-width:576px) {
+    .overlay-buttons {
+        flex-direction:row;
+        width:100%;
+    }
+    .overlay-buttons button {
+        padding:0.5rem 1rem;
+    }
+    .overlay p {
+        font-size:3rem !important;
+    }
+    
+}
+@media (max-width:438px) {
+    .overlay-buttons {
+        flex-direction:column;
+
+    }
+    .overlay {
+        gap:0.5rem;
+    }
+    .overlay p {
+        font-size:1.5rem !important;
+    }
+}
+
+
 
 
 .portfolio-titles {
