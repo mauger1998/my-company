@@ -2432,3 +2432,6 @@ button:hover {
 .logo-footer {
     width:225px !important;
 }
+.header-wrapper a p {
+    font-weight:300;
+}
