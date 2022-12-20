@@ -10,10 +10,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family:"baskerville" !important;
-
+    font-family: 'EB Garamond', serif !important;
+    
     scroll-behavior:smooth;
 }
 
@@ -698,10 +696,7 @@ header {
     align-items: flex-start;
     gap:1rem;
 }
-.pricing-titles p {
-    width:75%;
-    line-height:2;
-}
+
 .pricing-section h3 {
     font-size:2rem;
 }
@@ -776,6 +771,12 @@ header {
 .price-two p:nth-of-type(1),
 .price-three p:nth-of-type(1) {
     font-size:1.5rem;
+} 
+.price-one p:nth-of-type(2),
+.price-two p:nth-of-type(2),
+.price-three p:nth-of-type(2) {
+   
+    font-weight:200;
 } 
 .tick-container ul {
     display:flex;
@@ -1153,7 +1154,7 @@ strong {
     max-width:calc(1440px - 12rem)
 }
 .container img {
-    width:50px;
+    width:30px;
 }
 .list-item {
     width:50%;
@@ -1282,8 +1283,11 @@ footer ul {
     align-items: flex-start;
     gap:2rem;
 }
+.footer-left p {
+    font-weight:300;
+}
 .bold {
-    font-weight:bold;
+    font-weight:bold !important;
 }
 .logo {
     width:75px;
@@ -1323,6 +1327,10 @@ footer img {
     justify-content: flex-end;
     gap:2rem;
     font-size:0.8rem;
+    font-weight:300;
+}
+.footer-bottom p {
+    font-weight:200 !important;
 }
 @media (max-width:706px) {
     .footer-top {
@@ -1437,6 +1445,14 @@ footer a {
 }
 .logo-footer {
     width:200px;
+}
+a,
+p,
+li,
+button,
+strong,
+div {
+    font-family:"roboto", serif !important;
 }
 
 

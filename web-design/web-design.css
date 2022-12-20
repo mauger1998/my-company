@@ -11,10 +11,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family:"baskerville" !important;
-
+    font-family: 'EB Garamond', serif !important;
     scroll-behavior:smooth;
 }
 
@@ -519,12 +516,14 @@ header {
     width:100%;
     min-width:35rem;
 }
+.left-timeline p {
+    font-weight:300;
+}
 .right-timeline img {
     width:40px;
 }
 .right-timeline {
     margin-top:8rem;
-    /* padding-block:4rem; */
 }
 .icon-container {
     display:flex;
@@ -543,6 +542,7 @@ header {
 .icon-text p {
     line-height:1.75;
     font-size:0.9rem;
+    font-weight:300;
 }
 .icon-container .icon {
     align-self:flex-start;
@@ -1117,6 +1117,7 @@ footer {
 }
 footer ul {
     list-style:none;
+    font-weight:300;
 } 
 .footer-top{
     display:flex;
@@ -1150,8 +1151,11 @@ footer ul {
     align-items: flex-start;
     gap:2rem;
 }
+.footer-left p {
+    font-weight:300;
+}
 .bold {
-    font-weight:bold;
+    font-weight:bold !important;
 }
 .logo {
     width:75px;
@@ -1191,6 +1195,9 @@ footer img {
     justify-content: flex-end;
     gap:2rem;
     font-size:0.8rem;
+}
+.footer-bottom p {
+    font-weight:200;
 }
 @media (max-width:706px) {
     .footer-top {
@@ -1317,4 +1324,12 @@ footer a {
 }
 .logo-footer {
     width:200px;
+}
+
+a,
+p,
+li,
+button,
+strong {
+    font-family:"roboto", serif !important;
 }
