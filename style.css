@@ -309,7 +309,7 @@ nav ul li {
     transition:0.5s;
     transform:translateY(200%);
     transform-origin:bottom;
-    opacity:1;
+    opacity:0;
     animation:slide-up 1s ease-out forwards;
     animation-delay:1.5s;
 
