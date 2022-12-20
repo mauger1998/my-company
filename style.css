@@ -966,6 +966,8 @@ main {
 .services-left img {
     width:max(100%, 35rem);
     object-fit:cover;
+    transform:translateX(-100%);
+    opacity:0;
 }
 .services-left {
     width:50%;
@@ -991,14 +993,21 @@ main {
 }
 .services-titles p {
     font-weight:200;
+    transform:translateY(100%);
+    opacity:0;
+
 }
 .list {
     display:flex;
     align-items: center;
     gap:1rem;
+    transform:translateY(100%);
+    opacity:0;
 }
 .services-right h2 {
     font-size:2.5rem;
+    transform:translateY(100%);
+    opacity:0;
 }
 .list p {
     font-size:1.1rem;
@@ -1007,6 +1016,8 @@ main {
 .services-wrapper button {
     padding:.5rem 1rem;
     background-color:var(--new-green);
+    transform:translateY(100%);
+    opacity:0;
 }
 .services-wrapper .cross {
     right:10%;

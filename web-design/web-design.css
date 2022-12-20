@@ -373,13 +373,23 @@ main {
     bottom:26%;
     width:15px;
 }
-
-.absolute:nth-of-type(3) {
-    right:0%;
-    bottom:0%;
-    width:200px;
-} 
-
+.hollow {
+    top:20%;
+    left:10%;
+}
+.hollowed {
+    bottom:20%;
+    right:0;
+}
+.crossed {
+    width:15px;
+    left:40%;
+    top:20%;
+}
+.cross {
+   right:40%;
+   bottom:-10%;
+}
 
 .hero-section h1 img:nth-of-type(1) {
     width:70px;
@@ -501,6 +511,19 @@ header {
     padding:6rem;
     display:flex;
     gap:4rem;
+    position:relative;
+}
+.hollo {
+    top:305 !important;
+    right:0 !important;
+}
+.timeline-wrapper .crossed {
+    left:-10%;
+    top:40%;
+}
+.timeline-wrapper .hollow {
+    left:30% !important;
+    top:50%;
 }
 .left-timeline,
 .right-timeline {
@@ -609,6 +632,14 @@ header {
     justify-content: center;
     gap:4rem;
     padding:6rem;
+    position:relative;
+}
+.transparent-wrapper .hollow {
+    top:100% !important;
+}
+.transparent-wrapper .cross {
+   left:-5%;
+   top:0;
 }
 .left-transparent img {
     width:100%;
@@ -681,6 +712,16 @@ header {
     padding:6rem;
     display:flex;
     gap:4rem;
+    position:relative;
+}
+.assets-wrapper .hollow {
+    left:0;
+}
+.assets-wrapper .cross {
+    bottom:5%;
+}
+.assets-wrapper .other {
+   left:-10%;
 }
 .right-assets,
 .left-assets {
@@ -996,6 +1037,14 @@ header {
     flex-direction: column;
     gap:2rem;
     position:relative;
+}
+.goodbye-wrapper .hollowed {
+    bottom:0;
+    right:40%;
+}
+.goodbye-wrapper .cross {
+    top:15%;
+    
 }
 .goodbye-wrapper h2 {
     font-size:2.5rem;

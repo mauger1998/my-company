@@ -129,12 +129,65 @@ pricingLink.addEventListener("click", (e) => {
 gsap.registerPlugin(ScrollTrigger)
 
 
-// let tl = gsap.timeline({ defaults: {  duration: 0.5, ease: "inOut"  }})
-
-
-// tl.to(".flag-card", {opacity:1, scaleY: 1,  stagger:0.1,})
-//     .to(".flag-card h2", {opacity:1, scaleY:1, stagger:0.1})
-//     .to(".flag-card p", {opacity:1, scaleY:1, stagger:0.1})
+gsap.to(".services-left img", {
+    scrollTrigger: {
+        trigger: ".services-left img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=600",
+    },
+    x:0,
+    opacity:1
+})
+gsap.to(".services-right h2", {
+    scrollTrigger: {
+        trigger: ".services-left img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=600",
+    },
+    y:0,
+    opacity:1
+})
+gsap.to(".list", {
+    scrollTrigger: {
+        trigger: ".list",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    y:0,
+    opacity:1,
+    stagger:0.3
+   
+})
+gsap.to(".services-titles p", {
+    scrollTrigger: {
+        trigger: ".services-titles p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    y:0,
+    opacity:1,
+    
+   
+})
+gsap.to(".services-wrapper button", {
+    scrollTrigger: {
+        trigger: ".services-titles p",
+        scrub:true,
+        start:"bottom bottom",
+        end:"+=400",
+        
+    },
+    y:0,
+    opacity:1,
+    
+   
+})
 
 
 
