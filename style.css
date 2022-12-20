@@ -270,21 +270,48 @@ nav ul li {
     font-weight:700;
 }
 .hero-section h1 {
+    transition:0.5s;
+    transform:translateY(100%);
+    transform-origin:bottom;
+    opacity:0;
+    animation:slide-up 1s ease-out forwards;
+}
+@keyframes slide-up {
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.hero-section h1 {
     font-size:3.5rem ;
     text-align:center;
     position:relative;
-    overflow:visible !important;
 }
 .hero-section p {
     font-size:1.1rem;
     font-weight:300;
+    
+    transition:0.5s;
+    transform:translateY(200%);
+    transform-origin:bottom;
+    opacity:0;
+    animation:slide-up 1s ease-out forwards;
+    animation-delay:1s;
+
 }
 .hero-buttons button{
     padding-block:0.75rem;
     padding-inline:2rem;
     background-color:var(--new-green);
     color:black;
-    border:2px solid var(--new-green)
+    border:2px solid var(--new-green);
+    transition:0.5s;
+    transform:translateY(200%);
+    transform-origin:bottom;
+    opacity:1;
+    animation:slide-up 1s ease-out forwards;
+    animation-delay:1.5s;
+
 
 }
 
@@ -293,7 +320,6 @@ nav ul li {
     display:flex;
     align-items: center;
     justify-content: center;
-    overflow:hidden !important;
 
 }
 .hero-wrapper {
@@ -307,9 +333,11 @@ nav ul li {
     gap:2rem;
     position:relative;
     padding-top:14rem;
-    overflow:hidden !important;
 
 
+}
+.hero-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .absolute {
@@ -501,6 +529,7 @@ main {
 .hero-wrapper {
     padding-bottom:4rem;
     padding-top:12rem;
+
 }
 
 .flagpole-section {
@@ -517,6 +546,7 @@ main {
     gap:2rem;
     padding-top:0rem;
     max-width:1440px;
+
 }
 .flag-card {
     border-left:0.5px solid black;
@@ -530,6 +560,94 @@ main {
     overflow:visible !important;
     padding-right:4rem;
 }
+.flag-card {
+    transition:0.5s;
+    transform:scaleY(0);
+    transform-origin:bottom;
+    opacity:0;
+    animation: grow-in 0.5s ease-out forwards;
+    animation-delay:1.75s;
+}
+.flag-card:nth-child(1) {
+    transition:0.5s;
+    transform:scaleY(0);
+    transform-origin:bottom;
+    opacity:0;
+    animation: grow-in 0.5s ease-out forwards;
+    animation-delay:1.75s;
+
+}
+.flag-card:nth-child(2) {
+    transition:0.5s;
+    transform:scaleY(0);
+    transform-origin:bottom;
+    opacity:0;
+    animation: grow-in 0.5s ease-out forwards;
+    animation-delay:2s;
+}
+.flag-card:nth-child(3) {
+    transition:0.5s;
+    transform:scaleY(0);
+    transform-origin:bottom;
+    opacity:0;
+    animation: grow-in 0.5s ease-out forwards;
+    animation-delay:2.25s;
+}
+
+
+
+
+.h2-one,
+.h2-two,
+.h2-three {
+    opacity:0;
+    transition: 0.5s;
+    transform:translateX(-10%);
+    transform-origin:left;
+    animation: slide-in 0.5s ease-out forwards;
+
+}
+.p-one,
+.p-two,
+.p-three {
+    opacity:0;
+    transition: 0.5s;
+    transform:translateX(-10%);
+    transform-origin:left;
+    animation: slide-in 0.5s ease-out forwards;
+
+}
+.h2-one {
+    animation-delay:2.5s;
+}
+.h2-two {
+    animation-delay:2.75s;
+}
+.h2-three {
+    animation-delay:3s;
+}
+.p-one {
+    animation-delay:3.25s;
+}
+.p-two {
+    animation-delay:3.5s;
+}
+.p-three {
+    animation-delay:3.75s;
+}
+
+
+
+
+
+@keyframes slide-in {
+    to {
+        opacity:1;
+        transform:translateX(0);
+        transform-origin:left;
+
+    }
+}
 .flag-card::before {
     content: " ";
     width:0.5rem;
@@ -538,10 +656,30 @@ main {
     border:0.09rem solid black;
     position:absolute;
     background-color:white;
-
+    overflow:visible !important;
     top:0;
     left:-1%;
+    animation: delayed-slide 1s ease-out forwards;
+    transform:translateY(3000%);
+    opacity:0;
+    transition: 0.5s;
+    animation-delay:2.25s;
 
+}
+.flag-card:nth-child(1)::before {
+    animation-delay:2.25s;
+}
+.flag-card:nth-child(2)::before {
+    animation-delay:2.5s;
+}
+.flag-card:nth-child(3)::before {
+    animation-delay:3s;
+}
+@keyframes delayed-slide {
+    to {
+        transform:translateY(0);
+        opacity:1;
+    }
 }
 .flag-card h2 {
     line-height:0.8;
@@ -563,6 +701,18 @@ main {
     right:-1%;
     border:0.09rem solid black;
     background-color:white;
+    animation: delayed-slide 1s ease-out forwards;
+    transform:translateY(3000%);
+    opacity:0;
+    transition: 0.5s;
+    animation-delay:3s;
+}
+@keyframes grow-in {
+    to {
+        transform:scaleY(1);
+        transform-origin:bottom;
+        opacity:1;
+    }
 }
 
 /*********************/
