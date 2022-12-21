@@ -88,6 +88,113 @@ pricingLink.addEventListener("click", (e) => {
    
     
 })
+/****************** */
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.to(".updateScroll", {
+    scrollTrigger: {
+        trigger: ".updateScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".updates-img", {
+    scrollTrigger: {
+        trigger: ".updates-img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".maintenanceScroll", {
+    scrollTrigger: {
+        trigger: ".maintenanceScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".maintenance-img", {
+    scrollTrigger: {
+        trigger: ".maintenance-img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".container", {
+    scrollTrigger: {
+        trigger: ".maintenance-img",
+        scrub:true,
+        start:"top top",
+        end:"+=1500",
+        
+    },
+    scaleX:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to("footer p", {
+    scrollTrigger: {
+        trigger: "footer p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer img", {
+    scrollTrigger: {
+        trigger: "footer img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer ul a li", {
+    scrollTrigger: {
+        trigger: "footer ul a li",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
 
 
 
