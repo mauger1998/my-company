@@ -2519,3 +2519,32 @@ a {
     transform:translateX(100%);
     opacity:0;
 }
+.scrollTestimonial {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.titleScroll {
+    transform:translateY(100%);
+    opacity:0;
+}
+.testimonial-card {
+    transform:translateX(100%);
+    opacity:0;
+}
+.stars img {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.testimonial-card > p {
+    transform:translateY(100%);
+    opacity:0;
+}
+.testimonial-card-bottom > img {
+    transform:scaleY(0);
+    opacity:0;
+}
+.profile p {
+    transform:scaleY(0);
+    transform-origin:bottom;
+    opacity:0;
+}

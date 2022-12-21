@@ -235,6 +235,89 @@ gsap.to(".grid-item-one", {
     opacity:1,
     stagger:0.4,
 })
+gsap.to(".scrollTestimonial", {
+    scrollTrigger: {
+        trigger: ".scrollTestimonial",
+        scrub:true,
+        start:"top bottom",
+        end:"+=500",
+        
+    },
+    x:0,
+    opacity:0.05,
+})
+gsap.to(".titleScroll", {
+    scrollTrigger: {
+        trigger: ".titleScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    y:0,
+    opacity:1,
+    stagger:0.2,
+})
+gsap.to(".testimonial-card", {
+    scrollTrigger: {
+        trigger: ".testimonial-card",
+        scrub:true,
+        start:"top bottom",
+        end:"+=450",
+        
+    },
+    x:0,
+    opacity:1,
+    stagger:0.2,
+})
+gsap.to(".stars img", {
+    scrollTrigger: {
+        trigger: ".stars img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=350",
+        
+    },
+    x:0,
+    opacity:1,
+    stagger:0.2,
+})
+gsap.to(".testimonial-card > p", {
+    scrollTrigger: {
+        trigger: ".testimonial-card > p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:0,
+    opacity:1,
+    stagger:0.2,
+})
+gsap.to(".testimonial-card-bottom > img", {
+    scrollTrigger: {
+        trigger: ".testimonial-card-bottom > img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=200",
+        
+    },
+    scaleY:1,
+    opacity:1,
+    stagger:0.2,
+})
+gsap.to(".profile p", {
+    scrollTrigger: {
+        trigger: ".profile p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    scaleY:1,
+    opacity:1,
+    stagger:0.2,
+})
 
 
 
