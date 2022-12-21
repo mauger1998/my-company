@@ -2011,6 +2011,7 @@ nav ul li {
 
     padding-block:10rem;
 }
+
 .grid-item {
     overflow:visible !important;
 
@@ -2501,4 +2502,20 @@ a {
 .pricing-section .cross {
     top:10%;
 
+}
+/*******************/
+.scrollPortfolio {
+    transform:translateX(-100%)
+}
+.ourWorkScroll {
+    transform:translateY(100%);
+    opacity:0;
+}
+.first-item {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.grid-item-one {
+    transform:translateX(100%);
+    opacity:0;
 }

@@ -188,6 +188,53 @@ gsap.to(".services-wrapper button", {
     
    
 })
+gsap.to(".scrollPortfolio", {
+    scrollTrigger: {
+        trigger: ".scrollPortfolio",
+        scrub:true,
+        start:"top bottom",
+        end:"+=500",
+        
+    },
+    x:0,
+    opacity:0.05,
+})
+gsap.to(".ourWorkScroll", {
+    scrollTrigger: {
+        trigger: ".ourWorkScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=500",
+        
+    },
+    y:0,
+    opacity:1,
+    stagger:0.3,
+})
+gsap.to(".first-item", {
+    scrollTrigger: {
+        trigger: ".first-item",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    x:0,
+    opacity:1,
+    stagger:-0.4,
+})
+gsap.to(".grid-item-one", {
+    scrollTrigger: {
+        trigger: ".grid-item-one",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    x:0,
+    opacity:1,
+    stagger:0.4,
+})
 
 
 
