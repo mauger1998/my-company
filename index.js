@@ -318,6 +318,108 @@ gsap.to(".profile p", {
     opacity:1,
     stagger:0.2,
 })
+gsap.to(".scrollPrice", {
+    scrollTrigger: {
+        trigger: ".scrollPrice",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:0.05,
+   
+})
+gsap.to(".priceTitle", {
+    scrollTrigger: {
+        trigger: ".priceTitle",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.2,
+   
+})
+gsap.to(".priceCard", {
+    scrollTrigger: {
+        trigger: ".priceCard",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    scaleY:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".contact", {
+    scrollTrigger: {
+        trigger: ".contact",
+        scrub:true,
+        start:"top bottom",
+        end:"+=500",
+        
+    },
+    scaleX:1,
+    opacity:1,
+   
+})
+gsap.to("form", {
+    scrollTrigger: {
+        trigger: ".contact",
+        scrub:true,
+        start:"top bottom",
+        end:"+=600",
+        
+    },
+    scaleY:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer p", {
+    scrollTrigger: {
+        trigger: "footer p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer img", {
+    scrollTrigger: {
+        trigger: "footer img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer ul a li", {
+    scrollTrigger: {
+        trigger: "footer ul a li",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
 
 
 

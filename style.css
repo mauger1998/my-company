@@ -2452,7 +2452,8 @@ footer a {
 }
 p,
 a,
-li {
+li,
+label {
     font-family: 'Roboto', sans-serif !important;
 }
 button,
@@ -2546,5 +2547,34 @@ a {
 .profile p {
     transform:scaleY(0);
     transform-origin:bottom;
+    opacity:0;
+}
+.scrollPrice {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.priceTitle {
+    transform:translateY(100%);
+    opacity:0;
+}
+.priceCard {
+    transform:scaleY(0.1);
+    opacity:0;
+}
+
+.contact {
+    transform:scaleX(1%);
+    opacity:0;
+    transform-origin:left;
+}
+form {
+    transform:scaleY(1%);
+    transform-origin:bottom;
+    opacity:0;
+}
+footer p,
+footer img,
+footer ul a li {
+    transform:translateX(100%);
     opacity:0;
 }
