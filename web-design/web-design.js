@@ -91,6 +91,167 @@ dropDownPricingLink.addEventListener("click", (e) => {
     })
 })
 
+/************* Scroll Animations */
+
+gsap.registerPlugin(ScrollTrigger)
+
+
+gsap.to(".processScroll", {
+    scrollTrigger: {
+        trigger: ".processScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+    },
+    y:0,
+    opacity:1,
+    stagger: 0.3,
+})
+gsap.to(".icon", {
+    scrollTrigger: {
+        trigger: ".icon",
+        scrub:true,
+        start:"top bottom",
+        end:"+=1000",
+    },
+    y:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".icon-text", {
+    scrollTrigger: {
+        trigger: ".icon-text",
+        scrub:true,
+        start:"top bottom",
+        end:"+=1000",
+    },
+    x:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".left-transparent", {
+    scrollTrigger: {
+        trigger: ".left-transparent",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+    },
+    x:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".orderScroll", {
+    scrollTrigger: {
+        trigger: ".orderScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+    },
+    y:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".orderScrolled", {
+    scrollTrigger: {
+        trigger: ".orderScrolled",
+        scrub:true,
+        start:"top bottom",
+        end:"+=550",
+    },
+    y:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".right-assets", {
+    scrollTrigger: {
+        trigger: ".right-assets",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+    },
+    x:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".cardTitleScroll", {
+    scrollTrigger: {
+        trigger: ".cardTitleScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+    },
+    x:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".card", {
+    scrollTrigger: {
+        trigger: ".card",
+        scrub:true,
+        start:"top bottom",
+        end:"+=600",
+    },
+    scaleY:1,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to(".goodbyeScroll", {
+    scrollTrigger: {
+        trigger: ".goodbyeScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+    },
+    y:0,
+    opacity:1,
+    stagger: 0.5,
+})
+gsap.to("footer p", {
+    scrollTrigger: {
+        trigger: "footer p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer img", {
+    scrollTrigger: {
+        trigger: "footer img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer ul a li", {
+    scrollTrigger: {
+        trigger: "footer ul a li",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+
+
+
+
+
+
+
 
 
 
