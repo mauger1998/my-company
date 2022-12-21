@@ -420,6 +420,31 @@ gsap.to("footer ul a li", {
     stagger:0.1,
    
 })
+gsap.to(".enterprise-img", {
+    scrollTrigger: {
+        trigger: ".enterprise-img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+   
+})
+gsap.to(".enter-scroll", {
+    scrollTrigger: {
+        trigger: ".enter-scroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger:0.3,
+   
+})
 
 
 

@@ -536,6 +536,8 @@ main {
     opacity:0;
     animation:slide-up 1s ease-out forwards;
     animation-delay:1s;
+    width:50%;
+    font-weight:300 ;
 }
 
 .absolute {
@@ -566,6 +568,28 @@ main {
     width:200px;
 } 
 
+.hero-section .crossed {
+    width:15px;
+    right:20%;
+    bottom:5%;
+}
+.hero-section .cross {
+    left:20%;
+    top:15%;
+
+}
+.hero-section .other {
+    width:15px;
+}
+.hero-section .hollow {
+    top:25%;
+}
+.hero-section .hollowed {
+    bottom:8%;
+    left:20%;
+
+
+}
 
 
 
@@ -954,6 +978,22 @@ footer > * {
     justify-content: center;
     gap:1rem;
     padding:6rem;
+    position:relative;
+}
+.updates-wrapper .also {
+    width:15px;
+}
+.updates-wrapper .cross {
+    width:15px;
+    left: 60%;;
+}
+.updates-wrapper .crossed {
+    bottom:80%;;
+}
+.updates-wrapper .hollow {
+    left:10%;
+    bottom:10%;
+
 }
 
 .updates-wrapper h2 {
