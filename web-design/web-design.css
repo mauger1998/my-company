@@ -327,6 +327,11 @@ nav ul {
     visibility: visible;
     pointer-events:all !important;
 }
+@media (max-width:456px) {
+    .menu {
+        width:25px;
+    }
+}
 /******************** Hero Section *****************************/
 
 
@@ -367,7 +372,7 @@ main {
 }
 .hero-section p {
     font-size:1.1rem;
-    font-weight:300;
+    font-weight:200;
     text-align:center;
     transition:0.5s;
     transform:translateY(200%);
@@ -435,11 +440,10 @@ main {
 .hero-section .exist img {
     width:75px !important;
     z-index:-1;
-    top:-10% !important;
-    left:55% !important;
+    top:0% !important;
+    right:0% !important;
 }
 .hero-section .affordable img {
-    
     top:-100% !important;
     left:-20% !important;
 }
@@ -452,20 +456,18 @@ main {
 .new-circle {
     position:relative;
 }
-.new-circle-img {
-    position:absolute;
-    width:50px !important;
-    left:80% !important;
-    z-index:-1;
-    top:0% !important;
-    display:none;
-}
+
 header {
     z-index:1;
 }
 @media (max-width:1101px) {
     br {
         display:none;
+    }
+}
+@media (max-width:926px) {
+    .hero-section p {
+        width:75%;
     }
 }
 @media (max-width:855px) {
@@ -695,7 +697,7 @@ header {
     width:50%;
 }
 .right-transparent img {
-    width:40px;
+    width:30px;
 }
 .right-transparent {
     display:flex;
@@ -793,10 +795,10 @@ header {
     justify-content: center;
 }
 .left-assets img {
-    width:40px;
+    width:30px;
 }
 .left-assets h2 {
-    font-size:2rem;
+    font-size:2.5rem;
 }
 
 .left-assets p {
@@ -833,6 +835,9 @@ header {
     }
     .right-assets img {
         min-width:auto;
+    }
+    .left-assets h2 {
+        font-size:2rem;
     }
 }
 @media (max-width:499px) {
@@ -974,6 +979,11 @@ header {
         padding:0.75rem 2rem;
     }
 }
+@media (max-width:1074px) {
+    .card-main-titles p {
+        width:75%;
+    }
+}
 @media (max-width:879px) {
     .cards {
         grid-template-columns:1fr;
@@ -992,6 +1002,9 @@ header {
 @media (max-width:738px) {
     .card-wrapper {
         padding-inline:4rem;
+    }
+    .card-main-titles p {
+        width:100%;
     }
 }
 @media (max-width:683px) {
