@@ -135,6 +135,7 @@ gsap.to(".services-left img", {
         scrub:true,
         start:"top bottom",
         end:"+=600",
+        
     },
     x:0,
     opacity:1

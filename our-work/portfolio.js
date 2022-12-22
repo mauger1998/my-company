@@ -101,6 +101,102 @@ pricingLink.addEventListener("click", (e) => {
    
     
 })
+/*****************************/
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.to(".portfolioTitleScroll", {
+    scrollTrigger: {
+        trigger: ".portfolioTitleScroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".grid-item img", {
+    scrollTrigger: {
+        trigger: ".grid-item img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    x:0,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+
+gsap.to(".staggered", {
+    scrollTrigger: {
+        trigger: ".staggered",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".stagger", {
+    scrollTrigger: {
+        trigger: ".stagger",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+
+gsap.to(".lined", {
+    scrollTrigger: {
+        trigger: ".lined",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    scale:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".line-one", {
+    scrollTrigger: {
+        trigger: ".line-one",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    scale:1,
+    opacity:1,
+    stagger: 0.3,
+   
+})
+gsap.to(".img", {
+    scrollTrigger: {
+        trigger: ".img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    x:0,
+    opacity:1,
+    stagger: 1,
+   
+})
 
 
 

@@ -11,8 +11,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Roboto', sans-serif ;
-    font-family:"baskerville" !important;
+    font-family: 'EB Garamond', serif !important;
+
     scroll-behavior:smooth;
 }
 
@@ -57,6 +57,8 @@ header {
     max-width:1440px;
     background-color:transparent;
     padding-block:1.5rem;
+    background-color:rgba(255, 255, 255, 0.9) !important;
+
 }
 .logo-container img {
     width:200px;
@@ -488,18 +490,42 @@ header a {
     text-align:center;
     position:relative;
     overflow:visible;
+    transition:0.5s;
+    transform:translateY(100%);
+    transform-origin:bottom;
+    opacity:0;
+    animation:slide-up 1s ease-out forwards;
 
+
+}
+@keyframes slide-up {
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 .hero-section p {
     font-size:1.1rem;
     font-weight:300;
+    transition:0.5s;
+    transform:translateY(200%);
+    transform-origin:bottom;
+    opacity:0;
+    animation:slide-up 1s ease-out forwards;
+    animation-delay:1s;
 }
 .hero-buttons button{
     padding-block:0.75rem;
     padding-inline:2rem;
     background-color:var(--new-green);
     color:black;
-    border:2px solid var(--new-green)
+    border:2px solid var(--new-green);
+    transition:0.5s;
+    transform:translateY(200%);
+    transform-origin:bottom;
+    opacity:0;
+    animation:slide-up 1s ease-out forwards;
+    animation-delay:1.5s;
 
 }
 span {
@@ -538,16 +564,33 @@ span {
     width:15px;
 }
 .absolute:nth-of-type(2) {
-    left:10%;
+    left:20%;
     bottom:26%;
     width:15px;
+
 }
 
 .absolute:nth-of-type(3) {
-    right:0%;
-    bottom:0%;
-    width:200px;
+    right:20%;
+    bottom:30%;
+    width:15px;
+
 } 
+.absolute:nth-of-type(4) {
+    width:15px;
+    top:20%;
+    left:20%;
+
+} 
+
+.cross {
+    left:5% !important;
+
+}
+.hollo {
+    top:25%;
+
+}
 .hero-wrapper h1 img:nth-of-type(1) {
     width:70px;
     left:5%;
@@ -595,30 +638,18 @@ main {
     }
 }
 @media (max-width:720px) {
-    .hero-wrapper .affordable img {
-        width:60px !important;
-        top:-60% !important;
-        left:-12% !important;
-    }
+   
     .hero-wrapper .exist img {
         width:50px !important;
         left:75% !important;
     }
-    .absolute:nth-of-type(1) {
-        right:15%;
-        top:20%;
-        width:20px;
-    }
-    .absolute:nth-of-type(2) {
-        left:10%;
-        bottom:26%;
-        width:22px;
+    
       
 }
 .hero-wrapper p {
     text-align:center;
 }
-}
+
 @media (max-width:1101px) {
     br {
         display:none;
@@ -641,11 +672,7 @@ main {
         padding-inline:2rem;
     }
 
-    .absolute:nth-of-type(3) {
-        right:0%;
-        bottom:0%;
-        width:150px;
-    }
+  
 
 }
 @media (max-width:660px) {
@@ -780,7 +807,53 @@ button:hover {
     display:flex;
     flex-direction:column;
     align-items: flex-start;
+    position:relative;
 }
+
+
+
+.portfolio-wrapper .absolute:nth-of-type(1) {
+    right:15%;
+    top:10%;
+    width:15px;
+}
+.portfolio-wrapper .absolute:nth-of-type(2) {
+    left:30%;
+    bottom:16%;
+    width:15px;
+
+}
+
+.portfolio-wrapper .absolute:nth-of-type(3) {
+    right:20%;
+    bottom:45%;
+    width:15px;
+
+} 
+.portfolio-wrapper .absolute:nth-of-type(4) {
+    width:15px;
+    left:32%;
+    top:25%;
+
+} 
+
+.portfolio-wrapper .cross {
+    left:5% !important;
+    top:0;
+
+}
+.portfolio-wrapper .hollo {
+    top:50%;
+    left:30%;
+
+}
+
+
+
+
+
+
+
 .thumbnail-titles {
     display:flex;
     flex-direction:column;
@@ -797,7 +870,8 @@ button:hover {
     grid-template-columns:1fr 1fr 1fr;
     gap:6rem;
 }
-.grid-item {
+.grid-item,
+.grid-item-one {
     display:flex;
     flex-direction: column;
     gap:2rem;
@@ -807,7 +881,8 @@ button:hover {
     padding-inline:0.5rem;
 
 }
-.grid-item:hover {
+.grid-item:hover,
+.grid-item-one:hover {
     transition:0.5s;
     background-color:var(--blue);
     color:white;
@@ -818,19 +893,22 @@ button:hover {
     width:30%;
     background-color:var(--new-green);
 }
-.grid-item p:nth-of-type(1) {
+.grid-item p:nth-of-type(1),
+.grid-item-one p:nth-of-type(1) {
     letter-spacing: 0.25rem;
     font-weight:500;
     margin-left:4rem;
 }
-.grid-item p:nth-of-type(2) {
+.grid-item p:nth-of-type(2),
+.grid-item-one p:nth-of-type(2) {
     margin-left:4rem;
     font-size:1.5rem;
     font-weight:700;
     width:60%;
     line-height:1.5;
 }
-.grid-item:nth-of-type(4) {
+.grid-item:nth-of-type(4),
+.grid-item-one p:nth-of-type(4) {
     grid-column:1;
 }
 button {
@@ -1374,3 +1452,41 @@ footer a {
 .logo-footer {
     width:200px;
 }
+/**************************/
+a,
+p,
+li,
+button,
+strong,
+div {
+    font-family:"roboto", serif !important;
+}
+/********************************************/
+.portfolioTitleScroll {
+    transform:translateX(-30%);
+    opacity:0;
+}
+.grid-item img {
+    transform:translateX(50%);
+    opacity:0;
+}
+.img {
+    transform:translateX(-20rem);
+    opacity:0;
+    transition:0.5s;
+}
+.stagger {
+    transform:translateY(4rem);
+    opacity:0;
+}
+.staggered {
+    transform:translateY(4rem);
+    opacity:0;
+}
+.lined,
+.line-one {
+    transform:scaleX(0);
+    transform-origin:left;
+    opacity:0;
+}
+
