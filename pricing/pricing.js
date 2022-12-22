@@ -122,7 +122,7 @@ gsap.to(".maintenanceScroll", {
         trigger: ".maintenanceScroll",
         scrub:true,
         start:"top bottom",
-        end:"+=300",
+        end:"+=200",
         
     },
     y:1,
