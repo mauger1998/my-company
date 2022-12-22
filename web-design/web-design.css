@@ -1454,7 +1454,8 @@ a,
 p,
 li,
 button,
-strong {
+strong,
+.drop-down span {
     font-family:"roboto", serif !important;
 }
 /******************************/
@@ -1503,4 +1504,45 @@ footer img,
 footer ul a li {
     transform:translateX(100%);
     opacity:0;
+}
+/***************/
+.point {
+    text-decoration:none;
+    color:black;
+    
+}
+.point p {
+    font-weight:700 !important;
+    font-size:1.2rem;
+}
+.a {
+    color:white !important;
+    font-weight:300 !important;
+    text-decoration: none;
+}
+.drop-down-web-design-burger > a,
+.drop-down-pricing-burger > a,
+.drop-down-our-work-burger > a {
+    text-decoration:none;
+    color:black;
+}
+
+
+.drop-down-web-design-burger > a,
+.drop-down-pricing-burger > a,
+.drop-down-our-work-burger > a {
+    pointer-events:none;
+    font-weight:300;
+}
+.drop-down-web-design-burger > p,
+.drop-down-pricing-burger > p,
+.drop-down-our-work-burger > p {
+    font-weight:300;
+}
+.drop-down-burger-add a
+ {
+    pointer-events:all;
+}
+.none button:hover {
+    color:var(--new-green);
 }

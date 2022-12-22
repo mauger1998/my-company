@@ -236,7 +236,15 @@ nav ul li {
     border:2px solid var(--new-green);
     background-color:var(--new-green);
     display:flex;
-    align-items: center;gap:0.5rem;
+    align-items: center;
+    gap:0.5rem;
+}
+.drop-down button:hover {
+    transition:0.5s;
+    color:var(--new-green);
+}
+.none {
+    text-decoration:none;
 }
 .logoWhite {
     width:200px;
@@ -2350,7 +2358,8 @@ footer a {
 p,
 a,
 li,
-label {
+label,
+ul span {
     font-family: 'Roboto', sans-serif !important;
 }
 button,
@@ -2560,4 +2569,36 @@ footer ul a li {
 .enter-scroll {
     transform:translateY(15rem);
     opacity:0;
+}
+
+.point {
+    text-decoration:none;
+    color:black;
+    
+}
+.point p {
+    font-weight:700 !important;
+    font-size:1.2rem;
+}
+.a {
+    color:white !important;
+    font-weight:300 !important;
+    text-decoration: none;
+}
+.drop-down-web-design-burger > a,
+.drop-down-pricing-burger > a,
+.drop-down-our-work-burger > a {
+    text-decoration:none;
+    color:black;
+}
+
+
+.drop-down-web-design-burger > a,
+.drop-down-pricing-burger > a,
+.drop-down-our-work-burger > a {
+    pointer-events:none;
+}
+.drop-down-burger-add a
+ {
+    pointer-events:all;
 }

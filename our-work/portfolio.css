@@ -592,24 +592,26 @@ span {
     top:25%;
 
 }
-.hero-wrapper h1 img:nth-of-type(1) {
-    width:70px;
-    left:5%;
-   
-}
-.hero-wrapper .exist img {
-    width:75px !important;
-    z-index:-1;
-    top:-10% !important;
-    left:50% !important;
-}
-.hero-wrapper .affordable img {
-    
-    top:-100% !important;
-    left:-20% !important;
-}
-.exist {
+
+
+
+
+
+
+.relative {
     position:relative;
+}
+.annoying {
+    position:absolute;
+    right:0%;
+    z-index:-1;
+    width:75px;
+    top:0;
+}
+@media (max-width:572px) {
+    .annoying {
+        width:50px;
+    }
 }
 .affordable {
     position:relative;
@@ -618,18 +620,8 @@ span {
 main {
     gap:0;
 }
-.new-circle {
-    position:relative;
-}
 
-.new-circle-img {
-    position:absolute;
-    width:50px !important;
-    left:80% !important;
-    z-index:-1;
-    top:0% !important;
-    display:none;
-}
+
 @media (max-width:892px) {
     .hero-section h1 {
         font-size:3rem;
@@ -697,12 +689,27 @@ main {
         padding-inline:0.75rem;
     }
 }
+@media (max-width:554px) {
+    .hero-section p {
+        width:75%;
+    }
+}
 @media (max-width:508px) {
     .hero-wrapper h1 .gone {
         display:none;
     }
     .new-circle-img {
         display:block !important;
+    }
+}
+@media (max-width:468px) {
+    .hero-section .hollo {
+        top:20%;
+        width:10px;
+    }
+    .hero-section .cross {
+        width:10px;
+        bottom:40%;
     }
 }
 @media (max-width:402px) {

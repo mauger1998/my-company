@@ -593,7 +593,9 @@ main {
 }
 
 
-
+.hero-section .also {
+    width:10px;
+}
 .hero-section .affordable img {
     
     top:-100% !important;
@@ -640,6 +642,11 @@ header {
 @media (max-width:855px) {
     .hero-section h1 {
         font-size:3rem;
+    }
+}
+@media (max-width:762px) {
+    .hero-section p {
+        width:75%;
     }
 }
 @media (max-width:736px) {
@@ -1580,5 +1587,8 @@ footer ul a li {
     }
     
 }
+
+
+/******************/
 
 
