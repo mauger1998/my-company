@@ -291,14 +291,15 @@ nav ul li {
 }
 .hero-section p {
     font-size:1.1rem;
-    font-weight:300;
-    
+    font-weight:200;
     transition:0.5s;
     transform:translateY(200%);
     transform-origin:bottom;
     opacity:0;
     animation:slide-up 1s ease-out forwards;
     animation-delay:1s;
+    width:50%;
+    text-align:center;
 
 }
 .hero-buttons button{
@@ -407,6 +408,16 @@ main {
     top:0% !important;
     display:none;
 }
+@media (max-width:1119px) {
+    .hero-section p {
+        width:75%;
+    }
+}
+@media (max-width:1041px) {
+    .hero-section h1 br {
+        display:none;
+    }
+}
 @media (max-width:892px) {
     .hero-section h1 {
         font-size:3rem;
@@ -471,14 +482,7 @@ main {
         padding-inline:0.75rem;
     }
 }
-@media (max-width:508px) {
-    .hero-wrapper h1 .gone {
-        display:none;
-    }
-    .new-circle-img {
-        display:block !important;
-    }
-}
+
 @media (max-width:402px) {
     .hero-wrapper {
         padding-inline:1rem;
@@ -785,6 +789,7 @@ main {
     font-size:125px;
     opacity:0.05;
 }
+
 
 
 /*************************/
@@ -1131,6 +1136,17 @@ footer > * {
         font-size:1rem !important;
     }
 }
+@media (max-width:700px) {
+    .pricing-section {
+        padding-inline:4rem;
+    }
+    .pricing-section p {
+        width:100%;
+    }
+    .pricing-section .big {
+        left:4rem !important;
+    }
+}
 @media (max-width:590px) {
     .tick-container p {
         font-size:0.8rem !important;
@@ -1157,6 +1173,9 @@ footer > * {
 @media (max-width:500px) {
     .pricing-section {
         padding-inline:2rem;
+    }
+    .pricing-section .big {
+        left:2rem !important;
     }
     .price-one button,
     .price-two button,
@@ -1692,7 +1711,6 @@ nav ul li {
 /***************************/
 .big {
     top:6% !important;
-    left:6rem !important;
 }
 .grid-item img {
  width:100%;
@@ -1868,6 +1886,10 @@ nav ul li {
     overflow:visible !important;
     row-gap:6rem;
 }
+.portfolio-section .big {
+   left:6rem;
+   top:5% !important;
+}
 @media (max-width:1212px) {
     .portfolio-grid {
         grid-template-columns: 1fr 1fr;
@@ -1879,9 +1901,7 @@ nav ul li {
     }
 }
 @media (max-width:867px) {
-    .portfolio-wrapper {
-        padding-inline:4rem;
-    }
+    
     .portfolio-grid {
         row-gap:2rem;
     }
@@ -1891,19 +1911,39 @@ nav ul li {
         font-size:2rem;
     }
 }
-@media (max-width:648px) {
+@media (max-width:700px) {
+    .portfolio-section .big {
+        left:4rem;
+    }
+    .portfolio-wrapper {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:500px) {
     .portfolio-wrapper {
         padding-inline:2rem;
     }
 }
+
 @media (max-width:567px) {
     .portfolio-grid {
     grid-template-columns:1fr;    
 }
+    .portfolio-section .big {
+        top:3% !important;
+    }
+}
+@media (max-width:500px) {
+    .portfolio-section .big {
+        left:2rem;
+    }
 }
 @media (max-width:363px) {
     .portfolio-wrapper {
         padding-inline:1rem;
+    }
+    .portfolio-section .big {
+        left:1rem !important;
     }
 }
 /***************************/
@@ -2019,10 +2059,16 @@ nav ul li {
     .testimonial-wrapper {
         padding-inline:4rem;
     }
+    .testimonial-wrapper .big {
+        left:4rem !important;
+    }
 }
 @media (max-width:500px) {
     .testimonial-wrapper {
         padding-inline:2rem;
+    }
+    .testimonial-wrapper .big {
+        left:2rem !important;
     }
 }
 @media (max-width:471px) {
@@ -2036,6 +2082,9 @@ nav ul li {
 @media (max-width:357px) {
     .testimonial-wrapper {
         padding-inline:1rem;
+    }
+    .testimonial-wrapper .big {
+        left:1rem !important;
     }
     .stars img {
         width:15px;

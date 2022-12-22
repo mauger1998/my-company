@@ -513,6 +513,7 @@ header a {
     opacity:0;
     animation:slide-up 1s ease-out forwards;
     animation-delay:1s;
+    width:50%;
 }
 .hero-buttons button{
     padding-block:0.75rem;
