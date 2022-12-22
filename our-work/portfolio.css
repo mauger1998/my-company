@@ -1240,7 +1240,7 @@ footer img {
     gap:2rem;
     font-size:0.8rem;
 }
-@media (max-width:706px) {
+@media (max-width:906px) {
     .footer-top {
         flex-direction:column;
         align-items: center;

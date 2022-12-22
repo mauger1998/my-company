@@ -1034,16 +1034,19 @@ main {
     width:25px;
 
 }
-.price-one p:nth-of-type(1),
-.price-two p:nth-of-type(1),
-.price-three p:nth-of-type(1) {
+.price-one > p:nth-of-type(1),
+.price-two > p:nth-of-type(1),
+.price-three > p:nth-of-type(1) {
     font-size:1.5rem;
+    text-align:center;
+
     
 } 
 .price-one p:nth-of-type(2),
 .price-two p:nth-of-type(2),
 .price-three p:nth-of-type(2) {
     font-weight:200;
+    text-align:center;
 
 } 
 .tick-container ul {
@@ -1528,7 +1531,7 @@ footer img {
 .footer-bottom p {
     font-weight:200;
 }
-@media (max-width:706px) {
+@media (max-width:906px) {
     .footer-top {
         flex-direction:column;
         align-items: center;

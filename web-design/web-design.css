@@ -1323,7 +1323,7 @@ footer img {
 .footer-bottom p {
     font-weight:200;
 }
-@media (max-width:706px) {
+@media (max-width:906px) {
     .footer-top {
         flex-direction:column;
         align-items: center;
