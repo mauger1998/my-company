@@ -212,6 +212,25 @@ gsap.to(".ourWorkScroll", {
     opacity:1,
     stagger:0.3,
 })
+
+// ScrollTrigger.matchMedia({
+//     "(max-width:1212px)": function() {
+//         gsap.to(".first-item", {
+//             scrollTrigger: {
+//                 trigger: ".first-item",
+//                 scrub:true,
+//                 start:"top bottom",
+//                 end:"+=3000",
+                
+//             },
+//             x:0,
+//             opacity:1,
+//             stagger:-0.4,
+//         })
+//     }
+// })
+
+
 gsap.to(".first-item", {
     scrollTrigger: {
         trigger: ".first-item",
@@ -224,6 +243,10 @@ gsap.to(".first-item", {
     opacity:1,
     stagger:-0.4,
 })
+
+
+
+
 gsap.to(".grid-item-one", {
     scrollTrigger: {
         trigger: ".grid-item-one",
