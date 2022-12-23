@@ -786,12 +786,6 @@ button:hover {
 /************************/
 
 /**********************/
-.spline {
-    width:100%;
-    height:50rem;
-    margin-block:10rem;
-    max-width:1440px;
-}
 
 
 /***********************/
@@ -973,202 +967,6 @@ button {
 }
 
 
-video {
-    width:100%;
-    
-}
-.video-wrapper {
-    padding:4rem;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    gap:10rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    max-width:1440px;
-
-}
-.video-wrapper h2 {
-    font-size:2.5rem;
-}
-.video-wrapper p:nth-of-type(1) {
-    font-size:0.8rem;
-    font-weight:200;
-}
-.video-wrapper p:nth-of-type(2) {
-    font-size:1rem;
-    font-weight:400;
-    margin-top:2rem;
-    width:50%;
-    line-height:1.75;
-}
-
-.cilighting {
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.cilighting-wrapper {
-    width:100%;
-    max-width:1440px;
-    padding:4rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    gap:12rem;
-}
-.tick-container img {
-    width:40px;
-   
-}
-.cilighting-top {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.cilighting-titles {
-    display:flex;
-    flex-direction:column;
-}
-.cilighting-top-right {
-    width:50%;
-    padding-left:4rem;
-    display:flex;
-    flex-direction:column;
-    gap:1rem;
-}
-.tick-container {
-    display:flex;
-    align-items: center;
-    gap:2rem;
-    font-size:1rem;
-}
-.cilighting-top-left {
-    display:flex;
-    flex-direction:column;
-    width:50%;
-    align-items: flex-start;
-    gap:2rem;
-    padding-right:4rem;
-
-}
-.cilighting-top-left h2 {
-    font-size:3.5rem;
-}
-.cilighting-top-left p {
-    line-height:2;
-    font-size:1rem;
-}
-.second-row-container {
-    width:50%;
-}
-.second-row-text {
-    width:50%;
-    font-size:1rem;
-    display:flex;
-    flex-direction:column;
-    gap:2rem;
-    align-items: center;
-    justify-content: center;
-    text-align:right;
-    
-}
-.second-row-text p {
-    line-height:2;
-
-}
-.second-row-container img {
-    width:100%;
-}
-.cilighting-second-row {
-    display:flex;
-    gap:4rem;
-}
-.big-ci-image img {
-    width:100%;
-}
-.big-ci-image {
-    width:100%;
-    padding:4rem;
-    max-width:1440px;
-}
-.border {
-    border:1px solid black;
-}
-@media (max-width:972px) {
-    .cilighting-top {
-        flex-direction:column;
-        align-items: flex-start;
-        gap:8rem;
-        width:100%;
-    }
-    .cilighting-top-right {
-        padding-left:0rem !important;
-        width:100%;
-    }
-    .cilighting-top-left {
-        width:100%;
-    }
-    .cilighting-second-row {
-        flex-direction:column;
-        padding:0;
-    }
-    .second-row-container {
-        width:100%;
-        padding:0rem;
-    }
-    .second-row-text {
-        text-align:left;
-        width:100%;
-        padding:0rem;
-        display:flex;
-        flex-direction:column;
-        align-items: flex-start;
-    }
-    .second-row-text p {
-        padding:0;
-        text-align:left;
-        align-self:left;
-    }
-    .video-titles p {
-        width:100% !important;
-    }
-    .cilighting-top-left {
-        padding:0;
-    }
-}
-@media (max-width:522px) {
-    .cilighting-wrapper {
-        padding-inline:2rem !important;
-    }
-    .video-wrapper {
-        padding-inline:2rem;
-    }
-    .big-ci-image {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:354px) {
-    .cilighting-titles h2 {
-        font-size:2.25rem;
-    }
-    .video-titles h2 {
-        font-size:2.25rem;
-    }
-    .cilighting-wrapper {
-        padding-inline:1rem !important;
-    }
-    .video-wrapper {
-        padding-inline:1rem;
-    }
-    .big-ci-image {
-        padding-inline:1rem;
-    }
-
-}
 
 /***** Footer *****/
 .footer {
@@ -1540,4 +1338,26 @@ div,
     color:var(--new-green);
 }
 
-
+/**********************/
+.goodbye-titles h2,
+.goodbye-titles a  {
+    transform:translateY(100%);
+    opacity:0;
+}
+.para {
+    font-weight:200;
+    width:50%;
+}
+@media (max-width:1000px) {
+    .para {
+        width:75%;
+    }
+}
+@media (max-width:800px) {
+    .para {
+        width:100%;
+    }
+}
+#portfolio {
+    border:2px solid red;
+}

@@ -445,6 +445,35 @@ ScrollTrigger.matchMedia({
 })
 
 
+gsap.to(".goodbye-titles h2", {
+    scrollTrigger: {
+        trigger: ".goodbye-titles h2",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+
+})
+gsap.to(".goodbye-titles a", {
+    scrollTrigger: {
+        trigger: ".goodbye-titles a",
+        scrub:true,
+        start:"top bottom",
+        end:"+=300",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+
+})
+
+
+
 
 
 
