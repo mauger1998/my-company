@@ -1361,3 +1361,23 @@ div,
 #portfolio {
     border:2px solid red;
 }
+.menu {
+    width:25px;
+}
+nav a,
+nav a li,
+nav p {
+    text-decoration:none;
+    color:black;
+    font-weight:400 !important;
+}
+.drop-down a {
+    color:white;
+    text-decoration:none;
+}
+.drop-down-web-design-burger p,
+.drop-down-pricing-burger p,
+.drop-down-our-work-burger p {
+    pointer-events:none;
+    color:black;
+}

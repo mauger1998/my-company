@@ -1743,3 +1743,29 @@ footer ul a li {
     transform:scaleY(0.1);
     opacity:0;
 }
+.drop-down-web-design-burger p,
+.drop-down-pricing-burger p,
+.drop-down-our-work-burger p {
+    pointer-events:none;
+    color:black;
+}
+nav a,
+nav a li,
+nav p {
+    text-decoration:none;
+    color:black;
+    font-weight:400 !important;
+}
+.drop-down a {
+    color:white;
+    text-decoration:none;
+}
+.drop-down-web-design-burger p,
+.drop-down-pricing-burger p,
+.drop-down-our-work-burger p {
+    pointer-events:none;
+    color:black;
+}
+.menu {
+    width:25px;
+}

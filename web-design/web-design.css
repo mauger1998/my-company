@@ -1553,3 +1553,27 @@ footer ul a li {
 .none button:hover {
     color:var(--new-green);
 }
+.logoWhite {
+    width:200px !important;
+    margin-bottom:2rem;
+}
+nav a,
+nav a li,
+nav p {
+    text-decoration:none;
+    color:black;
+    font-weight:400 !important;
+}
+.drop-down a {
+    color:white;
+    text-decoration:none;
+}
+.menu {
+    width:25px;
+}
+.drop-down-web-design-burger p,
+.drop-down-pricing-burger p,
+.drop-down-our-work-burger p {
+    pointer-events:none;
+    color:black;
+}
