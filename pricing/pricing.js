@@ -148,7 +148,7 @@ gsap.to(".container", {
         trigger: ".maintenance-img",
         scrub:true,
         start:"top top",
-        end:"+=1500",
+        end:"+=2000",
         
     },
     scaleX:1,
@@ -191,6 +191,32 @@ gsap.to("footer ul a li", {
         
     },
     x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to(".enter-scroll", {
+    scrollTrigger: {
+        trigger: ".enter-scroll",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger:0.3,
+   
+})
+gsap.to(".right-card", {
+    scrollTrigger: {
+        trigger: ".right-card",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    scaleY:1,
     opacity:1,
     stagger:0.1,
    

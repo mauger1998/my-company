@@ -2602,3 +2602,16 @@ footer ul a li {
  {
     pointer-events:all;
 }
+/*************************/
+.enter-package {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+.enter-package strong {
+    font-size:2rem;
+}
+.enter-package {
+    height:max-content;
+    overflow:hidden;
+}

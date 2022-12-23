@@ -1133,7 +1133,7 @@ strong {
 }
 .maintenance-titles-wrapper {
     display:flex;
-    padding-bottom:12rem;
+    padding-bottom:4rem;
     align-items: center;
     justify-content: center;
     gap:4rem;
@@ -1171,7 +1171,7 @@ strong {
         font-size:0.8rem;
     }
     .maintenance-titles-wrapper {
-        padding-bottom:6rem;
+        padding-bottom:0rem;
     }
 }
 @media (max-width:330px) {
@@ -1632,4 +1632,114 @@ footer ul a li {
     color:var(--new-green);
 }
 
+/*******************/
+.enterprise-section {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.enterprise-wrapper {
+    width:100%;
+    padding:6rem;
+    max-width:1440px;
+    display:flex;
+    align-items: center;
+    gap:4rem;
+}
+.enterprise-left {
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    align-items: flex-start;
+}
+.enterprise-left h2 {
+    font-size:2.5rem;
+}
+.enterprise-left p {
+    line-height:1.75;
+    font-weight:200;
+}
+.enterprise-right {
+    width:50%;
+}
+.right-card {
+    border:0.5px solid black;
+    border-top:3px solid var(--new-green);
+    padding:4rem;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:1rem;
+}
+.right-card p:nth-child(1) {
+    font-size:1.5rem;
+}
+.right-card p:nth-of-type(2) {
+    font-size:1rem;
+    font-weight:200;
 
+}
+.right-card strong {
+    font-size:3.5rem;
+}
+.right-card button {
+    padding:0.5rem 2rem;
+    font-weight:700;
+    background-color:var(--new-green);
+}
+.ticks-card {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:1rem;
+    justify-content: center;
+}
+@media (max-width:1098px) {
+    .enterprise-wrapper {
+        flex-direction:column;
+    }
+    .enterprise-left,
+    .enterprise-right {
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .enterprise-wrapper {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:522px) {
+    .right-card {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .enterprise-wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:488px) {
+    .ticks-card .tick p {
+        font-size:0.8rem !important;
+    }
+    .tick {
+        gap:0.5rem;
+    }
+}
+@media (max-width:350px) {
+    .enterprise-wrapper {
+        padding-inline:1rem;
+    }
+}
+/**************/
+.enter-scroll {
+    transform:translateY(100%);
+    opacity:0;
+}
+.right-card {
+    transform:scaleY(0.1);
+    opacity:0;
+}
