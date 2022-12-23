@@ -1463,6 +1463,7 @@ strong,
     transform:translateY(200%);
     opacity:0;
 }
+
 .icon {
     transform:translateY(100%);
     opacity:0;
@@ -1491,10 +1492,16 @@ strong,
     transform:translateX(-100%);
     opacity:0;
 }
+
+
+
 .card {
     transform:scaleY(0.1);
     opacity:0;
 }
+
+
+
 .goodbyeScroll {
     transform:translateY(10rem);
     opacity:0;
