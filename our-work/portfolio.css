@@ -1113,8 +1113,11 @@ footer ul {
     padding:4rem;
     padding-block:16rem;
     flex-direction:column;
-    gap:4rem;
+    gap:2rem;
     position:relative;
+}
+.goodbye-titles p {
+    font-weight:200;
 }
 .goodbye-titles h2 {
     font-size:3.5rem;
@@ -1130,6 +1133,7 @@ footer ul {
     position:absolute;
     right:-5%;
     z-index:-1;
+    width:75px;
 }
 .abs {
     position:absolute;
@@ -1340,9 +1344,11 @@ div,
 
 /**********************/
 .goodbye-titles h2,
-.goodbye-titles a  {
+.goodbye-titles a,
+.goodbye-titles p  {
     transform:translateY(100%);
     opacity:0;
+    text-align:center;
 }
 .para {
     font-weight:200;
@@ -1380,4 +1386,10 @@ nav p {
 .drop-down-our-work-burger p {
     pointer-events:none;
     color:black;
+}
+footer p,
+footer img,
+footer ul a li {
+    transform:translateX(100%);
+    opacity:0;
 }

@@ -450,7 +450,20 @@ gsap.to(".goodbye-titles h2", {
         trigger: ".goodbye-titles h2",
         scrub:true,
         start:"top bottom",
-        end:"+=300",
+        end:"+=400",
+        
+    },
+    y:1,
+    opacity:1,
+    stagger: 0.3,
+
+})
+gsap.to(".goodbye-titles p", {
+    scrollTrigger: {
+        trigger: ".goodbye-titles p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
         
     },
     y:1,
@@ -463,13 +476,52 @@ gsap.to(".goodbye-titles a", {
         trigger: ".goodbye-titles a",
         scrub:true,
         start:"top bottom",
-        end:"+=300",
+        end:"+=400",
         
     },
     y:1,
     opacity:1,
     stagger: 0.3,
 
+})
+gsap.to("footer p", {
+    scrollTrigger: {
+        trigger: "footer p",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer img", {
+    scrollTrigger: {
+        trigger: "footer img",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
+})
+gsap.to("footer ul a li", {
+    scrollTrigger: {
+        trigger: "footer ul a li",
+        scrub:true,
+        start:"top bottom",
+        end:"+=400",
+        
+    },
+    x:1,
+    opacity:1,
+    stagger:0.1,
+   
 })
 
 
