@@ -397,6 +397,11 @@ nav ul li {
     top:30%;
     left:10%;
 }
+@media (max-width:509px) {
+    .hollow {
+        top:20%;
+    }
+}
 .hollowed {
    right:20% !important;
     bottom:10%;
@@ -705,6 +710,9 @@ main {
     .flagpole-wrapper {
         display:grid;
         grid-template-columns:1fr 1fr;
+    }
+    .flag-card {
+        width:100%;
     }
     .flag-card:nth-child(3) {
         place-self:center;
@@ -1118,7 +1126,7 @@ footer > * {
 
 .pricing-section .big {
     left:6rem !important;
-    top:-2% !important;
+    top:2% !important;
     opacity:0.05;
     font-size:150px;
 }
@@ -1153,6 +1161,11 @@ footer > * {
         font-size:1rem !important;
     }
     
+}
+@media (max-width:978px) {
+    .pricing-section p {
+        width:100%;
+    }
 }
 @media (max-width:700px) {
     .pricing-section {
@@ -1326,6 +1339,11 @@ form input {
     width:100%;
     padding:0.5rem;
     border:1px solid black;
+}
+form input:focus,
+form textarea:focus {
+    border:2px solid var(--new-green);
+    outline:none;
 }
 fieldset {
     display:flex;
@@ -1920,7 +1938,7 @@ nav ul li {
 }
 .portfolio-section .big {
    left:6rem;
-   top:5% !important;
+   top:8% !important;
 }
 @media (max-width:1212px) {
     .portfolio-grid {
@@ -2003,9 +2021,13 @@ nav ul li {
 }
 .testimonial-wrapper .big {
     left:6rem !important;
-    top:-2% !important;
+    top:-2% ;
     font-size:200px;
     opacity:0.05;
+}
+.testimonial-wrapper .big {
+    top:6% !important;
+    font-size:150px;
 }
 .testimonial-titles {
     display:flex;
@@ -2024,6 +2046,8 @@ nav ul li {
 }
 .testimonial-titles p {
     font-weight:300;
+    line-height:1.75;
+    width:60%;
 }
 .testimonial-cards {
     display:flex;
@@ -2064,6 +2088,20 @@ nav ul li {
 }
 .profile p:nth-of-type(2){
     font-weight:300;
+}
+@media (max-width:1220px) {
+    .testimonial-titles p {
+        width:75%;
+    }
+    
+}
+@media (max-width:1143px) {
+    .testimonial-titles p {
+        width:100%;
+    }
+    .testimonial-wrapper .big {
+        top:4% !important;
+    }
 }
 
 @media (max-width:1113px) {
@@ -2368,10 +2406,7 @@ footer a {
 .big {
     top:10% !important;
 }
-.testimonial-wrapper .big {
-    top:8% !important;
-    font-size:150px;
-}
+
 
 p,
 a,

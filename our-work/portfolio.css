@@ -506,7 +506,7 @@ header a {
 }
 .hero-section p {
     font-size:1.1rem;
-    font-weight:300;
+    font-weight:200;
     transition:0.5s;
     transform:translateY(200%);
     transform-origin:bottom;
@@ -853,7 +853,9 @@ button:hover {
 
 
 
-
+.hero-section .cross {
+    left:30% !important;
+}
 
 
 .thumbnail-titles {
@@ -1133,7 +1135,7 @@ footer ul {
     position:absolute;
     right:-5%;
     z-index:-1;
-    width:75px;
+    width:50px;
 }
 .abs {
     position:absolute;

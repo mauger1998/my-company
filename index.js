@@ -688,12 +688,12 @@ ScrollTrigger.matchMedia({
                 trigger: ".priceCard",
                 scrub:true,
                 start:"top bottom",
-                end:"+=300",
+                end:"+=200",
                 
             },
             scaleY:1,
             opacity:1,
-            stagger: 0.3,
+            stagger: 0.2,
            
         })
     }
