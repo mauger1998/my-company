@@ -121,6 +121,7 @@ gsap.to(".portfolioTitleScroll", {
 
 /*************Thumbnail Scroll Animations */
 
+
 ScrollTrigger.matchMedia({
     "(max-width:1094px)": function() {
         gsap.to(".item-first img", {
@@ -129,77 +130,11 @@ ScrollTrigger.matchMedia({
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
-            x:0,
+            x:1,
             opacity:1,
-            stagger: 0.3,
-           
-        })
-        gsap.to(".item-second img", {
-            scrollTrigger: {
-                trigger: ".item-second img",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            x:0,
-            opacity:1,
-            stagger: 0.3,
-           
-        })
-        gsap.to(".item-third img", {
-            scrollTrigger: {
-                trigger: ".item-third img",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            x:0,
-            opacity:1,
-            stagger: 0.3,
-           
-        })
-        gsap.to(".item-fourth img", {
-            scrollTrigger: {
-                trigger: ".item-fourth img",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            x:0,
-            opacity:1,
-            stagger: 0.3,
-           
-        })
-        gsap.to(".item-fifth img", {
-            scrollTrigger: {
-                trigger: ".item-fifth img",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            x:0,
-            opacity:1,
-            stagger: 0.3,
-           
-        })
-        gsap.to(".item-sixth img", {
-            scrollTrigger: {
-                trigger: ".item-sixth img",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            x:0,
-            opacity:1,
-            stagger: 0.3,
-           
+            stagger:0.3,
+            
         })
         gsap.to(".item-first .stagger", {
             scrollTrigger: {
@@ -207,12 +142,35 @@ ScrollTrigger.matchMedia({
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-           
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-first .line", {
+            scrollTrigger: {
+                trigger: ".item-first .line",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            scaleX:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-second img", {
+            scrollTrigger: {
+                trigger: ".item-second img",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            x:1,
+            opacity:1,
+            stagger:0.3,
+            
         })
         gsap.to(".item-second .stagger", {
             scrollTrigger: {
@@ -220,12 +178,35 @@ ScrollTrigger.matchMedia({
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-           
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-second .line", {
+            scrollTrigger: {
+                trigger: ".item-second .line",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            scaleX:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-third img", {
+            scrollTrigger: {
+                trigger: ".item-third img",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            x:1,
+            opacity:1,
+            stagger:0.3,
+            
         })
         gsap.to(".item-third .stagger", {
             scrollTrigger: {
@@ -233,131 +214,96 @@ ScrollTrigger.matchMedia({
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-           
+            stagger:0.3,
+            
         })
-        gsap.to(".item-fourth .staggered", {
+        gsap.to(".item-third .line", {
             scrollTrigger: {
-                trigger: ".item-fourth .staggered",
+                trigger: ".item-third .line",
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
+            },
+            scaleX:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-fourth img", {
+            scrollTrigger: {
+                trigger: ".item-fourth img",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            x:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-fourth .stagger", {
+            scrollTrigger: {
+                trigger: ".item-fourth .stagger",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-        
+            stagger:0.3,
+            
         })
-        gsap.to(".item-fifth .staggered", {
+        gsap.to(".item-fourth .line", {
             scrollTrigger: {
-                trigger: ".item-fifth .staggered",
+                trigger: ".item-fourth .line",
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
+            },
+            scaleX:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-fifth img", {
+            scrollTrigger: {
+                trigger: ".item-fifth img",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            x:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".item-fifth .stagger", {
+            scrollTrigger: {
+                trigger: ".item-fifth .stagger",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-        
+            stagger:0.3,
+            
         })
-        gsap.to(".item-sixth .staggered", {
+        gsap.to(".item-fifth .line", {
             scrollTrigger: {
-                trigger: ".item-sixth .staggered",
+                trigger: ".item-fifth .line",
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
-            y:1,
+            scaleX:1,
             opacity:1,
-            stagger: 0.3,
-        
+            stagger:0.3,
+            
         })
-        gsap.to(".item-first .lined", {
-            scrollTrigger: {
-                trigger: ".item-first .lined",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
-        })
-        gsap.to(".item-second .lined", {
-            scrollTrigger: {
-                trigger: ".item-second .lined",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
-        })
-        gsap.to(".item-third .lined", {
-            scrollTrigger: {
-                trigger: ".item-third .lined",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
-        })
-        gsap.to(".item-fourth .line-one", {
-            scrollTrigger: {
-                trigger: ".item-fourth .line-one",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
-        })
-        gsap.to(".item-fifth .line-one", {
-            scrollTrigger: {
-                trigger: ".item-fifth .line-one",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
-        })
-        gsap.to(".item-sixth .line-one", {
-            scrollTrigger: {
-                trigger: ".item-sixth .line-one",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
-        })
-        
     },
     "(min-width:1095px)": function() {
         gsap.to(".grid-item img", {
@@ -366,84 +312,78 @@ ScrollTrigger.matchMedia({
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
-            x:0,
+            x:1,
             opacity:1,
-            stagger: 0.3,
-           
+            stagger:0.3,
+            
         })
-        gsap.to(".img", {
+        gsap.to(".grid-item .stagger", {
             scrollTrigger: {
-                trigger: ".img",
+                trigger: ".grid-item .stagger",
                 scrub:true,
                 start:"top bottom",
-                end:"+=300",
-                
-            },
-            x:0,
-            opacity:1,
-            stagger: 1,
-           
-        })
-
-        gsap.to(".staggered", {
-            scrollTrigger: {
-                trigger: ".staggered",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
+                end:"+=400",
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-        
+            stagger:0.3,
+            
         })
-        gsap.to(".stagger", {
+        gsap.to(".grid-item .line", {
             scrollTrigger: {
-                trigger: ".stagger",
+                trigger: ".grid-item .line",
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
+            },
+            scaleX:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        
+        gsap.to(".grid-item-one img", {
+            scrollTrigger: {
+                trigger: ".grid-item-one img",
+                scrub:true,
+                start:"top bottom",
+                end:"+=300",
+            },
+            x:1,
+            opacity:1,
+            stagger:0.3,
+            
+        })
+        gsap.to(".grid-item-one .stagger", {
+            scrollTrigger: {
+                trigger: ".grid-item-one .stagger",
+                scrub:true,
+                start:"top bottom",
+                end:"+=400",
             },
             y:1,
             opacity:1,
-            stagger: 0.3,
-        
+            stagger:0.3,
+            
         })
-
-        gsap.to(".lined", {
+        gsap.to(".grid-item-one .line", {
             scrollTrigger: {
-                trigger: ".lined",
+                trigger: ".grid-item-one .line",
                 scrub:true,
                 start:"top bottom",
                 end:"+=300",
-                
             },
-            scale:1,
+            scaleX:1,
             opacity:1,
-            stagger: 0.3,
-        
-        })
-        gsap.to(".line-one", {
-            scrollTrigger: {
-                trigger: ".line-one",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-                
-            },
-            scale:1,
-            opacity:1,
-            stagger: 0.3,
-        
+            stagger:0.3,
+            
         })
         
     }
 })
 
+/*********************** */
 
 gsap.to(".goodbye-titles h2", {
     scrollTrigger: {

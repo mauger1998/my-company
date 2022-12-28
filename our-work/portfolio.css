@@ -550,7 +550,7 @@ span {
     align-items: center;
     gap:2rem;
     position:relative;
-    padding-top:14rem;
+    padding-top:12rem;
     
 
 
@@ -738,11 +738,7 @@ main {
         font-size:1.8rem;
     }
 }
-/* @media (max-width:320px) {
-    header .logo-container img {
 
-    }
-} */
 @media (max-width:316px) {
     .logo-container img {
         width:150px;
@@ -1283,25 +1279,29 @@ div,
     transform:translateX(50%);
     opacity:0;
 }
-.img {
-    transform:translateX(-20rem);
-    opacity:0;
-    transition:0.5s;
-}
-.stagger {
-    transform:translateY(4rem);
+.grid-item .stagger {
+    transform:translateY(100%);
     opacity:0;
 }
-.staggered {
-    transform:translateY(4rem);
-    opacity:0;
-}
-.lined,
-.line-one {
+.grid-item .line {
     transform:scaleX(0);
+    opacity:0;
     transform-origin:left;
+}
+.grid-item-one img {
+    transform:translateX(50%);
     opacity:0;
 }
+.grid-item-one .stagger {
+    transform:translateY(100%);
+    opacity:0;
+}
+.grid-item-one .line {
+    transform:scaleX(0);
+    opacity:0;
+    transform-origin:left;
+}
+
 /******************/
 .point {
     text-decoration:none;
