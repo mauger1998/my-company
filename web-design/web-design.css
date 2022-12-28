@@ -381,6 +381,7 @@ main {
     animation:slide-up 1s ease-out forwards;
     animation-delay:1s;
     width:50%;
+    line-height:1.5;
 }
 .hero-section button {
     padding:0.75rem 2rem;
@@ -418,6 +419,9 @@ main {
     bottom:20%;
     right:20%;
 
+}
+.assets-wrapper .hollowed {
+    right:2%;
 }
 .crossed {
     width:15px;
@@ -1174,7 +1178,9 @@ header {
     width:75px;
 
 }
-
+.together {
+    position:relative;
+}
 .absone {
     position:absolute;
     top:-175%;
@@ -1182,8 +1188,9 @@ header {
 }
 .abs {
     z-index:-1;
-    top:-40%;
-    right:-2rem;
+    width:50px;
+    right:0;
+    top:0;
 }
 .abstwo,
 .absthree,
@@ -1209,11 +1216,7 @@ header {
     .goodbye-wrapper {
         padding-inline:4rem;
     }
-    .abs {
-        width:50px;
-        top:-10%;
-        right:-1.5rem;
-    }
+   
     .absone {
         width:75px;
         top:-100%;
@@ -1251,9 +1254,7 @@ header {
     .goodbye-wrapper button {
         padding:0.5rem 1rem;
     }
-    .abs {
-        width:30px;
-    }
+    
 }
 @media (max-width:299px) {
     .goodbye-wrapper h2 {
