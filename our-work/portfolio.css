@@ -120,11 +120,10 @@ nav ul li {
     color:white;
     position:absolute;
     right:10%;
-    bottom:-600%;
+    bottom:-700%;
     transform:translateY(-100%);
     opacity:0;
     transition:0.5s;
-    /* height:35rem; */
     padding:2rem;
     padding-block:4rem;
     display:none;
@@ -490,13 +489,34 @@ header a {
     text-align:center;
     position:relative;
     overflow:visible;
-    transition:0.5s;
-    transform:translateY(100%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
+    
 
 
+}
+@media (min-width:1024px) {
+    .hero-section h1 {
+        transition:0.5s;
+        transform:translateY(100%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+    }
+    .hero-section p {
+        transition:0.5s;
+        transform:translateY(200%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+        animation-delay:1s;
+    }
+    .hero-section button {
+        transition:0.5s;
+        transform:translateY(200%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+        animation-delay:1.5s;
+    }
 }
 @keyframes slide-up {
     to {
@@ -507,12 +527,7 @@ header a {
 .hero-section p {
     font-size:1.1rem;
     font-weight:200;
-    transition:0.5s;
-    transform:translateY(200%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
-    animation-delay:1s;
+    
     width:50%;
 }
 .hero-buttons button{
@@ -521,12 +536,7 @@ header a {
     background-color:var(--new-green);
     color:black;
     border:2px solid var(--new-green);
-    transition:0.5s;
-    transform:translateY(200%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
-    animation-delay:1.5s;
+    
 
 }
 span {

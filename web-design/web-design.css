@@ -244,7 +244,7 @@ nav ul {
     color:white;
     position:absolute;
     right:13%;
-    bottom:-450%;
+    bottom:-550%;
     padding:6rem;
     padding-left:2rem;
     transition:0.5s;
@@ -358,12 +358,33 @@ main {
 .hero-section h1 {
     font-size:3.5rem;
     text-align:center;
-    transition:0.5s;
-    transform:translateY(100%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
+    
 
+}
+@media (min-width:1024px) {
+    .hero-section h1 {
+        transition:0.5s;
+        transform:translateY(100%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+    }
+    .hero-section p {
+        transition:0.5s;
+        transform:translateY(200%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+        animation-delay:1s;
+    }
+    .hero-section button {
+        transition:0.5s;
+        transform:translateY(200%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+        animation-delay:1.5s;
+    }
 }
 @keyframes slide-up {
     to {
@@ -375,12 +396,7 @@ main {
     font-size:1.1rem;
     font-weight:200;
     text-align:center;
-    transition:0.5s;
-    transform:translateY(200%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
-    animation-delay:1s;
+    
     width:50%;
     line-height:1.5;
 }
@@ -391,12 +407,7 @@ main {
     background-color:var(--new-green);
     font-size:1rem;
     cursor:pointer;
-    transition:0.5s;
-    transform:translateY(200%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
-    animation-delay:1.5s;
+    
 }
 .absolute {
     position:absolute;
