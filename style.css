@@ -636,12 +636,17 @@ main {
 }
 .p-one {
     animation-delay:3.25s;
+    font-weight:300;
 }
 .p-two {
     animation-delay:3.5s;
+    font-weight:300;
+
 }
 .p-three {
     animation-delay:3.75s;
+    font-weight:300;
+
 }
 
 
@@ -1392,6 +1397,7 @@ fieldset {
 input,
 textarea {
     font-family:"roboto", serif !important;
+    padding:0.25rem;
 }
 
 

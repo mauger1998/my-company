@@ -550,7 +550,7 @@ span {
     align-items: center;
     gap:2rem;
     position:relative;
-    padding-top:12rem;
+    padding-top:14rem;
     
 
 
@@ -839,10 +839,25 @@ button:hover {
     left:5% !important;
     top:0;
 
+
 }
 .portfolio-wrapper .hollo {
     top:50%;
     left:30%;
+
+    
+
+}
+.portfolio-wrapper .hollow {
+    right:5% !important;
+
+}
+.portfolio-wrapper .hollowed{
+    left:5% !important;
+
+}
+.portfolio-wrapper .other{
+    left:80% !important;
 
 }
 
