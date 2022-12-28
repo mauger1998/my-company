@@ -32,6 +32,8 @@ header {
     align-items: center;
     justify-content: center;
     position:fixed;
+    background-color:rgba(255, 255, 255, 0.9) !important;
+
 }
 .header-wrapper {
     width:100%;
@@ -41,7 +43,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position:relative;
-    background-color:rgba(255, 255, 255, 0.9) !important;
 
 }
 .logo-container img {
@@ -941,11 +942,7 @@ header {
 .card-main-titles button:hover {
     color:var(--new-green);
 }
-.card img {
-    width:100%;
-    object-fit:cover;
-    height:100%;
-}
+
 .card {
     display:flex;
     align-items: center;
@@ -969,7 +966,7 @@ header {
     flex-direction:column;
     align-items: flex-start;
     gap:1rem;
-    width:60%;
+    width:100%;
     padding-block:2rem;
 }
 .card-left .card-title {
@@ -988,9 +985,7 @@ header {
     font-size:0.8rem;
     line-height:1.75;
 }
-.card-right {
-    height:100%;
-}
+
 .card-left button {
     padding:0.5rem 1rem;
     font-weight:bold;
