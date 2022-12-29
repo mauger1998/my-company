@@ -1018,7 +1018,8 @@ main {
 .pricing-titles p {
     width:75%;
     line-height:2;
-    font-weight:300;
+    font-weight:300 !important;
+    color:var(--light-text);
 }
 .pricing-section h3 {
     font-size:2.5rem;
@@ -2108,6 +2109,7 @@ nav ul li {
     font-weight:300;
     line-height:1.75;
     width:60%;
+    color:var(--light-text)
 }
 .testimonial-cards {
     display:flex;
@@ -2651,6 +2653,7 @@ a {
     font-weight:300;
     width:100%;
     line-height:1.75;
+    color:var(--light-text);
 }
 .enterprise-wrapper button {
     background-color:var(--new-green);
