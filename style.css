@@ -3,6 +3,7 @@
     --light-purple:#D8C8FF;
     --blue:#0A2640;
     --new-green:#65E4A3;
+    --light-text:rgb(108, 107, 107);
 }
 *,
 *::before,
@@ -275,9 +276,14 @@ nav ul li {
 }
 /*********************/
 
-.hero-section h1,
-.hero-section p {
+.hero-section h1
+{
     font-weight:700;
+}
+.hero-section p {
+    color:var(--light-text);
+    font-weight:300 !important;
+
 }
 
 @media (min-width:1024px) {
@@ -298,11 +304,11 @@ nav ul li {
     }
     .hero-buttons button {
         transition:0.5s;
-    transform:translateY(200%);
-    transform-origin:bottom;
-    opacity:0;
-    animation:slide-up 1s ease-out forwards;
-    animation-delay:1.5s;
+        transform:translateY(200%);
+        transform-origin:bottom;
+        opacity:0;
+        animation:slide-up 1s ease-out forwards;
+        animation-delay:1.5s;
     }
 }
 @keyframes slide-up {
@@ -717,6 +723,7 @@ main {
 }
 .flag-card p {
     line-height:1.75;
+    color:rgb(108, 107, 107);
 }
 
 
@@ -854,8 +861,7 @@ main {
 .services-left img {
     width:max(100%, 35rem);
     object-fit:cover;
-    transform:translateX(-100%);
-    opacity:0;
+    
 }
 .services-left {
     width:50%;
@@ -880,23 +886,20 @@ main {
     gap:1.5rem;
 }
 .services-titles p {
-    font-weight:200;
-    transform:translateY(100%);
-    opacity:0;
+    font-weight:300;
     line-height:1.75;
+    color:var(--light-text);
 
 }
 .list {
     display:flex;
     align-items: center;
     gap:1rem;
-    transform:translateY(100%);
-    opacity:0;
+   
 }
 .services-right h2 {
     font-size:2.5rem;
-    transform:translateY(100%);
-    opacity:0;
+    
 }
 .list p {
     font-size:1.1rem;
@@ -905,8 +908,7 @@ main {
 .services-wrapper button {
     padding:.5rem 1rem;
     background-color:var(--new-green);
-    transform:translateY(100%);
-    opacity:0;
+    
 }
 .services-wrapper .cross {
     right:10%;
@@ -919,6 +921,28 @@ main {
 .services-wrapper .hollow {
     right:5%;
     top:0;
+}
+@media (min-width:1024px) {
+    .services-wrapper button {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .services-right h2 {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .list {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .services-titles p {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .services-left img {
+        transform:translateX(-100%);
+        opacity:0;
+    }
 }
 
 @media (max-width:1278px) {
@@ -1789,6 +1813,7 @@ nav ul li {
 }
 .grid-item img {
  width:100%;
+ border:3px solid black;
 }
 .grid-item > p {
     font-weight:200;
@@ -1824,7 +1849,7 @@ nav ul li {
 }
 .overlay p {
     font-size:2.5rem;
-    font-weight:700;
+    font-weight:700 !important;
 }
 .overlay button {
     border:2px solid var(--new-green);
@@ -1923,13 +1948,14 @@ nav ul li {
     font-size:2.5rem;
 }
 .portfolio-titles p {
-    font-weight:200;
+    font-weight:300;
+    color:var(--light-text)
+
 }
 .portfolio-titles p:nth-of-type(2) {
     margin-top:2rem;
     width:75%;
     line-height:1.75;
-    font-weight:200;
 }
 .portfolio-section {
     overflow:visible !important;
@@ -2022,6 +2048,13 @@ nav ul li {
     .portfolio-section .big {
         left:1rem !important;
     }
+}
+.grid-item p {
+    font-weight:300;
+    
+}
+.grid-item img {
+    aspect-ratio: 3/2;
 }
 /***************************/
 
@@ -2491,79 +2524,89 @@ a {
 
 }
 /*******************/
-.scrollPortfolio {
-    transform:translateX(-100%)
-}
-.ourWorkScroll {
-    transform:translateY(100%);
-    opacity:0;
-}
-.first-item {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.grid-item-one {
-    transform:translateX(100%);
-    opacity:0;
-}
-.scrollTestimonial {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.titleScroll {
-    transform:translateY(100%);
-    opacity:0;
-}
-.testimonial-card {
-    transform:translateX(100%);
-    opacity:0;
-}
-.stars img {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.testimonial-card > p {
-    transform:translateY(100%);
-    opacity:0;
-}
-.testimonial-card-bottom > img {
-    transform:scaleY(0);
-    opacity:0;
-}
-.profile p {
-    transform:scaleY(0);
-    transform-origin:bottom;
-    opacity:0;
-}
-.scrollPrice {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.priceTitle {
-    transform:translateY(100%);
-    opacity:0;
-}
-.priceCard {
-    transform:scaleY(0.1);
-    opacity:0;
+/*******************/
+/*******************/
+/*******************/
+@media (min-width:1024px) {
+    .scrollPortfolio {
+        transform:translateX(-100%)
+    }
+    .ourWorkScroll {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .first-item {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .grid-item-one {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .scrollTestimonial {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .titleScroll {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .testimonial-card {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .stars img {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .testimonial-card > p {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .testimonial-card-bottom > img {
+        transform:scaleY(0);
+        opacity:0;
+    }
+    .profile p {
+        transform:scaleY(0);
+        transform-origin:bottom;
+        opacity:0;
+    }
+    .scrollPrice {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .priceTitle {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .priceCard {
+        transform:scaleY(0.1);
+        opacity:0;
+    }
+    
+    .contact {
+        transform:scaleX(1%);
+        opacity:0;
+        transform-origin:left;
+    }
+    form {
+        transform:scaleY(1%);
+        transform-origin:bottom;
+        opacity:0;
+    }
+    footer p,
+    footer img,
+    footer ul a li {
+        transform:translateX(100%);
+        opacity:0;
+    }
 }
 
-.contact {
-    transform:scaleX(1%);
-    opacity:0;
-    transform-origin:left;
-}
-form {
-    transform:scaleY(1%);
-    transform-origin:bottom;
-    opacity:0;
-}
-footer p,
-footer img,
-footer ul a li {
-    transform:translateX(100%);
-    opacity:0;
-}
+
+/***************************/
+/***************************/
+/***************************/
 /***************************/
 .enterprise-section {
     width:100%;
