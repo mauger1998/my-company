@@ -3,6 +3,7 @@
     --light-purple:#D8C8FF;
     --blue:#0A2640;
     --new-green:#65E4A3;
+    --light-text:rgb(108, 107, 107);
 }
 *,
 *::before,
@@ -117,6 +118,7 @@ nav ul li {
     display:none;
     width:20rem;
     overflow-y: hidden;
+    pointer-events:none;
 }
 .logoWhite {
     margin-bottom:4rem;
@@ -232,6 +234,8 @@ nav ul li {
     transform:translateY(0);
     opacity:1;
     transition:0.5s;
+    pointer-events:all;
+
 }
 
 .header-add {
@@ -544,7 +548,7 @@ main {
     font-size:1.1rem;
     font-weight:300;
     text-align:center;
-    
+    color:var(--light-text);
     width:50%;
     font-weight:300 ;
 }
@@ -1007,7 +1011,8 @@ footer > * {
     font-size:2.5rem;
 }
 .updates-titles p {
-    font-weight:200;
+    font-weight:300;
+    color:var(--light-text);
 }
 .updates-wrapper p {
     font-weight:300;
@@ -1115,7 +1120,11 @@ strong {
 .maintenance-titles p {
     font-weight:300;
     line-height:1.75;
+    color:var(--light-text);
     width:100%;
+}
+.maintenance-titles strong {
+    color:black;
 }
 .maintenance-titles {
     display:flex;
@@ -1534,59 +1543,63 @@ div,
 
 
 
-.priceCard {
-    transition:0.5s;
-    animation: grow-in 1s ease forwards;
-    transform:scaleY(0);
-    opacity:0;
-    animation-delay:1s;
-}
-.priceCard:nth-child(2) {
-    transition:0.5s;
-    animation: grow-in 1s ease forwards;
-    transform:scaleY(0);
-    opacity:0;
-    animation-delay:1.5s;
-}
-.priceCard:nth-child(3) {
-    transition:0.5s;
-    animation: grow-in 1s ease forwards;
-    transform:scaleY(0);
-    opacity:0;
-    animation-delay:2s;
 
-}
 @keyframes grow-in {
     to {
         transform:scaleY(1);
         opacity:1;
     }
 }
-.updateScroll {
-    transform:translateY(15rem);
-    opacity:0;
-}
-.updates-img {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.maintenanceScroll {
-    transform:translateY(20rem);
-    opacity:0;
-}
-.maintenance-img {
-    transform:translateX(100%);
-    opacity:0;
-}
-.container {
-    transform:scaleX(0);
-    opacity:0;
-}
-footer p,
-footer img,
-footer ul a li {
-    transform:translateX(100%);
-    opacity:0;
+
+@media (min-width:1024px) {
+    .updateScroll {
+        transform:translateY(15rem);
+        opacity:0;
+    }
+    .updates-img {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .maintenanceScroll {
+        transform:translateY(20rem);
+        opacity:0;
+    }
+    .maintenance-img {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .container {
+        transform:scaleX(0);
+        opacity:0;
+    }
+    footer p,
+    footer img,
+    footer ul a li {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .priceCard {
+        transition:0.5s;
+        animation: grow-in 1s ease forwards;
+        transform:scaleY(0);
+        opacity:0;
+        animation-delay:1s;
+    }
+    .priceCard:nth-child(2) {
+        transition:0.5s;
+        animation: grow-in 1s ease forwards;
+        transform:scaleY(0);
+        opacity:0;
+        animation-delay:1.5s;
+    }
+    .priceCard:nth-child(3) {
+        transition:0.5s;
+        animation: grow-in 1s ease forwards;
+        transform:scaleY(0);
+        opacity:0;
+        animation-delay:2s;
+    
+    }
 }
 
 @media (max-width:700px) {
@@ -1667,7 +1680,8 @@ footer ul a li {
 }
 .enterprise-left p {
     line-height:1.75;
-    font-weight:200;
+    font-weight:300;
+    color:var(--light-text);
 }
 .enterprise-right {
     width:50%;
@@ -1776,4 +1790,33 @@ nav p {
 }
 .menu {
     width:25px;
+}
+
+
+
+.contactButtonDrop {
+    max-width:8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding:0.5rem 1rem !important;
+    
+   
+}
+.contactButtonDrop li {
+    color:black !important;
+    font-weight:bold;
+}
+@media (max-width:371px) {
+    .drop-down {
+        width:auto ;
+    }
+}
+@media (max-width:299px) {
+    .drop-down {
+        width:auto;
+        padding-inline:1.5rem;
+    }
+   
 }

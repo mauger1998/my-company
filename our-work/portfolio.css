@@ -130,6 +130,7 @@ nav ul li {
     display:none;
     width:20rem;
     overflow-y: hidden;
+    pointer-events:none;
 }
 .logoWhite {
     margin-bottom:4rem;
@@ -236,7 +237,8 @@ nav ul li {
     border:2px solid var(--new-green);
     background-color:var(--new-green);
     display:flex;
-    align-items: center;gap:0.5rem;
+    align-items: center;
+    gap:0.5rem;
 }
 .logoWhite {
     width:200px;
@@ -245,6 +247,7 @@ nav ul li {
     transform:translateY(0);
     opacity:1;
     transition:0.5s;
+    pointer-events:all;
 }
 
 .header-add {
@@ -1434,4 +1437,34 @@ nav p {
 
 a {
     color:black;
+}
+
+
+
+
+.contactButtonDrop {
+    max-width:8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding:0.5rem 1rem !important;
+    
+   
+}
+.contactButtonDrop li {
+    color:black !important;
+    font-weight:bold;
+}
+@media (max-width:371px) {
+    .drop-down {
+        width:auto ;
+    }
+}
+@media (max-width:299px) {
+    .drop-down {
+        width:auto;
+        padding-inline:1.5rem;
+    }
+   
 }

@@ -253,6 +253,7 @@ nav ul {
     opacity:1;
     transform:translateY(-120%);
     visibility: hidden;
+    pointer-events:none;
     
 }
 .drop-down ul {
@@ -280,6 +281,7 @@ nav ul {
     transition:0.5s;
     display:block;
     visibility:visible;
+    pointer-events:all;
 }
 .menu {
     cursor:pointer;
@@ -1628,4 +1630,30 @@ nav p {
 .drop-down-our-work-burger p {
     pointer-events:none;
     color:black;
+}
+
+
+
+.contactButtonDrop {
+    max-width:8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding:0.5rem 1rem !important;
+    
+   
+}
+.contactButtonDrop li {
+    color:black !important;
+}
+@media (max-width:371px) {
+    .drop-down {
+       padding-inline:1.75rem;
+    }
+}
+@media (max-width:371px) {
+    .drop-down {
+       padding-inline:1.5rem;
+    }
 }
