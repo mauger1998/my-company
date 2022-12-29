@@ -945,6 +945,11 @@ header {
     line-height:1.75;
     font-weight:300;
 }
+@media (max-width:1103px) {
+    .card-main-titles p {
+        width:75%;
+    }
+}
 .card-main-titles-title {
     display:flex;
     flex-direction: column;

@@ -223,6 +223,40 @@ gsap.to(".right-card", {
 })
 
 
+const pricingTiersClick = document.querySelector(".pricingTiersClick")
+const maintenanceClick = document.querySelector(".maintenanceClick")
+const dropPricingTiersClick = document.querySelector(".dropPricingClick")
+const dropMaintenanceClick = document.querySelector(".dropMaintenanceClick")
+
+pricingTiersClick.addEventListener("click", (e) => {
+    pricingMenu.classList.remove("add-to-drop")
+    pricingMenuP.forEach(p => {
+        p.classList.remove("cursor")
+    })
+   
+})
+maintenanceClick.addEventListener("click", (e) => {
+    pricingMenu.classList.remove("add-to-drop")
+    pricingMenuP.forEach(p => {
+        p.classList.remove("cursor")
+    })
+   
+})
+
+
+
+dropPricingTiersClick.addEventListener("click", (e) => {
+    burgepricingMenu.classList.remove("drop-down-burger-add")
+    dropDown.classList.remove("toggle")
+   
+})
+dropMaintenanceClick.addEventListener("click", (e) => {
+    burgepricingMenu.classList.remove("drop-down-burger-add")
+    dropDown.classList.remove("toggle")
+   
+})
+
+
 
 
 

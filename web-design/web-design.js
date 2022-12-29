@@ -34,6 +34,7 @@ webDesignLink.addEventListener("click", (e) => {
     webDesignMenu.classList.toggle("add-to-drop")
     pointerLinkDesign.classList.toggle("addme")
 
+    
     webDesignDropDownLinks.forEach(p => {
         p.classList.toggle("cursor")
     })
@@ -272,6 +273,60 @@ gsap.to("footer ul a li", {
     x:1,
     opacity:1,
     stagger:0.1,
+   
+})
+
+
+const ourProcessLink = document.querySelector(".ourProcessClick")
+const assetsLink = document.querySelector(".assetsClick")
+const servicesClick = document.querySelector(".servicesClick")
+
+const dropProcessClick = document.querySelector(".dropProcessClick")
+const dropAssetsClick = document.querySelector(".dropAssetsClick")
+const dropServicesClick = document.querySelector(".dropServicesClick")
+
+
+
+dropProcessClick.addEventListener("click", (e) => {
+    dropDownWebDesignMenu.classList.remove("addToOurWork")
+    dropDown.classList.remove("addToDrop")
+    webDesignDropDownLinks.forEach(p => {
+        p.classList.remove("cursor")
+    })
+    
+   
+})
+dropAssetsClick.addEventListener("click", (e) => {
+    dropDownWebDesignMenu.classList.remove("addToOurWork")
+    dropDown.classList.remove("addToDrop")
+    webDesignDropDownLinks.forEach(p => {
+        p.classList.remove("cursor")
+    })
+    
+   
+})
+dropServicesClick.addEventListener("click", (e) => {
+    dropDownWebDesignMenu.classList.remove("addToOurWork")
+    dropDown.classList.remove("addToDrop")
+    webDesignDropDownLinks.forEach(p => {
+        p.classList.remove("cursor")
+    })
+    
+   
+})
+
+
+
+ourProcessLink.addEventListener("click", (e) => {
+    webDesignMenu.classList.remove("add-to-drop")
+   
+})
+assetsLink.addEventListener("click", (e) => {
+    webDesignMenu.classList.remove("add-to-drop")
+   
+})
+servicesClick.addEventListener("click", (e) => {
+    webDesignMenu.classList.remove("add-to-drop")
    
 })
 
