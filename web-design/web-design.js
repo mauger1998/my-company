@@ -97,8 +97,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 
-ScrollTrigger.matchMedia({
-    "(max-width:1001px)": function() {
+
+    
         gsap.to(".processScroll", {
             scrollTrigger: {
                 trigger: ".processScroll",
@@ -110,21 +110,7 @@ ScrollTrigger.matchMedia({
             opacity:1,
             stagger: 0.3,
         })
-    },
-    "(min-width:1002px)": function() {
-        gsap.to(".processScroll", {
-            scrollTrigger: {
-                trigger: ".processScroll",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-            },
-            y:0,
-            opacity:1,
-            stagger: 0.3,
-        })
-    }
-})
+ 
 
 
 gsap.to(".processScroll", {
@@ -218,54 +204,9 @@ gsap.to(".cardTitleScroll", {
 /*******Cards******/
 
 
-ScrollTrigger.matchMedia({
-    "(max-width:1149px)": function() {
-        gsap.to(".first-card", {
-            scrollTrigger: {
-                trigger: ".first-card",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-            },
-            scaleY:1,
-            opacity:1,
-            stagger: 0.5,
-        })
-        gsap.to(".second-card", {
-            scrollTrigger: {
-                trigger: ".second-card",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-            },
-            scaleY:1,
-            opacity:1,
-            stagger: 0.5,
-        })
-        gsap.to(".third-card", {
-            scrollTrigger: {
-                trigger: ".third-card",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-            },
-            scaleY:1,
-            opacity:1,
-            stagger: 0.5,
-        })
-        gsap.to(".fourth-card", {
-            scrollTrigger: {
-                trigger: ".fourth-card",
-                scrub:true,
-                start:"top bottom",
-                end:"+=300",
-            },
-            scaleY:1,
-            opacity:1,
-            stagger: 0.5,
-        })
-    },
-    "(min-width:1150px)": function() {
+
+        
+    
         gsap.to(".card", {
             scrollTrigger: {
                 trigger: ".card",
@@ -277,8 +218,6 @@ ScrollTrigger.matchMedia({
             opacity:1,
             stagger: 0.5,
         })
-    }
-})
 
 
 

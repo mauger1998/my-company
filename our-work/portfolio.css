@@ -818,6 +818,10 @@ button:hover {
     align-items: flex-start;
     position:relative;
 }
+.para {
+    font-weight:300 !important;
+    color:var(--light-text);
+}
 
 @media (max-width:700px) {
     .portfolio-wrapper {

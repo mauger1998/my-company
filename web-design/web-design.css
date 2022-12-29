@@ -3,7 +3,9 @@
     --light-purple:#D8C8FF;
     --blue:#0A2640;
     --new-green:#65E4A3;
-    --card-blue:#374D67
+    --card-blue:#374D67;
+    --light-text:rgb(108, 107, 107);
+
 }
 *,
 *::before,
@@ -394,9 +396,9 @@ main {
 }
 .hero-section p {
     font-size:1.1rem;
-    font-weight:200;
+    font-weight:300;
     text-align:center;
-    
+    color:var(--light-text);
     width:50%;
     line-height:1.5;
 }
@@ -574,7 +576,7 @@ header {
     position:relative;
 }
 .hollo {
-    top:305 !important;
+    top:30% !important;
     right:0 !important;
 }
 .timeline-wrapper .cross {
@@ -623,6 +625,7 @@ header {
 }
 .left-timeline p {
     font-weight:300;
+    color:var(--light-text);
 }
 .right-timeline img {
     width:40px;
@@ -648,6 +651,7 @@ header {
     line-height:1.75;
     font-size:0.9rem;
     font-weight:300;
+    color:var(--light-text)
 }
 .icon-container .icon {
     align-self:flex-start;
@@ -755,6 +759,7 @@ header {
 .right-transparent p {
     line-height:1.75;
     font-weight:300;
+    color:var(--light-text);
 }
 .right-transparent button {
     padding:0.75rem 1rem;
@@ -852,6 +857,10 @@ header {
 
 .left-assets p {
     font-weight:300;
+    color:var(--light-text);
+}
+.left-assets strong {
+    color:black;
 }
 .left-assets strong {
     font-size:1.1rem;
@@ -1499,58 +1508,61 @@ strong,
     font-family:"roboto", serif !important;
 }
 /******************************/
-.processScroll {
-    transform:translateY(200%);
-    opacity:0;
-}
 
-.icon {
-    transform:translateY(100%);
-    opacity:0;
-}
-.icon-text {
-    transform:translateX(100%);
-    opacity:0;
-}
-.left-transparent {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.orderScroll {
-    transform:translateY(200%);
-    opacity:0;
-}
-.orderScrolled {
-    transform:translateY(200%);
-    opacity:0;
-}
-.right-assets {
-    transform:translateX(100%);
-    opacity:0;
-}
-.cardTitleScroll {
-    transform:translateX(-100%);
-    opacity:0;
-}
-
-
-
-.card {
-    transform:scaleY(0.1);
-    opacity:0;
-}
-
-
-
-.goodbyeScroll {
-    transform:translateY(10rem);
-    opacity:0;
-}
-footer p,
-footer img,
-footer ul a li {
-    transform:translateX(100%);
-    opacity:0;
+@media (min-width:1024px) {
+    .processScroll {
+        transform:translateY(200%);
+        opacity:0;
+    }
+    
+    .icon {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .icon-text {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .left-transparent {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .orderScroll {
+        transform:translateY(200%);
+        opacity:0;
+    }
+    .orderScrolled {
+        transform:translateY(200%);
+        opacity:0;
+    }
+    .right-assets {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    .cardTitleScroll {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    
+    
+    
+    .card {
+        transform:scaleY(0.1);
+        opacity:0;
+    }
+    
+    
+    
+    .goodbyeScroll {
+        transform:translateY(10rem);
+        opacity:0;
+    }
+    footer p,
+    footer img,
+    footer ul a li {
+        transform:translateX(100%);
+        opacity:0;
+    }
 }
 /***************/
 .point {
