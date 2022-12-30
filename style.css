@@ -116,23 +116,7 @@ nav ul li {
     z-index:1000;
     position:relative;
 }
-.drop-down {
-    background-color:var(--blue);
-    opacity:0.8;
-    color:white;
-    position:absolute;
-    right:10%;
-    bottom:-700%;
-    transform:translateY(-100%);
-    opacity:0;
-    transition:0.5s;
-    padding:2rem;
-    padding-block:4rem;
-    display:none;
-    width:20rem;
-    overflow-y: hidden;
-    pointer-events:none;
-}
+
 .logoWhite {
     margin-bottom:4rem;
 }
@@ -150,71 +134,17 @@ nav ul li {
     gap:1rem;
     align-self:flex-start;
 }
-.drop-down-our-work-burger {
-    display:flex;
-    flex-direction:column;
-    gap:2.5rem;
-    position:absolute;
-    border:2px solid black;
-    background-color:var(--new-green);
-    font-weight:bold;
-    color:black;
-    left:0%;
-    top:100%;
-    padding:4rem;
-    padding-block:2rem;
-    transform:translateY(-250%);
-    opacity:0;
-    transition:0.5s;
-    z-index:2;
 
 
-}
-.drop-down-web-design-burger {
-    display:flex;
-    flex-direction:column;
-    gap:2.5rem;
-    position:absolute;
-    border:2px solid black;
-    background-color:var(--new-green);
-    font-weight:bold;
-    color:black;
-    left:0%;
-    padding:4rem;
-    top:100%;
-    transform:translateY(-250%);
+.drop-down-burger-add {
+    transform:translateY(0);
     opacity:1;
-    transition:0.5s;
-    z-index:2;
-
-}
-.drop-down-pricing-burger {
-    display:flex;
-    flex-direction:column;
-    gap:2.5rem;
-    position:absolute;
-    border:2px solid black;
-    background-color:var(--new-green);
-    font-weight:bold;
-    color:black;
-    left:0%;
-    padding:4rem;
-    top:100%;
-    transform:translateY(-250%);
-    opacity:1;
-    transition:0.5s;
-    z-index:2;
-
+    transition:opacity 0.5s, transform 0.5s;
 }
 .drop-down-burger-add {
     transform:translateY(0);
     opacity:1;
-    transition:0.5s;
-}
-.drop-down-burger-add {
-    transform:translateY(0);
-    opacity:1;
-    transition:0.5s;
+    transition:opacity 0.5s, transform 0.5s;
 }
 
 .drop-down span img {
@@ -254,7 +184,7 @@ nav ul li {
 .toggle {
     transform:translateY(0);
     opacity:1;
-    transition:0.5s;
+    transition:opacity 0.5s, transform 0.5s;
     pointer-events:all;
 }
 
@@ -291,14 +221,14 @@ nav ul li {
 
 @media (min-width:1024px) {
     .hero-section h1 {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:translateY(100%);
         transform-origin:bottom;
         opacity:0;
         animation:slide-up 1s ease-out forwards;
     }
     .hero-section p {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:translateY(200%);
         transform-origin:bottom;
         opacity:0;
@@ -306,7 +236,7 @@ nav ul li {
         animation-delay:1s;
     }
     .hero-buttons button {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:translateY(200%);
         transform-origin:bottom;
         opacity:0;
@@ -588,7 +518,7 @@ main {
 
 @media (min-width:1024px) {
     .flag-card {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:scaleY(0);
         transform-origin:bottom;
         opacity:0;
@@ -596,7 +526,7 @@ main {
         animation-delay:1.75s;
     }
     .flag-card:nth-child(1) {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:scaleY(0);
         transform-origin:bottom;
         opacity:0;
@@ -605,7 +535,7 @@ main {
     
     }
     .flag-card:nth-child(2) {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:scaleY(0);
         transform-origin:bottom;
         opacity:0;
@@ -613,7 +543,7 @@ main {
         animation-delay:2s;
     }
     .flag-card:nth-child(3) {
-        transition:0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:scaleY(0);
         transform-origin:bottom;
         opacity:0;
@@ -628,7 +558,7 @@ main {
     .h2-two,
     .h2-three {
         opacity:0;
-        transition: 0.5s;
+        transition:opacity 0.5w, transform 0.5s;
         transform:translateX(-10%);
         transform-origin:left;
         animation: slide-in 0.5s ease-out forwards;
@@ -638,7 +568,7 @@ main {
     .p-two,
     .p-three {
         opacity:0;
-        transition: 0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         transform:translateX(-10%);
         transform-origin:left;
         animation: slide-in 0.5s ease-out forwards;
@@ -672,7 +602,7 @@ main {
         animation: delayed-slide 1s ease-out forwards;
         transform:translateY(3000%);
         opacity:0;
-        transition: 0.5s;
+        transition:opacity 0.5s, transform 0.5s;
         animation-delay:2.25s;
 
     }
@@ -2267,37 +2197,11 @@ nav ul li {
 .cursor {
     cursor:pointer !important;
 }
-.our-work-menu {
-    position:absolute;
-    inset:0;
-    width:max-content;
-    height:25rem;
 
-}
-.our-work-menu {
-    display:flex;
-    flex-direction:column;
-    z-index:1000;
-    align-items: flex-start;
-    justify-content: center;
-    gap:2rem;
-    background-color:var(--blue);
-    padding:2rem;
-    font-weight:700;
-    color:white;
-    font-size:1rem;
-    top:150%;
-    left:-15%;
-    transform:translateY(-10%);
-    opacity:0;
-    transition:0.5s;
-    padding-inline:2rem;
-
-}
 .add-to-drop {
     transform:translateY(0%) !important;
     opacity:1 !important;
-    transition:0.5s;
+    transition:opacity 0.5s, transform 0.5s;
 }
 .web-design-drop {
     position:relative;
@@ -2311,30 +2215,12 @@ nav ul li {
     height:20rem;
 
 }
-.web-design-menu {
-    display:flex;
-    flex-direction:column;
-    z-index:1000;
-    align-items: flex-start;
-    justify-content: center;
-    gap:2rem;
-    background-color:var(--blue);
-    font-weight:700;
-    font-size:1rem;
-    top:150%;
-    left:25%;
-    transform:translateY(-10%);
-    opacity:0;
-    color:white;
-    transition:0.5s;
-    padding-inline:2rem;
-    
 
-}
 .add-to-drop {
     transform:translateY(0%) !important;
     opacity:1 !important;
-    transition:0.5s;
+    transition:opacity transform 0.5s;
+
 }
 
 
@@ -2350,25 +2236,7 @@ nav ul li {
     width:max-content;
     height:20rem;
 }
-.pricing-menu {
-    display:flex;
-    flex-direction:column;
-    z-index:1000;
-    align-items: flex-start;
-    justify-content: center;
-    gap:2rem;
-    color:white;
-    background-color:var(--blue);
-    font-weight:700;
-    font-size:1rem;
-    top:150%;
-    left:40%;
-    transform:translateY(-10%);
-    opacity:0;
-    transition:0.5s;
-    padding-inline:2rem;
 
-}
 
 
 .drop-down-our-work-burger,
@@ -2391,7 +2259,7 @@ nav ul li {
 .add-to-drop {
     transform:translateY(0%) !important;
     opacity:1 !important;
-    transition:0.5s;
+    transition:opacity 0.5s, transform 0.5s;
     pointer-events:all;
 }
 

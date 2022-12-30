@@ -39,6 +39,73 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <script defer src="web-design.js"></script>
     <link rel="icon" type="image/x-icon" href="../svg/flag-for-guernsey-svgrepo-com.svg">
+    <style>
+        .drop-down {
+    background-color:var(--blue);
+    color:white;
+    position:absolute;
+    right:13%;
+    bottom:-550%;
+    padding:6rem;
+    padding-left:2rem;
+    transition:0.5s;
+    opacity:0;
+    transform:translateY(-120%);
+    pointer-events:none;
+    
+}
+.pricing-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    color:white;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:36%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:0.5s;
+    padding-inline:2rem;
+
+}
+.web-design-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:15%;
+    transform:translateY(-10%);
+    opacity:0;
+    color:white;
+    transition:0.5s;
+    padding-inline:2rem;
+
+}
+.drop-down-our-work-burger,
+.drop-down-web-design-burger,
+.drop-down-pricing-burger {
+    opacity:0;
+    transform:translateY(-100%);
+    transition:0.5s;
+    pointer-events:none;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    padding:2rem;
+    font-weight:bold;
+}
+    </style>
 </head>
 <body style="overflow-x:hidden !important">
     <header>
@@ -188,13 +255,13 @@
 
             <h1>
                 <span class="affordable">                   
-                    Affordable</span> Web Design in <span class="new-circle">Guernsey <br></span>Custom Websites That Fit Your Brand <br> and Convert  Eyes To <span class="exist"> Leads <img src="../svgwhite/Vector.svg" alt="Background Texture" class="absolute test"></span>
+                    Affordable</span> Web Design in <span class="new-circle">Guernsey </span><br>Convert  Eyes To <span class="exist"> Leads <img src="../svgwhite/Vector.svg" alt="Background Texture" class="absolute test"></span>
                 </span>
             </h1>
 
 
-            <p>We know how to build custom websites that leverage the power of the internet and optimize for search engines to reach and engage more potential customers. From concept to launch, we'll help you create a website that stands out and delivers results.</p>
-            <a aria-label="Contact Us Button" href="../index.html#contact"><button>Hire Us</button></a>
+            <p>We build custom websites that leverage the power of the internet and optimize for search engines to reach and engage more potential customers.</p>
+            <a aria-label="Contact Us Button" href="../index.html#contact"><button>Hire Us For a Project</button></a>
         </div>
     </main>
 
@@ -338,48 +405,47 @@
             </div>
             <div class="cards">
                 <div class="card fourth-card">
-                    <div class="card-left">
+                    
                         <div class="card-title">
                             <p>Shop</p>
-                            <h3>E-Commerce Site Design & Build</h3>
+                            <h3>E-Commerce Sites</h3>
                         </div>
-                        <p>Don't miss out on the huge potential of online sales! Our team can help you build and maintain an e-commerce store that is easy to use and attracts customers. From design to payment processing to marketing, we've got you covered.</p>
+                        <p>Don't miss out on the huge potential of online sales! Our team can help you build and maintain an e-commerce store that is easy to use and attracts customers. Increase your sales with an E-commerce platform. </p>
                         <a aria-label="Contact Us Page" href="../index.html#contact"><button>Enquire Now</button></a>
-                    </div>
+                    
                     
                 </div>
 
                 <div class="card first-card">
                     <div class="card-left">
-                        <div class="card-title">
+                        
                             <p>Dns</p>
-                            <h3>Hosting & Domain Services</h3>
+                            <h3>Hosting & Domain</h3>
                         </div>
-                        <p>Having a reliable and secure hosting and domain service is essential for any website. Our team can help you set up and manage your hosting and domain needs, ensuring that your website is always online and accessible. Business email included with domain.</p>
+                        <p>Having a reliable and secure hosting and domain service is essential for any website. We help you set up and manage your hosting and domain needs, so your website is always online and accessible.</p>
                         <a aria-label="Contact Us Button" href="../index.html#contact"><button>Enquire Now</button></a>
-                    </div>
+                    
                     
                 </div>
                 <div class="card second-card">
-                    <div class="card-left">
+                    
                         <div class="card-title">
                             <p>Ui/Ux</p>
                             <h3>Website Design & Build</h3>
                         </div>
-                        <p>At Island Web Design, we specialize in creating custom websites that showcase your business and engage your audience. From concept to launch, we'll help you build a website that meets your goals and stands out from the competition.</p>
+                        <p>At Island Web Design, we specialize in creating custom websites that showcase your business and engage your audience. We'll help you build a website that meets your goals and stands out.</p>
                         <a aria-label="Contact Us Button" href="../index.html#contact"><button>Enquire Now</button></a>
-                    </div>
+                    
                     
                 </div>
                 <div class="card third-card">
-                    <div class="card-left">
                         <div class="card-title">
                             <p>Assets</p>
-                            <h3>Content Writing & Ad Copy</h3>
+                            <h3>Copywriting</h3>
                         </div>
-                        <p>Words matter, and the right ones can make all the difference. We are skilled writers and we can craft compelling content that tells your brand's story and sells your products or services. Let us help you communicate effectively and make a lasting impression.</p>
+                        <p>Words matter, and the right ones can make all the difference. We can craft compelling content that tells your brand's story and leaves a lasting impression on your customer.</p>
                         <a aria-label="Contact Us Button" href="../index.html#contact"><button>Enquire Now</button></a>
-                    </div>
+                   
                     
                 </div>
             </div>

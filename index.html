@@ -38,6 +38,104 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="svg/flag-for-guernsey-svgrepo-com.svg">
 
+    <style>
+        .drop-down-web-design-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-50%);
+    opacity:0;
+    transition:opacity 0.5s, transform 0.5s;
+    z-index:2;
+    pointer-events:none;
+
+
+}
+.drop-down-pricing-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-50%);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.5s, transform 0.5s;
+    z-index:2;
+
+}
+.drop-down {
+    background-color:var(--blue);
+    color:white;
+    position:absolute;
+    right:10%;
+    bottom:-700%;
+    transform:translateY(-100%);
+    opacity:0;
+    transition: opacity 0.5s, transform 0.5s;
+    padding:2rem;
+    padding-block:4rem;
+    display:none;
+    width:20rem;
+    overflow-y: hidden;
+    pointer-events:none;
+    will-change: opacity transform;
+}
+.web-design-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:30%;
+    transform:translateY(-10%);
+    opacity:0;
+    color:white;
+    transition:opacity 0.5s, transform 0.5s;
+    padding-inline:2rem;
+    
+
+}
+.pricing-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    color:white;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:40%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:opacity 0.5s, transform 0.5s;
+    padding-inline:2rem;
+
+}
+    </style>
+
 </head>
 <body style="overflow-x:hidden">
     <main>
@@ -230,7 +328,7 @@
                 </div>
                 <div class="flag-card">
                     <h2 class="h2-three">Increase your reach naturally</h2>
-                    <p class="p-three">Make sure your business is visible to potential customers online. We can help you increase your reach and get noticed by the right people. By optimizing your website and implementing effective digital marketing strategies, you can reach a wider audience.</p>
+                    <p class="p-three">Make sure your business is visible to potential customers online. We help you increase your reach and get noticed by the right people. By optimizing your website and implementing effective digital marketing strategies, you can reach a wider audience.</p>
                 </div>
             </div>
         </section>

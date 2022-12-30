@@ -103,23 +103,7 @@ nav ul li {
     z-index:1000;
     position:relative;
 }
-.drop-down {
-    background-color:var(--blue);
-    opacity:0.8;
-    color:white;
-    position:absolute;
-    right:10%;
-    bottom:-700%;
-    transform:translateY(-100%);
-    opacity:0;
-    transition:0.5s;
-    padding:2rem;
-    padding-block:4rem;
-    display:none;
-    width:20rem;
-    overflow-y: hidden;
-    pointer-events:none;
-}
+
 .logoWhite {
     margin-bottom:4rem;
 }
@@ -137,62 +121,8 @@ nav ul li {
     gap:1rem;
     align-self:flex-start;
 }
-.drop-down-our-work-burger {
-    display:flex;
-    flex-direction:column;
-    gap:2.5rem;
-    position:absolute;
-    border:2px solid black;
-    background-color:var(--new-green);
-    font-weight:bold;
-    color:black;
-    left:0%;
-    top:100%;
-    padding:4rem;
-    padding-block:2rem;
-    transform:translateY(-250%);
-    opacity:0;
-    transition:0.5s;
-    z-index:2;
 
 
-}
-.drop-down-web-design-burger {
-    display:flex;
-    flex-direction:column;
-    gap:2.5rem;
-    position:absolute;
-    border:2px solid black;
-    background-color:var(--new-green);
-    font-weight:bold;
-    color:black;
-    left:0%;
-    padding:4rem;
-    top:100%;
-    transform:translateY(-250%);
-    opacity:1;
-    transition:0.5s;
-    z-index:2;
-
-}
-.drop-down-pricing-burger {
-    display:flex;
-    flex-direction:column;
-    gap:2.5rem;
-    position:absolute;
-    border:2px solid black;
-    background-color:var(--new-green);
-    font-weight:bold;
-    color:black;
-    left:0%;
-    padding:4rem;
-    top:100%;
-    transform:translateY(-250%);
-    opacity:1;
-    transition:0.5s;
-    z-index:2;
-
-}
 .drop-down-burger-add {
     transform:translateY(0);
     opacity:1;
@@ -225,7 +155,8 @@ nav ul li {
     border:2px solid var(--new-green);
     background-color:var(--new-green);
     display:flex;
-    align-items: center;gap:0.5rem;
+    align-items: center;
+    gap:0.5rem;
 }
 .logoWhite {
     width:200px;
@@ -309,26 +240,7 @@ nav ul li {
     height:20rem;
 
 }
-.web-design-menu {
-    display:flex;
-    flex-direction:column;
-    z-index:1000;
-    align-items: flex-start;
-    justify-content: center;
-    gap:2rem;
-    background-color:var(--blue);
-    font-weight:700;
-    font-size:1rem;
-    top:150%;
-    left:30%;
-    transform:translateY(-10%);
-    opacity:0;
-    color:white;
-    transition:0.5s;
-    padding-inline:2rem;
-   
 
-}
 .add-to-drop {
     transform:translateY(0%) !important;
     opacity:1 !important;
@@ -349,26 +261,7 @@ nav ul li {
     height:20rem;
 
 }
-.pricing-menu {
-    display:flex;
-    flex-direction:column;
-    z-index:1000;
-    align-items: flex-start;
-    justify-content: center;
-    gap:2rem;
-    color:white;
-    background-color:var(--blue);
-    font-weight:700;
-    font-size:1rem;
-    top:150%;
-    left:45%;
-    transform:translateY(-10%);
-    opacity:0;
-    transition:0.5s;
-    padding-inline:2rem;
-   
 
-}
 
 .drop-down-our-work-burger,
 .drop-down-web-design-burger,
@@ -490,9 +383,9 @@ main {
     padding:12rem 6rem;
     min-height:100%;
     gap:2rem;
-    padding-top:14rem;
+    padding-top:10rem;
     position:relative;
-    padding-bottom:6rem;
+    padding-bottom:2rem;
     
 }
 @keyframes slide-up {

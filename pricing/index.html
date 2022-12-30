@@ -40,6 +40,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="../svg/flag-for-guernsey-svgrepo-com.svg">
+    <style>
+        .pricing-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    color:white;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:45%;
+    transform:translateY(-10%);
+    opacity:0;
+    transition:0.5s;
+    padding-inline:2rem;
+   
+
+}
+.web-design-menu {
+    display:flex;
+    flex-direction:column;
+    z-index:1000;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    background-color:var(--blue);
+    font-weight:700;
+    font-size:1rem;
+    top:150%;
+    left:30%;
+    transform:translateY(-10%);
+    opacity:0;
+    color:white;
+    transition:0.5s;
+    padding-inline:2rem;
+   
+
+}
+.drop-down-web-design-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-250%);
+    opacity:1;
+    transition:0.5s;
+    z-index:2;
+
+}
+.drop-down-pricing-burger {
+    display:flex;
+    flex-direction:column;
+    gap:2.5rem;
+    position:absolute;
+    border:2px solid black;
+    background-color:var(--new-green);
+    font-weight:bold;
+    color:black;
+    left:0%;
+    padding:4rem;
+    top:100%;
+    transform:translateY(-250%);
+    opacity:1;
+    transition:0.5s;
+    z-index:2;
+
+}
+.drop-down {
+    background-color:var(--blue);
+    opacity:0.8;
+    color:white;
+    position:absolute;
+    right:10%;
+    bottom:-700%;
+    transform:translateY(-100%);
+    opacity:0;
+    transition:0.5s;
+    padding:2rem;
+    padding-block:4rem;
+    display:none;
+    width:20rem;
+    overflow-y: hidden;
+    pointer-events:none;
+}
+    </style>
 </head>
 <body style="overflow-x:hidden !important">
     <header style="overflow:visible !important">
@@ -197,7 +292,7 @@
 
             <h1>
                 <span class="affordable">                   
-                    Affordable</span> Web Design in Guernsey <br><span class="gone">Industry Leading Prices  For Companys <br>  That Want To  <span class="exist">  <img aria-hidden="true" src="../svgwhite/Vector.svg" alt="background texture" class="absolute test new">Exist</span>
+                    Affordable</span> Web Design in Guernsey <br><span class="gone">Industry Leading <span class="exist">Prices  <img aria-hidden="true" src="../svgwhite/Vector.svg" alt="background texture" class="absolute test new"></span>
                 </span>
             </h1>
 
@@ -445,7 +540,7 @@
                     <p class="updateScroll">Packages</p>
                     <h2 class="updateScroll">Updates & Maintenance to your Website</h2>
                 </div>
-                <p class="updateScroll">Site updates, maintenance or anything similar will be charged our hourly rate of <strong>£60</strong> unless otherwise specified in one of our maintenance packages. The Basic package includes everything needed to maintain a website, uptime, security, content etc, whereas the Advanced package is the digital marketing package, this includes conversion rate optimization based on analytics, Seo, content writing, page speed audits and much more. We manage your seo, ads, copy and everything inbetween, this package is for the business that wants to go the extra mile and really give their site the chance to be great.</p>
+                <p class="updateScroll">Site updates, maintenance or anything similar will be charged our hourly rate of <strong>£60</strong> unless otherwise specified in one of our maintenance packages. The Basic package includes general website maintenance, backups and basic analytics, whereas the Advanced package includes marketing consultation, general managment of all analytics and audits and one hour of our time weekly for anything you would like addressed along with much more. This package is for the business that wants to go the extra mile and really give their site the chance to be great along with getting ahead of the competition who arent doing these things.</p>
                 <a aria-label="Contact Us Button" class="updateScroll" href="../index.html#contact"><button>Book Now</button></a>
             </div>
             <div class="updates-img">
@@ -461,7 +556,7 @@
             <div class="maintenance-titles-wrapper">
                 <div class="maintenance-titles">
                     <h2 class="maintenanceScroll">Website Maintenance Packages</h2>
-                    <p class="maintenanceScroll">Maintaining a website is a crucial but often overlooked aspect of running an online business. From keeping up with device and browser updates to managing traffic and assets to ensuring security, not to mention all the work that goes into search engine optimisation,  it can be a lot of work. That's where our maintenance packages come in. For a monthly or yearly fee, our team can take care of all the necessary updates and maintenance tasks to keep your website running smoothly. Don't let your website fall behind - invest in one of our maintenance packages today. <strong>Please read this before signing the contract.</strong></p>
+                    <p class="maintenanceScroll">Maintaining a website is a crucial but often overlooked aspect of running an online business. From keeping up with device and browser updates to managing traffic and assets to ensuring security, not to mention all the work that goes into search engine optimisation, (full seo package coming soon) it can be a lot of work. That's where our maintenance packages come in. For a monthly or yearly fee, our team can take care of all the necessary updates and maintenance tasks to keep your website running smoothly. Don't let your website fall behind - invest in one of our maintenance packages today. <strong>Please read this before signing the contract.</strong></p>
                     <a aria-label="Contact Us Button" class="maintenanceScroll" href="../index.html#contact"><button>Book Now</button></a>
                 </div>
                 <div class="maintenance-img">
@@ -485,7 +580,7 @@
                         <div class="price-summary">
                             <p>Advanced Plan</p>
                             <div class="price">
-                                <p>£150</p>
+                                <p>£100</p>
                                 <p>per month</p>
                             </div>
                         </div>
@@ -498,19 +593,13 @@
 
                     </div>
                     <div class="container">
-                        <div class="list-item">Weekly site backups</div>
+                        <div class="list-item">Weekly site backups and security updates</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
 
 
                     </div>
-                    <div class="container">
-                        <div class="list-item">Security checks</div>
-                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-
-
-                    </div>
+                    
                     <div class="container">
                         <div class="list-item">Site health checks for errors such as 404 pages</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
@@ -519,7 +608,7 @@
 
                     </div>
                     <div class="container">
-                        <div class="list-item">Uptime tests</div>
+                        <div class="list-item">Weekly uptime tests</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
 
@@ -533,42 +622,29 @@
 
 
                     </div>
-                    <div class="container">
-                        <div class="list-item">Making sure your website performance lasts and doesnt degrade</div>
-                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-
-                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-
-                    </div>
-                    <div class="container">
-                        <div class="list-item">Making sure you stay highly ranked on Google</div>
-                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-                        
-
-
-                    </div>
+                
+                    
+                   
                     <div class="container">
                         <div class="list-item">Oversee Google analytics (conversion rate optimization based on results)</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-
+                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
                     </div>
+
+
                     <div class="container">
                         <div class="list-item">Marketing consultation</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
 
                     </div>
                     <div class="container">
-                        <div class="list-item">General management of all analytics, conversion rate, page speed, seo etc</div>
+                        <div class="list-item">General management of all analytics, conversion rate, page speed, audits etc</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
 
                     </div>
+                   
                     <div class="container">
-                        <div class="list-item">Weekly Ahref audit and fix</div>
-                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
-
-                    </div>
-                    <div class="container">
-                        <div class="list-item">Regular updates to written content based on new information or leads</div>
+                        <div class="list-item">Regular updates to general content based on new information or leads</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
 
                     </div>
@@ -578,10 +654,22 @@
 
                     </div>
                     <div class="container">
-                        <div class="list-item">Anything else you can think of that you think will benefit the website in regards to seo and digital marketing</div>
+                        <div class="list-item">One hour of time weekly for general adjustments and updates</div>
                         <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
 
                     </div>
+                    
+                    <div class="container">
+                        <div class="list-item">Monthly activity report on all site activity and analytics</div>
+                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
+
+                    </div>
+                    <div class="container">
+                        <div class="list-item">Monthly browser test for all popular browsers</div>
+                        <img src="../svg/tick-svgrepo-com (1) 1.svg" alt="Tick to confirm part of website maintenance package">
+
+                    </div>
+                    
                 </div>
                 
                     

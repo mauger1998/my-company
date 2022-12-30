@@ -213,7 +213,7 @@ gsap.to(".cardTitleScroll", {
                 trigger: ".card",
                 scrub:true,
                 start:"top bottom",
-                end:"+=600",
+                end:"+=300",
             },
             scaleY:1,
             opacity:1,
