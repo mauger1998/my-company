@@ -1989,7 +1989,12 @@ nav ul li {
 }
 .grid-item img {
     aspect-ratio: 3/2;
+    object-fit:cover;
 }
+/* .grid-item:nth-child(1) img {
+    aspect-ratio:auto;
+  
+} */
 /***************************/
 
 
@@ -2572,13 +2577,16 @@ a {
 }
 
 /********************/
-.enterprise-img {
-    transform:translateX(-100%);
-    opacity:0;
-}
-.enter-scroll {
-    transform:translateY(15rem);
-    opacity:0;
+
+@media (min-width:1024px) {
+    .enterprise-img {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    .enter-scroll {
+        transform:translateY(15rem);
+        opacity:0;
+    }
 }
 
 .point {

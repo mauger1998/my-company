@@ -819,14 +819,14 @@ button:hover {
     flex-direction: column;
     gap:2rem;
     align-items: flex-start;
-    transition:0.5s;
+    transition: transform 0.5s, opacity 0.5s;
     padding:2rem;
     padding-inline:0.5rem;
 
 }
 .grid-item:hover,
 .grid-item-one:hover {
-    transition:0.5s;
+    transition: transform 0.5s, opacity 0.5s;
     background-color:var(--blue);
     color:white;
     cursor:pointer;
