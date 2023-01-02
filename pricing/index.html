@@ -93,10 +93,11 @@
     left:0%;
     padding:4rem;
     top:100%;
-    transform:translateY(-250%);
-    opacity:1;
+    transform:translateY(-50%);
+    opacity:0;
     transition:0.5s;
     z-index:2;
+    pointer-events:none;
 
 }
 .drop-down-pricing-burger {
@@ -111,10 +112,12 @@
     left:0%;
     padding:4rem;
     top:100%;
-    transform:translateY(-250%);
-    opacity:1;
+    transform:translateY(-50%);
+    opacity:0;
     transition:0.5s;
     z-index:2;
+    pointer-events:none;
+
 
 }
 .drop-down {
@@ -133,6 +136,31 @@
     width:20rem;
     overflow-y: hidden;
     pointer-events:none;
+}
+.toggle {
+    transform:translateY(0);
+    opacity:1;
+    transition:opacity 0.5s, transform 0.5s;
+    pointer-events:all;
+}
+.drop-down-burger-add {
+    transform:translateY(0);
+    opacity:1;
+    transition:0.5s;    
+    pointer-events:all;
+
+}
+.drop-down-burger-add {
+    transform:translateY(0);
+    opacity:1;
+    transition:0.5s;
+    pointer-events:all;
+
+}
+@media (max-width:1144px) {
+    .drop-down {
+        display:block;
+    }
 }
     </style>
 </head>

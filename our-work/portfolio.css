@@ -134,16 +134,7 @@ nav ul li {
 }
 
 
-.drop-down-burger-add {
-    transform:translateY(0);
-    opacity:1;
-    transition: opacity 0.5s, transform 0.5s;
-}
-.drop-down-burger-add {
-    transform:translateY(0);
-    opacity:1;
-    transition: opacity 0.5s, transform 0.5s;
-}
+
 
 .drop-down span img {
         width:25px;

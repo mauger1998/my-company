@@ -105,6 +105,47 @@
     padding:2rem;
     font-weight:bold;
 }
+.addToDrop {
+    opacity:1;
+    transform:translateY(0);
+    transition:0.5s;
+    display:block;
+    visibility:visible;
+    pointer-events:all;
+}
+.burger-our-work-drop,
+.burger-web-design-drop,
+.burger-pricing-drop {
+    cursor:pointer;
+
+}
+.drop-down-web-design-burger,
+.drop-down-pricing-burger,
+.drop-down-our-work-burger {
+    background-color:var(--new-green);
+    color:black;
+    position:absolute;
+}
+.addToDrop {
+    opacity:1;
+    transform:translateY(0);
+    transition:0.5s;
+    display:block;
+    visibility:visible;
+    pointer-events:all;
+}
+.addToOurWork {
+    transition:0.5s;
+    opacity:1;
+    transform:translateY(0);
+    visibility: visible;
+    pointer-events:all !important;
+}
+@media (max-width:1144px) {
+    .drop-down {
+        display:block;
+    }
+}
     </style>
 </head>
 <body style="overflow-x:hidden !important">

@@ -199,33 +199,14 @@ nav ul {
     width:25px;
 
 }
-.drop-down-web-design-burger,
-.drop-down-pricing-burger,
-.drop-down-our-work-burger {
-    background-color:var(--new-green);
-    color:black;
-    position:absolute;
-}
-.addToDrop {
-    opacity:1;
-    transform:translateY(0);
-    transition:0.5s;
-    display:block;
-    visibility:visible;
-    pointer-events:all;
-}
+
 .menu {
     cursor:pointer;
 
 }
 
 
-.burger-our-work-drop,
-.burger-web-design-drop,
-.burger-pricing-drop {
-    cursor:pointer;
 
-}
 
 
 .drop-down button {
@@ -243,13 +224,7 @@ nav ul {
     align-items: center;
     gap:1rem;
 }
-.addToOurWork {
-    transition:0.5s;
-    opacity:1;
-    transform:translateY(0);
-    visibility: visible;
-    pointer-events:all !important;
-}
+
 @media (max-width:456px) {
     .menu {
         width:25px;
