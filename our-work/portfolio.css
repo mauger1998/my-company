@@ -554,6 +554,9 @@ main {
     .hero-wrapper p {
         font-size:1rem;
     }
+    .annoying {
+        width:60px;
+    }
 
 }
 @media (max-width:666px) {
@@ -610,11 +613,17 @@ main {
         width:10px;
         bottom:40%;
     }
+    .annoying {
+        width:50px;
+    }
 }
+
 @media (max-width:402px) {
     .hero-wrapper {
         padding-inline:1rem;
     }
+    
+    
 }
 @media (max-width:392px) {
     header .logo-container img {

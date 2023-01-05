@@ -1624,13 +1624,16 @@ div,
     }
 }
 /**************/
-.enter-scroll {
-    transform:translateY(100%);
-    opacity:0;
-}
-.right-card {
-    transform:scaleY(0.1);
-    opacity:0;
+
+@media (min-width:1024px) {
+    .enter-scroll {
+        transform:translateY(100%);
+        opacity:0;
+    }
+    .right-card {
+        transform:scaleY(0.1);
+        opacity:0;
+    }
 }
 .drop-down-web-design-burger p,
 .drop-down-pricing-burger p,
