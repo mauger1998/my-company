@@ -1291,6 +1291,9 @@ footer a {
 .logo-footer {
     width:200px;
 }
+.card button:hover {
+    color:var(--new-green);
+}
 
 a,
 p,
