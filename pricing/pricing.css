@@ -1690,3 +1690,6 @@ nav p {
     }
    
 }
+.drop-down button:hover li {
+    color:white !important;
+}

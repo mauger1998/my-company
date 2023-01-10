@@ -97,7 +97,7 @@
     color:white;
     position:absolute;
     right:10%;
-    bottom:-700%;
+    bottom:-750%;
     transform:translateY(-100%);
     opacity:0;
     transition: opacity 0.5s, transform 0.5s;
@@ -120,7 +120,7 @@
     font-weight:700;
     font-size:1rem;
     top:150%;
-    left:30%;
+    left:20%;
     transform:translateY(-10%);
     opacity:0;
     color:white;
@@ -141,7 +141,7 @@
     font-weight:700;
     font-size:1rem;
     top:150%;
-    left:40%;
+    left:30%;
     transform:translateY(-10%);
     opacity:0;
     transition:opacity 0.5s, transform 0.5s;
@@ -164,7 +164,7 @@
     transition:opacity 0.5s, transform 0.5s;
     pointer-events:all;
 }
-@media (max-width:1144px) {
+@media (max-width:1250px) {
     .drop-down {
         display:block;
     }
@@ -251,7 +251,7 @@
                 </nav>
                 <img class="menu" src="../Black-Icons/Mobile-Menu.svg" alt="Mobile Screen Hamburger Menu Icon">
                 <div class="nav-button-container">
-                    <button class="button-add">Contact Us<span><img aria-hidden="true" src="../svg/contact-svgrepo-com.svg" alt="Book Now Contact Icon"></span></button>
+                    <a aria-label="Contact Us" href="#contact"><button class="button-add">Contact Us<span><img aria-hidden="true" src="../svg/contact-svgrepo-com.svg" alt="Book Now Contact Icon"></span></button></a>
                 </div>
                 <div class="drop-down" style="overflow:visible !important">
                     <img class="logoWhite" src="../svg/MYLOGOWHITE.svg" alt="Island Web Design Logo White">
@@ -330,7 +330,7 @@
                             </li>
                         </a>
                         <button class="contactButtonDrop">
-                            <a aria-label="Contact Us Link" href="../index.html#contact">
+                            <a aria-label="Contact Us Link" href="#contact">
                                 <li>Contact Us</li>
                             </a>
                         </button>
@@ -412,7 +412,7 @@
                 <img src="../landing-svg/NicePng_hundred-dollar-bill-png_689584.png" alt="Wasting money on advertising money burning">
             </div>
         </section>
-        <section class="form-section">
+        <section id="contact" class="form-section">
             <div class="form-wrapper">
                 <h2>Leave your Url and Email and get a FREE audit of your website in your inbox in 20 minutes!</h2>
                 <form action="https://formsubmit.co/jordan@islandwebdesign.net" method="POST">

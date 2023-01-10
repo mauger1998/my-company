@@ -1462,3 +1462,6 @@ nav p {
        padding-inline:1.5rem;
     }
 }
+.drop-down button:hover li {
+    color:white !important;
+}

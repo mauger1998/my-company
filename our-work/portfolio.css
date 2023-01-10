@@ -1363,3 +1363,6 @@ a {
     }
    
 }
+.drop-down button:hover li {
+    color:white !important;
+}

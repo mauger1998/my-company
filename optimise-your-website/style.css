@@ -423,6 +423,7 @@ header button {
 
 
 
+
 @media (max-width:1250px) {
     nav {
         display:none;
@@ -1045,4 +1046,8 @@ ul {
         opacity:1;
         transform:translateY(0);
     }
+}
+
+.drop-down button:hover li {
+    color:white !important;
 }
