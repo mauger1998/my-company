@@ -83,7 +83,7 @@ nav ul {
     display:none;
     width:40px;
 }
-@media (max-width:1144px) {
+@media (max-width:1250px) {
     nav {
         display:none;
     }
